@@ -2,6 +2,8 @@
   "version": 2,
   "projects": {
     "base-ui": "libs/base-ui",
+    "gatsby-plugin-emotion": "libs/gatsby-plugin-emotion",
+    "gatsby-plugin-top-layout": "libs/gatsby-plugin-top-layout",
     "home": "apps/home",
     "home-e2e": "apps/home-e2e"
   }

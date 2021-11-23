@@ -1,0 +1,15 @@
+{
+  "root": "libs/gatsby-plugin-top-layout",
+  "sourceRoot": "libs/gatsby-plugin-top-layout/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/gatsby-plugin-top-layout/**/*.js"]
+      }
+    }
+  },
+  "tags": []
+}

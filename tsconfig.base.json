@@ -35,7 +35,9 @@
       "@watheia/base-ui.theme.size-definition": [
         "libs/base-ui/src/theme/size-definition/index.ts"
       ],
-      "@watheia/base-ui.theme.theme-provider": ["libs/base-ui/src/theme/theme-provider"]
+      "@watheia/base-ui.theme.theme-provider": ["libs/base-ui/src/theme/theme-provider"],
+      "@waweb/gatsby-plugin-emotion": ["libs/gatsby-plugin-emotion/src/index.js"],
+      "@waweb/gatsby-plugin-top-layout": ["libs/gatsby-plugin-top-layout/src/index.js"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -42,5 +42,8 @@ module.exports = {
         icon: `src/images/logo.svg`,
       },
     },
+    {
+      resolve: require.resolve("../../libs/gatsby-plugin-emotion"),
+    },
   ],
 }
