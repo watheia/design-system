@@ -1,0 +1,42 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@watheia/base-ui": ["libs/base-ui/src/index.ts"],
+      "@watheia/base-ui.layout.top-layout": ["libs/base-ui/src/layout/top-layout/index.ts"],
+      "@watheia/base-ui.theme.brand-definition": [
+        "libs/base-ui/src/theme/brand-definition/index.ts"
+      ],
+      "@watheia/base-ui.theme.color-definition": [
+        "libs/base-ui/src/theme/color-definition/index.ts"
+      ],
+      "@watheia/base-ui.theme.colors": ["libs/base-ui/src/theme/colors/colors.module.scss"],
+      "@watheia/base-ui.theme.fonts.book": ["libs/base-ui/src/theme/fonts/book/index.ts"],
+      "@watheia/base-ui.theme.fonts.clean": ["libs/base-ui/src/theme/fonts/clean/index.ts"],
+      "@watheia/base-ui.theme.heading-margin-definition": [
+        "libs/base-ui/src/theme/heading-margin-definition/index.ts"
+      ],
+      "@watheia/base-ui.theme.shadow-definition": [
+        "libs/base-ui/src/theme/shadow-definition/index.ts"
+      ],
+      "@watheia/base-ui.theme.size-definition": [
+        "libs/base-ui/src/theme/size-definition/index.ts"
+      ],
+      "@watheia/base-ui.theme.theme-provider": ["libs/base-ui/src/theme/theme-provider"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
