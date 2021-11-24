@@ -11,19 +11,19 @@
 {
     "layout/top-layout": {
         "scope": "watheia.base-ui",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "libs/base-ui/src/layout/top-layout"
     },
     "theme/brand-definition": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "mainFile": "index.ts",
         "rootDir": "libs/base-ui/src/theme/brand-definition"
     },
     "theme/color-definition": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "mainFile": "index.ts",
         "rootDir": "libs/base-ui/src/theme/color-definition"
     },
@@ -33,39 +33,33 @@
         "mainFile": "colors.module.scss",
         "rootDir": "libs/base-ui/src/theme/colors"
     },
-    "theme/fonts/book": {
-        "scope": "watheia.base-ui",
-        "version": "1.1.0",
-        "mainFile": "index.ts",
-        "rootDir": "libs/base-ui/src/theme/fonts/book"
-    },
     "theme/fonts/clean": {
         "scope": "watheia.base-ui",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "libs/base-ui/src/theme/fonts/clean"
     },
     "theme/heading-margin-definition": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "mainFile": "index.ts",
         "rootDir": "libs/base-ui/src/theme/heading-margin-definition"
     },
     "theme/shadow-definition": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "mainFile": "index.ts",
         "rootDir": "libs/base-ui/src/theme/shadow-definition"
     },
     "theme/size-definition": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "mainFile": "index.ts",
         "rootDir": "libs/base-ui/src/theme/size-definition"
     },
     "theme/theme-provider": {
         "scope": "watheia.base-ui",
-        "version": "1.1.1",
+        "version": "1.1.2",
         "mainFile": "index.tsx",
         "rootDir": "libs/base-ui/src/theme/theme-provider"
     },

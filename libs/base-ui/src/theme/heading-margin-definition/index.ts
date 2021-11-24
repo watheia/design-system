@@ -1,3 +1,3 @@
-import styles from "./heading-margin-definition.module.scss"
+import * as styles from "./heading-margin-definition.module.scss"
 const { headingMargins } = styles
 export { headingMargins }

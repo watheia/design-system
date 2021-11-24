@@ -7,7 +7,7 @@ import { primaryPalette } from "@watheia/base-ui.theme.color-definition"
 import { brands } from "@watheia/base-ui.theme.brand-definition"
 import { headingMargins } from "@watheia/base-ui.theme.heading-margin-definition"
 import { SansFont } from "@watheia/base-ui.theme.fonts.clean"
-import texts from "./texts.module.scss"
+import * as texts from "./texts.module.scss"
 
 /**
  * @name ThemeProvider
