@@ -111,5 +111,11 @@
         "mainFile": "index.ts",
         "rootDir": "libs/base-ui/src/utils/is-browser"
     },
+    "views/sample": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "libs/design/src/views/sample"
+    },
     "$schema-version": "14.9.0"
 }

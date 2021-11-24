@@ -23523,6 +23523,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sample-8f6133@workspace:libs/design/src/views/sample":
+  version: 0.0.0-use.local
+  resolution: "sample-8f6133@workspace:libs/design/src/views/sample"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
 "sanitize-html@npm:^1.27.5":
   version: 1.27.5
   resolution: "sanitize-html@npm:1.27.5"

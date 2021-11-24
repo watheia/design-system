@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://harmony-docs.bit.dev/workspace/configurations
- **/{
+ **/ {
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -64,9 +64,7 @@
        **/
       "teambit.react/react": {},
       "teambit.pkg/pkg": {
-        "packageManagerPublishArgs": [
-          "--access public"
-        ],
+        "packageManagerPublishArgs": ["--access public"],
         "packageJson": {
           "name": "@watheia/{scope}.{name}",
           "private": false,
@@ -89,6 +87,9 @@
     },
     "libs/base-ui": {
       "defaultScope": "watheia.base-ui"
+    },
+    "libs/design": {
+      "defaultScope": "watheia.design"
     }
   }
 }

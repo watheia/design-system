@@ -8,7 +8,7 @@ export type ParagraphProps = {
   /**
    * Font size (from a list of presets).
    */
-  size: PossibleSizes & keyof typeof styles
+  size: PossibleSizes
 
   /**
    * The underlying html element
@@ -25,6 +25,8 @@ export type ParagraphProps = {
 export function Paragraph({ className, size, element: Element, ...rest }: ParagraphProps) {
   return (
     <Element
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       className={classNames(styles[size], className)}
       data-bit-id="watheia.base-ui/text/paragraph"
       {...rest}
