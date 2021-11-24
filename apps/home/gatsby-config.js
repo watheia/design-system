@@ -14,6 +14,8 @@ module.exports = {
       }
     },
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -54,6 +56,42 @@ module.exports = {
         // customTypings: (classes) => classes.map((className) => `export const ${className}: string;`).join('\n'),
 
         dropEmptyFile: true
+      }
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        // defaultLayouts: {
+        //   default: require.resolve(`./src/components/MDXFilter/index.js`)
+        // },
+        // rehypePlugins: [require(`rehype-slug`)],
+        plugins: [
+          `gatsby-transformer-remark`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-images-remote`
+        ],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-transformer-remark`
+          },
+          {
+            resolve: `gatsby-remark-copy-linked-files`,
+            options: {
+              ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`, `md`, `mdx`]
+            }
+          },
+          {
+            resolve: `gatsby-remark-images-remote`,
+            options: {
+              maxWidth: 1280,
+              linkImagesToOriginal: false,
+              withWebp: { quality: 80 },
+              disableBgImage: true,
+              backgroundColor: "none"
+            }
+          }
+        ]
       }
     },
     {
