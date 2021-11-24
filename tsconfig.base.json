@@ -17,6 +17,21 @@
     "paths": {
       "@watheia/base-ui": ["libs/base-ui/src/index.ts"],
       "@watheia/base-ui.layout.top-layout": ["libs/base-ui/src/layout/top-layout/index.ts"],
+      "@watheia/base-ui.routing.compare-url": [
+        "libs/base-ui/src/routing/compare-url/index.ts"
+      ],
+      "@watheia/base-ui.routing.link": ["libs/base-ui/src/routing/link/index.ts"],
+      "@watheia/base-ui.routing.native-link": [
+        "libs/base-ui/src/routing/native-link/index.ts"
+      ],
+      "@watheia/base-ui.routing.native-nav-link": [
+        "libs/base-ui/src/routing/native-nav-link/index.ts"
+      ],
+      "@watheia/base-ui.routing.routing-provider": [
+        "libs/base-ui/src/routing/routing-provider/index.ts"
+      ],
+      "@watheia/base-ui.theme.sizes": ["libs/base-ui/src/theme/sizes/index.ts"],
+      "@watheia/base-ui.utils.is-browser": ["libs/base-ui/src/utils/is-browser/index.ts"],
       "@watheia/base-ui.theme.brand-definition": [
         "libs/base-ui/src/theme/brand-definition/index.ts"
       ],

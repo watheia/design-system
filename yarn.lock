@@ -9452,6 +9452,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"classnames@npm:2.3.1":
+  version: 2.3.1
+  resolution: "classnames@npm:2.3.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fclassnames%2F-%2Fclassnames-2.3.1.tgz"
+  checksum: 14db8889d56c267a591f08b0834989fe542d47fac659af5a539e110cc4266694e8de86e4e3bbd271157dbd831361310a8293e0167141e80b0f03a0f175c80960
+  languageName: node
+  linkType: hard
+
 "clean-58b42c@workspace:libs/base-ui/src/theme/fonts/clean":
   version: 0.0.0-use.local
   resolution: "clean-58b42c@workspace:libs/base-ui/src/theme/fonts/clean"
@@ -9804,6 +9811,15 @@ __metadata:
   checksum: 59715f2fc456a73f68826285718503340b9f0dd89bfffc42749906c5cf3d4277ef11ef1cca0350d0e79204f00f1f6d83851ececc9095dc88512a697ac0b9bdcb
   languageName: node
   linkType: hard
+
+"compare-url-b1252b@workspace:libs/base-ui/src/routing/compare-url":
+  version: 0.0.0-use.local
+  resolution: "compare-url-b1252b@workspace:libs/base-ui/src/routing/compare-url"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
 
 "component-emitter@npm:^1.2.1, component-emitter@npm:~1.3.0":
   version: 1.3.0
@@ -15724,6 +15740,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"is-browser-82f77d@workspace:libs/base-ui/src/utils/is-browser":
+  version: 0.0.0-use.local
+  resolution: "is-browser-82f77d@workspace:libs/base-ui/src/utils/is-browser"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
 "is-buffer@npm:^1.1.5":
   version: 1.1.6
   resolution: "is-buffer@npm:1.1.6"
@@ -17641,6 +17666,15 @@ __metadata:
   checksum: 0c37f9f7fa212b38912b7145e1cd16a5f3cd34d782441c3e6ca653485d326f58b3caccda66efce1c5812bde4961bbde3374fae4b0d11bf1226152337f3894aa5
   languageName: node
   linkType: hard
+
+"link-4685ba@workspace:libs/base-ui/src/routing/link":
+  version: 0.0.0-use.local
+  resolution: "link-4685ba@workspace:libs/base-ui/src/routing/link"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
 
 "listr2@npm:^3.8.3":
   version: 3.13.5
@@ -19651,6 +19685,24 @@ __metadata:
   checksum: 06c14271ee966e108d55ae109f340976a9556c8603e888037145d6522726aebe89dd0c861b4b83947feaf6d39e79e08817559e8693deedc2c94e82c5cbd090c7
   languageName: node
   linkType: hard
+
+"native-link-4b58ec@workspace:libs/base-ui/src/routing/native-link":
+  version: 0.0.0-use.local
+  resolution: "native-link-4b58ec@workspace:libs/base-ui/src/routing/native-link"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
+"native-nav-link-5516e2@workspace:libs/base-ui/src/routing/native-nav-link":
+  version: 0.0.0-use.local
+  resolution: "native-nav-link-5516e2@workspace:libs/base-ui/src/routing/native-nav-link"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
 
 "native-request@npm:^1.0.5":
   version: 1.1.0
@@ -22046,6 +22098,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"querystringify@npm:^2.1.1":
+  version: 2.2.0
+  resolution: "querystringify@npm:2.2.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fquerystringify%2F-%2Fquerystringify-2.2.0.tgz"
+  checksum: 5641ea231bad7ef6d64d9998faca95611ed4b11c2591a8cae741e178a974f6a8e0ebde008475259abe1621cb15e692404e6b6626e927f7b849d5c09392604b15
+  languageName: node
+  linkType: hard
+
 "queue-microtask@npm:^1.2.2":
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
@@ -23290,6 +23349,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"routing-provider-b0b012@workspace:libs/base-ui/src/routing/routing-provider":
+  version: 0.0.0-use.local
+  resolution: "routing-provider-b0b012@workspace:libs/base-ui/src/routing/routing-provider"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
 "run-async@npm:^2.4.0":
   version: 2.4.1
   resolution: "run-async@npm:2.4.1"
@@ -23888,6 +23956,15 @@ __metadata:
 "size-definition-65d256@workspace:libs/base-ui/src/theme/size-definition":
   version: 0.0.0-use.local
   resolution: "size-definition-65d256@workspace:libs/base-ui/src/theme/size-definition"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
+"sizes-9e4174@workspace:libs/base-ui/src/theme/sizes":
+  version: 0.0.0-use.local
+  resolution: "sizes-9e4174@workspace:libs/base-ui/src/theme/sizes"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
@@ -26421,6 +26498,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"url-parse@npm:1.5.1":
+  version: 1.5.1
+  resolution: "url-parse@npm:1.5.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Furl-parse%2F-%2Furl-parse-1.5.1.tgz"
+  dependencies:
+    querystringify: ^2.1.1
+    requires-port: ^1.0.0
+  checksum: ce5c400db52d83b941944502000081e2338e46834cf16f2888961dc034ea5d49dbeb85ac8fdbe28c3fe738c09320a71a2f6d9286b748895cd464b1e208b6b991
+  languageName: node
+  linkType: hard
+
 "url-to-options@npm:^1.0.1":
   version: 1.0.1
   resolution: "url-to-options@npm:1.0.1"
@@ -26740,6 +26827,7 @@ __metadata:
     babel-jest: 27.2.3
     babel-plugin-module-resolver: 4.0.0
     babel-preset-gatsby: 0.12.1
+    classnames: 2.3.1
     clsx: ^1.1.1
     core-js: ^3.0.0
     cypress: ^8.3.0
@@ -26785,6 +26873,7 @@ __metadata:
     ts-jest: 27.0.5
     tslib: ^2.0.0
     typescript: ~4.4.3
+    url-parse: 1.5.1
     webpack: ~5.53.0
   languageName: unknown
   linkType: soft
