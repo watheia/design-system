@@ -1,0 +1,42 @@
+{
+  "root": "libs/design",
+  "sourceRoot": "libs/design/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/design",
+        "tsConfig": "libs/design/tsconfig.lib.json",
+        "project": "libs/design/package.json",
+        "entryFile": "libs/design/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "assets": [
+          {
+            "glob": "libs/design/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/design/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/design"],
+      "options": {
+        "jestConfig": "libs/design/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
