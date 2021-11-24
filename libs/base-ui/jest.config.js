@@ -2,8 +2,8 @@ module.exports = {
   displayName: "base-ui",
   preset: "../../jest.preset.js",
   transform: {
-    "^.+\\.[tj]sx?$": "babel-jest",
+    "^.+\\.[tj]sx?$": "babel-jest"
   },
   moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
-  coverageDirectory: "../../coverage/libs/base-ui",
+  coverageDirectory: "../../coverage/libs/base-ui"
 }

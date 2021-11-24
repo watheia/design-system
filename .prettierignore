@@ -3,6 +3,7 @@
 /dist
 /coverage
 /.yarn
+/public
 
 /apps/home/node_modules
 /apps/home/public

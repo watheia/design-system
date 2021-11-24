@@ -1,5 +1,5 @@
 import React, { useMemo } from "react"
-import classnames from "classnames"
+import clsx from "clsx"
 
 import { NativeLink, LinkProps } from "@watheia/base-ui.routing.native-link"
 import { compareUrl } from "@watheia/base-ui.routing.compare-url"
@@ -37,21 +37,21 @@ export function NativeNavLink({
 
   const isDefaultActive = useMemo(
     () => rest.href && compareUrl(activeHref, rest.href),
-    [exact, strict, activeHref, rest.href]
+    [activeHref, rest.href]
   )
 
   const calcIsActive = isActive?.() || isDefaultActive
 
   const combinedStyles = useMemo(
     () => (calcIsActive && activeStyle ? { ...style, ...activeStyle } : style),
-    [calcIsActive, style]
+    [activeStyle, calcIsActive, style]
   )
 
   return (
     <NativeLink
       {...rest}
       style={combinedStyles}
-      className={classnames(className, calcIsActive && activeClassName)}
+      className={clsx(className, calcIsActive && activeClassName)}
     />
   )
 }

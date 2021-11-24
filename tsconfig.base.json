@@ -30,6 +30,7 @@
       "@watheia/base-ui.routing.routing-provider": [
         "libs/base-ui/src/routing/routing-provider/index.ts"
       ],
+      "@watheia/base-ui.text.paragraph": ["libs/base-ui/src/text/paragraph/index.tsx"],
       "@watheia/base-ui.theme.sizes": ["libs/base-ui/src/theme/sizes/index.ts"],
       "@watheia/base-ui.utils.is-browser": ["libs/base-ui/src/utils/is-browser/index.ts"],
       "@watheia/base-ui.theme.brand-definition": [

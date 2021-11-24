@@ -8,5 +8,5 @@ export type TopLayoutContextType = {
 }
 
 export const TopLayoutContext = createContext<TopLayoutContextType>({
-  color: "aqua",
+  color: "aqua"
 })

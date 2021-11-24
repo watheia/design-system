@@ -1,5 +1,5 @@
 import React from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 import * as styles from "./paragraph.module.scss"

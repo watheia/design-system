@@ -1,27 +1,31 @@
-import urlParse from 'url-parse';
+import urlParse from "url-parse"
 
-export type Options = { exact?: boolean; strict?: boolean };
+export type Options = { exact?: boolean; strict?: boolean }
 
-export function compareUrl(baseUrl: string, toMatchUrl: string, { exact, strict }: Options = {}) {
-  if (baseUrl === toMatchUrl) return true;
+export function compareUrl(
+  baseUrl: string,
+  toMatchUrl: string,
+  { exact, strict }: Options = {}
+) {
+  if (baseUrl === toMatchUrl) return true
 
   if (!strict) {
     // remove any trailing slashes, e.g. '.../?query=...', '.../#hash...', '.../'
-    baseUrl = baseUrl.replace(/\/(?=[?#]|$)/, '');
-    toMatchUrl = toMatchUrl.replace(/\/(?=[?#]|$)/, '');
+    baseUrl = baseUrl.replace(/\/(?=[?#]|$)/, "")
+    toMatchUrl = toMatchUrl.replace(/\/(?=[?#]|$)/, "")
   }
 
-  const base = urlParse(baseUrl);
-  const match = urlParse(toMatchUrl);
+  const base = urlParse(baseUrl)
+  const match = urlParse(toMatchUrl)
 
-  const subUrl = isSubUrl(base, match);
-  const exactMatch = !exact || isExactMatch(base, match);
-  const strictMatch = !strict || isStrictMatch(base, match);
+  const subUrl = isSubUrl(base, match)
+  const exactMatch = !exact || isExactMatch(base, match)
+  const strictMatch = !strict || isStrictMatch(base, match)
 
-  return subUrl && exactMatch && strictMatch;
+  return subUrl && exactMatch && strictMatch
 }
 
-function isSubUrl(base: urlParse, match: urlParse) {
+function isSubUrl(base: urlParse<any>, match: urlParse<any>) {
   return (
     (!match.protocol || match.protocol === base.protocol) &&
     (!match.hostname || match.hostname === base.hostname) &&
@@ -31,20 +35,24 @@ function isSubUrl(base: urlParse, match: urlParse) {
     (!match.hash || match.hash === base.hash) &&
     (!match.password || match.password === base.password) &&
     (!match.username || match.username === base.username)
-  );
+  )
 }
 
-function isExactMatch(base: urlParse, match: urlParse) {
+function isExactMatch(base: urlParse<any>, match: urlParse<any>) {
   return (
-    (!match.pathname || base.pathname === match.pathname) && (!match.query || isSubObject(base.query, match.query))
-  );
+    (!match.pathname || base.pathname === match.pathname) &&
+    (!match.query || isSubObject(base.query, match.query))
+  )
 }
 
-function isStrictMatch(base: urlParse, match: urlParse) {
-  return !match.pathname || base.pathname.endsWith('/') === match.pathname.endsWith('/');
+function isStrictMatch(base: urlParse<any>, match: urlParse<any>) {
+  return !match.pathname || base.pathname.endsWith("/") === match.pathname.endsWith("/")
 }
 
 /** returns true when all items in source are also be in target, i.e. source ⊆ target */
-function isSubObject(source: Record<string, string | undefined>, target: Record<string, string | undefined>) {
-  return Object.keys(source).every((key) => source[key] === target[key]);
+function isSubObject(
+  source: Record<string, string | undefined>,
+  target: Record<string, string | undefined>
+) {
+  return Object.keys(source).every((key) => source[key] === target[key])
 }

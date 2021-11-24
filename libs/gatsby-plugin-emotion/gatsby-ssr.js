@@ -7,7 +7,7 @@ import getEmotionCache from "./getEmotionCache"
 export const replaceRenderer = ({
   bodyComponent,
   setHeadComponents,
-  replaceBodyHTMLString,
+  replaceBodyHTMLString
 }) => {
   const cache = getEmotionCache()
   const { extractCriticalToChunks } = createEmotionServer(cache)
