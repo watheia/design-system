@@ -10,11 +10,11 @@
     /**
      * the name of the component workspace. used for development purposes.
      **/
-    "name": "my-workspace-name",
+    "name": "Watheia",
     /**
      * set the icon to be shown on the Bit server.
      **/
-    "icon": "https://static.bit.dev/bit-logo.svg",
+    "icon": "https://cdn.watheia.org/assets/icon.png",
     /**
      * default directory to place a component during `bit import` and `bit create`.
      * the following placeholders are available:
@@ -23,7 +23,7 @@
      * scope - scope name only, e.g. 'compilation'.
      * owner - owner name in bit.dev, e.g. 'teambit'.
      **/
-    "defaultDirectory": "libs/{scope}/src/{name}",
+    "defaultDirectory": "libs/components/src/{scope}/{name}",
     /**
      * default scope for all components in workspace.
      **/
@@ -85,10 +85,10 @@
         }
       }
     },
-    "libs/base-ui": {
+    "libs/components/src/base-ui": {
       "defaultScope": "watheia.base-ui"
     },
-    "libs/design": {
+    "libs/components/src/design": {
       "defaultScope": "watheia.design"
     }
   }

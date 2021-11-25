@@ -6,13 +6,16 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "resolveJsonModule": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "types": ["apps/home/typings", "typings"]
   },
   "files": [],
-  "include": [],
+  "include": ["typings"],
   "references": [
     {
       "path": "./tsconfig.app.json"

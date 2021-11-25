@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-svgr",
       options: {
-        svgo: false,
+        svgo: true,
         ref: true
       }
     },

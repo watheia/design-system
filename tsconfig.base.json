@@ -15,46 +15,61 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@watheia/base-ui": ["libs/base-ui/src/index.ts"],
-      "@watheia/base-ui.layout.top-layout": ["libs/base-ui/src/layout/top-layout/index.ts"],
-      "@watheia/base-ui.routing.compare-url": [
-        "libs/base-ui/src/routing/compare-url/index.ts"
+      "@watheia/base-ui.layout.top-layout": [
+        "libs/components/src/base-ui/layout/top-layout/index.ts"
       ],
-      "@watheia/base-ui.routing.link": ["libs/base-ui/src/routing/link/index.ts"],
+      "@watheia/base-ui.routing.compare-url": [
+        "libs/components/src/base-ui/routing/compare-url/index.ts"
+      ],
+      "@watheia/base-ui.routing.link": [
+        "libs/components/src/base-ui/routing/link/index.ts"
+      ],
       "@watheia/base-ui.routing.native-link": [
-        "libs/base-ui/src/routing/native-link/index.ts"
+        "libs/components/src/base-ui/routing/native-link/index.ts"
       ],
       "@watheia/base-ui.routing.native-nav-link": [
-        "libs/base-ui/src/routing/native-nav-link/index.ts"
+        "libs/components/src/base-ui/routing/native-nav-link/index.ts"
       ],
       "@watheia/base-ui.routing.routing-provider": [
-        "libs/base-ui/src/routing/routing-provider/index.ts"
+        "libs/components/src/base-ui/routing/routing-provider/index.ts"
       ],
-      "@watheia/base-ui.text.paragraph": ["libs/base-ui/src/text/paragraph/index.tsx"],
-      "@watheia/base-ui.theme.sizes": ["libs/base-ui/src/theme/sizes/index.ts"],
-      "@watheia/base-ui.utils.is-browser": ["libs/base-ui/src/utils/is-browser/index.ts"],
+      "@watheia/base-ui.text.paragraph": [
+        "libs/components/src/base-ui/text/paragraph/index.tsx"
+      ],
       "@watheia/base-ui.theme.brand-definition": [
-        "libs/base-ui/src/theme/brand-definition/index.ts"
+        "libs/components/src/base-ui/theme/brand-definition/index.ts"
       ],
       "@watheia/base-ui.theme.color-definition": [
-        "libs/base-ui/src/theme/color-definition/index.ts"
+        "libs/components/src/base-ui/theme/color-definition/index.ts"
       ],
-      "@watheia/base-ui.theme.colors": ["libs/base-ui/src/theme/colors/colors.module.scss"],
-      "@watheia/base-ui.theme.fonts.book": ["libs/base-ui/src/theme/fonts/book/index.ts"],
-      "@watheia/base-ui.theme.fonts.clean": ["libs/base-ui/src/theme/fonts/clean/index.ts"],
+      "@watheia/base-ui.theme.colors": [
+        "libs/components/src/base-ui/theme/colors/colors.module.scss"
+      ],
+      "@watheia/base-ui.theme.fonts.book": [
+        "libs/components/src/base-ui/theme/fonts/book/index.ts"
+      ],
+      "@watheia/base-ui.theme.fonts.clean": [
+        "libs/components/src/base-ui/theme/fonts/clean/index.ts"
+      ],
       "@watheia/base-ui.theme.heading-margin-definition": [
-        "libs/base-ui/src/theme/heading-margin-definition/index.ts"
+        "libs/components/src/base-ui/theme/heading-margin-definition/index.ts"
       ],
       "@watheia/base-ui.theme.shadow-definition": [
-        "libs/base-ui/src/theme/shadow-definition/index.ts"
+        "libs/components/src/base-ui/theme/shadow-definition/index.ts"
       ],
       "@watheia/base-ui.theme.size-definition": [
-        "libs/base-ui/src/theme/size-definition/index.ts"
+        "libs/components/src/base-ui/theme/size-definition/index.ts"
       ],
-      "@watheia/base-ui.theme.theme-provider": ["libs/base-ui/src/theme/theme-provider"],
-      "@watheia/design": ["libs/design/src/index.ts"],
-      "@waweb/gatsby-plugin-emotion": ["libs/gatsby-plugin-emotion/src/index.js"],
-      "@waweb/gatsby-plugin-top-layout": ["libs/gatsby-plugin-top-layout/src/index.js"]
+      "@watheia/base-ui.theme.sizes": ["libs/components/src/base-ui/theme/sizes/index.ts"],
+      "@watheia/base-ui.theme.theme-provider": [
+        "libs/components/src/base-ui/theme/theme-provider/index.tsx"
+      ],
+      "@watheia/base-ui.utils.is-browser": [
+        "libs/components/src/base-ui/utils/is-browser/index.ts"
+      ],
+      "@watheia/design.views.sample": ["libs/components/src/design/views/sample/index.ts"],
+      "@waweb/gatsby-plugin-emotion": ["libs/gatsby-plugin-emotion/index.js"],
+      "@waweb/gatsby-plugin-top-layout": ["libs/gatsby-plugin-top-layout/index.js"]
     }
   },
   "exclude": ["node_modules", "tmp"]

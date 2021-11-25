@@ -1,8 +1,7 @@
 {
   "version": 2,
   "projects": {
-    "base-ui": "libs/base-ui",
-    "design": "libs/design",
+    "components": "libs/components",
     "gatsby-plugin-emotion": "libs/gatsby-plugin-emotion",
     "gatsby-plugin-top-layout": "libs/gatsby-plugin-top-layout",
     "home": "apps/home",
