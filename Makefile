@@ -1,4 +1,4 @@
-.PHONY: clean install test lint build
+.PHONY: clean install test lint build check-deps
 
 SHELL := /bin/bash
 PATH := ./node_modules/.bin:$(PATH)
@@ -18,3 +18,8 @@ clean_all:
 build:
 	bit build
 	nx run-many --target build --all
+
+depgraph:
+	depcruise . --progress --config .dependency-cruiser.js --output-type ddot  --output-to depgraph.dot
+	cat depgraph.dot | dot -T svg > depgraph.svg.tmp
+	mv depgraph.svg.tmp depgraph.svg

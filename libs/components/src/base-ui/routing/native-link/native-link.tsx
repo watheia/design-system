@@ -16,6 +16,7 @@ const externalLinkAttributes = { rel: "noopener", target: "_blank" }
  */
 export function NativeLink({ href = "", external, replace, onClick, ...rest }: LinkProps) {
   const externalProps = external ? externalLinkAttributes : {}
+  const internal = /^\/(?!\/)/.test(href ?? "")
 
   const handleClick = useCallback(
     (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -27,9 +28,10 @@ export function NativeLink({ href = "", external, replace, onClick, ...rest }: L
 
       return res
     },
-    [href, replace, onClick]
+    [onClick, replace, external, href]
   )
 
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore TOOD: @Uri please check this
   return <a {...rest} {...externalProps} onClick={handleClick} href={href} />
 }

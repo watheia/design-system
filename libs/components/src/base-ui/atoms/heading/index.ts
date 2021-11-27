@@ -1,2 +1,2 @@
-export { Heading } from "./heading"
+export * from "./heading"
 export type { HeadingProps, Element } from "./heading"

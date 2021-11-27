@@ -1,24 +1,19 @@
 import React from "react"
+import { Theme } from "@watheia/base-ui.theme.theme-provider"
 import { Link } from "./link"
 
-const Center = ({ children }: React.HTMLAttributes<HTMLDivElement>) => {
-  return (
-    <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-      {children}
-    </div>
-  )
-}
-
-export const BaseLink = () => (
-  <Center>
-    <Link href="https://bit.dev">bit.dev</Link>
-  </Center>
+export const LinkExample = () => (
+  <Theme>
+    <Link href="https://google.com" data-testid="test-link">
+      look it up!
+    </Link>
+  </Theme>
 )
 
-export const BaseLinkWithExternal = () => (
-  <Center>
-    <Link href="https://bit.dev" external={true} data-testid="test-link">
-      bit.dev
+export const LinkWithExternal = () => (
+  <Theme>
+    <Link href="https://google.com" external data-testid="test-link">
+      look it up!
     </Link>
-  </Center>
+  </Theme>
 )

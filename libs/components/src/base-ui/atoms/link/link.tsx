@@ -1,26 +1,27 @@
 import React from "react"
+import classNames from "clsx"
 
-export type LinkProps = {
-  /**
-   * opens link in a new tab
-   */
-  external?: boolean
-} & React.AnchorHTMLAttributes<HTMLAnchorElement>
+import { Link as BaseLink, LinkProps } from "@watheia/base-ui.routing.link"
+
+import * as styles from "./link.module.scss"
 
 /**
- * Base component for link, equivalent to a `<a/>` tag.
+ * A concrete link, styled for Evangelist, extending [base link](https://bit.dev/bit/base-ui/elements/link).
+ * Accepts all props as html Anchor Element.
  *
- * This component is a placeholder for future implementations,
- * where different applications can override this component with their underlying navigation system.
+ * The link will use these css variables, when available:
+ * -   --wa-accent-color, for text color.
+ * -   --wa-accent-heavy, for text color on hover.
+ * @name Link
+ * @example
+ * <Link href="https://google.com">look it up!</Link>
  */
 export function Link(props: LinkProps) {
-  const { external, children, ...rest } = props
-
-  const externalProps = external ? { rel: "noopener", target: "_blank" } : {}
-
   return (
-    <a data-bit-id="watheia.base-ui/atoms/link" {...externalProps} {...rest}>
-      {children}
-    </a>
+    <BaseLink
+      data-bit-id="watheia.base-ui/atoms/link"
+      {...props}
+      className={classNames(props.className, styles.primaryLink)}
+    />
   )
 }

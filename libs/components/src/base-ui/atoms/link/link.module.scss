@@ -1,0 +1,7 @@
+.primaryLink {
+  color: var(--wa-accent-color, #04bfbf);
+
+  &:hover {
+    color: var(--wa-accent-heavy, #04acac);
+  }
+}

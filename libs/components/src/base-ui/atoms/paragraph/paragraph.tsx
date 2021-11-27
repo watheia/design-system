@@ -1,7 +1,8 @@
 import React from "react"
-import classNames from "clsx"
+import clsx from "clsx"
 
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
+import { styles as adobeClean } from "@watheia/base-ui.theme.fonts.clean"
 import * as styles from "./paragraph.module.scss"
 
 export type ParagraphProps = {
@@ -22,14 +23,12 @@ export type ParagraphProps = {
  * @example
  * <Paragraph size="sm">This is some text</Paragraph>
  */
-export function Paragraph({ className, size, element: Element, ...rest }: ParagraphProps) {
+export function Paragraph({ className, size, element: Element, ...props }: ParagraphProps) {
   return (
     <Element
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
-      className={classNames(styles[size], className)}
+      className={clsx(styles[size], adobeClean.sansFont, className)}
       data-bit-id="watheia.base-ui/text/paragraph"
-      {...rest}
+      {...props}
     />
   )
 }

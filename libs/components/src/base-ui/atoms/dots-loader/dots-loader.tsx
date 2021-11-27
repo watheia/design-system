@@ -1,7 +1,7 @@
 import React from "react"
 import clsx from "clsx"
 
-import styles from "./dots-loader.module.scss"
+import * as styles from "./dots-loader.module.scss"
 
 type LoaderProps = React.HTMLAttributes<HTMLSpanElement>
 

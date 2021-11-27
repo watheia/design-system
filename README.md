@@ -6,6 +6,12 @@ This project was generated using [Nx](https://nx.dev).
 
 🔎 **Smart, Extensible Build Framework**
 
+## Project Layout
+
+_source elements in SVG image are navigatable_
+
+![depgraph](./depgraph.svg)
+
 ## Adding capabilities to your workspace
 
 Nx supports many plugins which add capabilities for developing different types of applications and different tools.

@@ -66,11 +66,7 @@ module.exports = {
         //   default: require.resolve(`./src/components/MDXFilter/index.js`)
         // },
         // rehypePlugins: [require(`rehype-slug`)],
-        plugins: [
-          `gatsby-transformer-remark`,
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-images-remote`
-        ],
+        plugins: [`gatsby-transformer-remark`, `gatsby-remark-copy-linked-files`],
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-transformer-remark`
@@ -79,16 +75,6 @@ module.exports = {
             resolve: `gatsby-remark-copy-linked-files`,
             options: {
               ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`, `md`, `mdx`]
-            }
-          },
-          {
-            resolve: `gatsby-remark-images-remote`,
-            options: {
-              maxWidth: 1280,
-              linkImagesToOriginal: false,
-              withWebp: { quality: 80 },
-              disableBgImage: true,
-              backgroundColor: "none"
             }
           }
         ]

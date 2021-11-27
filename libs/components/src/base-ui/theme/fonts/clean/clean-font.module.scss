@@ -2,11 +2,11 @@
 $staticStorageUrl: "https://static.bit.dev";
 
 /**
- * Define `@font-face` rules for font-family Circular Pro Book, including bold and italic.  
+ * Define `@font-face` rules for font-family Circular Pro Book, including bold and italic.
  * Provides a handy class name to add to root component.
  *
  * @example
- * import { bookFont } from '@bit/bit.base-ui.theme.fonts.book';
+ * import { bookFont } from '@watheia/base-ui.theme.fonts.book';
  * //...
  *
  * <body className={bookFont}>

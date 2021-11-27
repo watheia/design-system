@@ -4,8 +4,8 @@ export type { LinkProps } from "@watheia/base-ui.routing.link"
 export * from "@watheia/base-ui.routing.link"
 export * from "@watheia/base-ui.routing.native-link"
 export * from "@watheia/base-ui.routing.routing-provider"
-export type { ParagraphProps } from "@watheia/base-ui.text.paragraph"
-export * from "@watheia/base-ui.text.paragraph"
+export type { ParagraphProps } from "@watheia/base-ui.atoms.paragraph"
+export * from "@watheia/base-ui.atoms.paragraph"
 export type {
   TopLayoutContextType,
   TopLayoutProps

@@ -14,3 +14,8 @@ export enum PossibleSizes {
   xl = "xl",
   xxl = "xxl"
 }
+
+/**
+ * Default breakpoint scale for screen sizes
+ */
+export const Breakpoiunts = { XS: 480, S: 640, M: 768, L: 1024, XL: 1280, XXL: 1536 }

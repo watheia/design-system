@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./text-separator.module.scss"
+import * as styles from "./text-separator.module.scss"
 import clsx from "clsx"
 
 /**
