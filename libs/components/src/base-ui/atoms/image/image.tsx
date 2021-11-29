@@ -1,32 +1,24 @@
 import React from "react"
-import clsx from "clsx"
-import * as styles from "./image.module.scss"
 
-export type BaseImageProps = {
-  /**
-   * alt text (to comply a11y standards)
-   */
-  alt: string
-  /**
-   * Makes image fill the whole width of container.
-   * same as `width: 100%`
-   */
-  fullWidth?: boolean
-} & React.ImgHTMLAttributes<HTMLImageElement>
+import { BaseImage, BaseImageProps } from "@watheia/base-ui.atoms.image-base"
+import { staticStorageUrl } from "@watheia/tools.constants.storage"
+
+export type ImageProps = BaseImageProps
 
 /**
- * Template component for images.
- * Accepts all the arguments of native html image.
+ * Concrete image, using our Static Storage CDN.
+ *
+ * Treats src as relative paths on top of our image storage, and supports all other properties an html `<img>` would.
+ * @name Image
  * @example
- * 	<BaseImage alt="avatar" src="https://storage.com/asdlkfjsdf.png">
+ * <Image src="homepage-bit/map.png" alt="illustration" fullWidth />
  */
-export function BaseImage({ alt, className, fullWidth, ...rest }: BaseImageProps) {
+export function Image({ src, ...rest }: ImageProps) {
   return (
-    <img
+    <BaseImage
       data-bit-id="watheia.base-ui/atoms/image"
-      alt={alt}
       {...rest}
-      className={clsx(styles.image, fullWidth && styles.fullWidth, className)}
+      src={`${staticStorageUrl}/${src}`}
     />
   )
 }

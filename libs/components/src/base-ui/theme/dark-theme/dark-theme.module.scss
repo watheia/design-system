@@ -1,0 +1,65 @@
+@import "~@watheia/base-ui.theme.colors/colors.module.scss";
+
+.darkTheme {
+  color: #{$d10};
+  --wa-text-color: #{$d10};
+  --wa-text-color-heavy: #{$w20};
+  --wa-text-color-light: #{$d30};
+  --wa-text-inactive: #{$d40};
+  --wa-text-inactive-heavy: #{$d30};
+
+  --wa-border-color: #{$d40};
+  --wa-border-color-heavy: #{$d30};
+  --wa-border-color-light: #{$d50}; // TBD
+  --wa-border-color-lightest: #{$d50};
+
+  // -- accent -- //
+  --wa-accent-color: #{$g60};
+  --wa-accent-heavy: #{$g50};
+  --wa-accent-light: #{$p70};
+  --wa-accent-text: #{$p30};
+  --wa-accent-text-heavy: #{$p20};
+  --wa-text-on-accent: var(--wa-text-color, #{$d10});
+  --wa-accent-bg: #1a1452; // #{$p110}; TBD!
+  --wa-accent-bg-heavy: #221967; // #{$p100}; TBD!
+
+  // -- background -- //
+  // // higher number = more important, and 'closer' to the user.
+  // --wa-bg-01: #{$d70};
+  // --wa-bg-03: #{$w20};
+  // --wa-bg-05: #{$d10};
+  // --wa-bg-07: #{$d15};
+  // --wa-bg-09: #{$d20};
+  // --wa-bg-11: #{$d30};
+  --wa-bg-color: #{$d60}; // default background for interactive elements
+  --wa-bg-heavy: #{$d50}; // e.g. when hovering
+  --wa-bg-heaviest: #{$d40}; // e.g. when active ('pressed')
+  --wa-bg-bedrock: #{$d70}; // i.e. <body/> background
+  --wa-navigation: #{$d60}; // i.e. <body/> background
+  --wa-bg-overlay: #{$d60}; // e.g. button, input, etc
+  --wa-bg-modal: #{$d60}; // e.g. button, input, etc
+  --wa-bg-tooltip: #{$d60}; // e.g. button, input, etc
+  --wa-bg-tooltip-heavy: #{$d50};
+  --wa-bg-dent: #{$d60};
+
+  // -- error -- //
+  // might replace with 'error' theme
+  --wa-error-color: #{$r30};
+  --wa-error-heavy: #{$r20};
+  --wa-error-light: #{$r40};
+  --wa-error-bg: #{$r70};
+  --wa-error-bg-heavy: #{$r60};
+}
+
+// extended primary palette (WIP)
+// name 	color	lightness
+// $p110: #1a1452;	// 19.6%
+// $p100: #221967;	// 25%
+// $p90: #22158a;	// 31%
+// $p80: #2c1bb1;	// 40%
+// $p70: #3e29df;	// 52%
+// $g60: #04acac;	// 61$
+// $g50: #04bfbf;	// 63%
+// $p40: #897dec;
+// $p30: #c9c3f6;
+// $p20: #eceaff;

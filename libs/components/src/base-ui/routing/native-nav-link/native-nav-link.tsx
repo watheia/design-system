@@ -3,7 +3,7 @@ import clsx from "clsx"
 
 import { NativeLink, LinkProps } from "@watheia/base-ui.routing.native-link"
 import { compareUrl } from "@watheia/base-ui.routing.compare-url"
-import { isBrowser } from "@watheia/base-ui.utils.is-browser"
+import { isBrowser } from "@watheia/tools.is-browser"
 
 export type NavLinkProps = LinkProps & {
   /** class name to apply when active */

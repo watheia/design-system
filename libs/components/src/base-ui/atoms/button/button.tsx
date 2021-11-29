@@ -1,103 +1,46 @@
-import React, { Component, ReactNode } from "react"
-import clsx from "clsx"
+import React from "react"
+import classNames from "clsx"
 
-// //@ts-ignore
-// import Spinner from '@watheia/base-ui.ellipsis';
+import BaseButton, { ButtonProps as BaseProps } from "@watheia/base-ui.atoms.button-base"
 
-import * as styles from "./button.module.scss"
-import { DotsLoader } from "@watheia/base-ui.atoms.dots-loader"
-
-// const defaultSpinner = (
-// 	<Spinner color="#ffffff" size={18} style={{ verticalAlign: 'middle' }} />
-// );
+import styles from "./button.module.scss"
+import elevations from "./elevations.module.scss"
 
 export type ButtonProps = {
   /**
-   * loader to show while button is busy. Turns on when onClick returns a promise (until it resolves), or when `loading={true}`.
+   * style the button with shadow and click effect.
    */
-  loader?: ReactNode
+  elevation?: "none" | "low" | "medium" | "high"
   /**
-   * explicitly toggle loader on and off
+   * style variance ('cta', 'normal')
    */
-  loading?: boolean
-
-  /**
-   * allow clicking on button even while loading. (i.e. make simultaneous triggers)
-   */
-  activeWhenLoading?: boolean
-} & React.ButtonHTMLAttributes<HTMLButtonElement>
+  importance?: "normal" | "ghost" | "cta" | "muted"
+} & BaseProps
 
 /**
- * Base button, with very basic styles. Accepts all parameters of native html button.
- *
- * If onClick returns a promise, BaseButton will show a loader automatically, until the promise is resolved or rejected.
+ * Button component with click effect and built in loader.
+ * Supports all props from native html button.
+ * @name Button
  * @example
- * <Button onClick={() => api.submitUserData()} loader={<CustomLoader/> } />
+ * 	<Button importance="cta" elevation="medium" loading loader={<Loader/>}>Click me!</Button>
  */
-export default class Button extends Component<ButtonProps> {
-  state = { isLoading: false }
-  private activePromises = new Set<Promise<any>>()
-  private unmounted = false
+export function Button({
+  className,
+  importance = "normal",
+  elevation = "low",
+  ...rest
+}: ButtonProps) {
+  return (
+    <BaseButton
+      className={classNames(styles.Button, elevations[elevation], className)}
+      data-bit-id="watheia.base-ui/atoms/button"
+      data-variation={importance}
+      {...rest}
+    />
+  )
+}
 
-  static defaultProps = {
-    loader: <DotsLoader />,
-    loading: false
-  }
-
-  componentWillUnmount() {
-    this.unmounted = false
-    this.activePromises = new Set<Promise<any>>()
-  }
-
-  private handleClick = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    const { onClick } = this.props
-    if (!onClick) return
-
-    this.setState({ isLoading: true })
-
-    const promise = Promise.resolve(onClick.call(this, event)).catch(() => {})
-    this.activePromises.add(promise)
-
-    promise.then(() => this.handleResolve(promise))
-  }
-
-  private handleResolve(p: Promise<any>) {
-    if (this.unmounted) return
-
-    this.activePromises.delete(p)
-    if (this.activePromises.size === 0) {
-      this.setState({ isLoading: false })
-    }
-  }
-
-  render() {
-    const {
-      onClick,
-      className,
-      children,
-      loader,
-      loading,
-      disabled,
-      activeWhenLoading = false,
-      ...rest
-    } = this.props
-
-    // ignore internal state when component is controlled
-    const isLoading = (loading !== undefined && loading) || this.state.isLoading
-
-    const content = isLoading ? loader : children
-    const disabledByLoading = isLoading && !activeWhenLoading
-
-    return (
-      <button
-        data-bit-id="watheia.base-ui/input/button"
-        {...rest}
-        disabled={disabled || disabledByLoading}
-        onClick={this.handleClick}
-        className={clsx(className, styles.vanillaButton)}
-      >
-        {content}
-      </button>
-    )
-  }
+Button.defaultProps = {
+  importance: "normal", //TODO
+  elevation: "low"
 }

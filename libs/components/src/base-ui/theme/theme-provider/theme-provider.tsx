@@ -1,7 +1,11 @@
 import React from "react"
 import classNames from "clsx"
 
-import { headingFontSize, textFontSize } from "@watheia/base-ui.theme.size-definition"
+import {
+  headingFontSize,
+  textFontSize,
+  spacing
+} from "@watheia/base-ui.theme.size-definition"
 import { shadowTheme } from "@watheia/base-ui.theme.shadow-definition"
 import { primaryPalette } from "@watheia/base-ui.theme.color-definition"
 import { brands } from "@watheia/base-ui.theme.brand-definition"
@@ -27,6 +31,7 @@ export function Theme(props: React.HTMLAttributes<HTMLDivElement>) {
       className={classNames(
         headingFontSize,
         textFontSize,
+        spacing,
         shadowTheme,
         primaryPalette,
         brands,

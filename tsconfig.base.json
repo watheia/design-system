@@ -18,23 +18,54 @@
       "@watheia/base-ui.atoms.button": [
         "libs/components/src/base-ui/atoms/button/index.ts"
       ],
+      "@watheia/base-ui.atoms.button-base": [
+        "libs/components/src/base-ui/atoms/button-base/index.ts"
+      ],
+      "@watheia/base-ui.atoms.checkbox/hidden": [
+        "libs/components/src/base-ui/atoms/checkbox/hidden/index.ts"
+      ],
+      "@watheia/base-ui.atoms.checkbox/indicator": [
+        "libs/components/src/base-ui/atoms/checkbox/indicator/index.ts"
+      ],
+      "@watheia/base-ui.atoms.checkbox/label": [
+        "libs/components/src/base-ui/atoms/checkbox/label/index.ts"
+      ],
       "@watheia/base-ui.atoms.dots-loader": [
         "libs/components/src/base-ui/atoms/dots-loader/index.ts"
       ],
+      "@watheia/base-ui.atoms.error": ["libs/components/src/base-ui/atoms/error/index.ts"],
       "@watheia/base-ui.atoms.heading": [
         "libs/components/src/base-ui/atoms/heading/index.ts"
       ],
       "@watheia/base-ui.atoms.icon": ["libs/components/src/base-ui/atoms/icon/index.ts"],
+      "@watheia/base-ui.atoms.icon-base": [
+        "libs/components/src/base-ui/atoms/icon-base/index.ts"
+      ],
+      "@watheia/base-ui.atoms.icon-line": [
+        "libs/components/src/base-ui/atoms/icon-line/index.ts"
+      ],
       "@watheia/base-ui.atoms.image": ["libs/components/src/base-ui/atoms/image/index.ts"],
+      "@watheia/base-ui.atoms.image-base": [
+        "libs/components/src/base-ui/atoms/image-base/index.ts"
+      ],
       "@watheia/base-ui.atoms.link": ["libs/components/src/base-ui/atoms/link/index.ts"],
       "@watheia/base-ui.atoms.paragraph": [
         "libs/components/src/base-ui/atoms/paragraph/index.ts"
       ],
+      "@watheia/base-ui.atoms.styled-text": [
+        "libs/components/src/base-ui/atoms/styled-text/index.ts"
+      ],
       "@watheia/base-ui.atoms.text-separator": [
         "libs/components/src/base-ui/atoms/text-separator/index.ts"
       ],
+      "@watheia/base-ui.atoms.x-button": [
+        "libs/components/src/base-ui/atoms/x-button/index.ts"
+      ],
       "@watheia/base-ui.css-components.elevation": [
         "libs/components/src/base-ui/css-components/elevation/index.ts"
+      ],
+      "@watheia/base-ui.css-components.fade-in-out": [
+        "libs/components/src/base-ui/css-components/fade-in-out/index.ts"
       ],
       "@watheia/base-ui.css-components.pill": [
         "libs/components/src/base-ui/css-components/pill/index.ts"
@@ -44,6 +75,27 @@
       ],
       "@watheia/base-ui.gfx.ref-tooltip": [
         "libs/components/src/base-ui/gfx/ref-tooltip/index.ts"
+      ],
+      "@watheia/base-ui.layout.align": [
+        "libs/components/src/base-ui/layout/align/index.ts"
+      ],
+      "@watheia/base-ui.layout.breakpoints": [
+        "libs/components/src/base-ui/layout/breakpoints/index.ts"
+      ],
+      "@watheia/base-ui.layout.col-span": [
+        "libs/components/src/base-ui/layout/col-span/index.ts"
+      ],
+      "@watheia/base-ui.layout.grid-component": [
+        "libs/components/src/base-ui/layout/grid-component/index.ts"
+      ],
+      "@watheia/base-ui.layout.grid-presets.four-way-grid": [
+        "libs/components/src/base-ui/layout/grid-presets/four-way-grid/index.ts"
+      ],
+      "@watheia/base-ui.layout.grid-presets.z-grid": [
+        "libs/components/src/base-ui/layout/grid-presets/z-grid/index.ts"
+      ],
+      "@watheia/base-ui.layout.page-frame": [
+        "libs/components/src/base-ui/layout/page-frame/index.ts"
       ],
       "@watheia/base-ui.layout.top-layout": [
         "libs/components/src/base-ui/layout/top-layout/index.ts"
@@ -78,8 +130,44 @@
       "@watheia/base-ui.surfaces.click-outside": [
         "libs/components/src/base-ui/surfaces/click-outside/index.ts"
       ],
+      "@watheia/base-ui.surfaces.drawer": [
+        "libs/components/src/base-ui/surfaces/drawer/index.ts"
+      ],
+      "@watheia/base-ui.surfaces.dropdown": [
+        "libs/components/src/base-ui/surfaces/dropdown/index.ts"
+      ],
+      "@watheia/base-ui.surfaces.split-pane.collapsed-pane": [
+        "libs/components/src/base-ui/surfaces/split-pane/collapsed-pane/index.ts"
+      ],
+      "@watheia/base-ui.surfaces.split-pane.fat-splitter": [
+        "libs/components/src/base-ui/surfaces/split-pane/fat-splitter/index.ts"
+      ],
+      "@watheia/base-ui.surfaces.split-pane.hover-splitter": [
+        "libs/components/src/base-ui/surfaces/split-pane/hover-splitter/index.ts"
+      ],
+      "@watheia/base-ui.surfaces.split-pane.layout": [
+        "libs/components/src/base-ui/surfaces/split-pane/layout/index.ts"
+      ],
+      "@watheia/base-ui.surfaces.split-pane.pane": [
+        "libs/components/src/base-ui/surfaces/split-pane/pane/index.ts"
+      ],
+      "@watheia/base-ui.surfaces.split-pane.split-pane": [
+        "libs/components/src/base-ui/surfaces/split-pane/split-pane/index.ts"
+      ],
+      "@watheia/base-ui.surfaces.split-pane.splitter": [
+        "libs/components/src/base-ui/surfaces/split-pane/splitter/index.ts"
+      ],
+      "@watheia/base-ui.surfaces.tooltip": [
+        "libs/components/src/base-ui/surfaces/tooltip/index.ts"
+      ],
+      "@watheia/base-ui.theme.accent-color": [
+        "libs/components/src/base-ui/theme/accent-color/index.ts"
+      ],
       "@watheia/base-ui.theme.brand-definition": [
         "libs/components/src/base-ui/theme/brand-definition/index.ts"
+      ],
+      "@watheia/base-ui.theme.brands": [
+        "libs/components/src/base-ui/theme/brands/index.ts"
       ],
       "@watheia/base-ui.theme.color-definition": [
         "libs/components/src/base-ui/theme/color-definition/index.ts"
@@ -87,11 +175,23 @@
       "@watheia/base-ui.theme.colors": [
         "libs/components/src/base-ui/theme/colors/index.ts"
       ],
+      "@watheia/base-ui.theme.dark-theme": [
+        "libs/components/src/base-ui/theme/dark-theme/index.ts"
+      ],
       "@watheia/base-ui.theme.fonts.clean": [
         "libs/components/src/base-ui/theme/fonts/clean/index.ts"
       ],
+      "@watheia/base-ui.theme.fonts.icon-font": [
+        "libs/components/src/base-ui/theme/fonts/icon-font/index.ts"
+      ],
+      "@watheia/base-ui.theme.fonts.roboto": [
+        "libs/components/src/base-ui/theme/fonts/roboto/index.ts"
+      ],
       "@watheia/base-ui.theme.heading-margin-definition": [
         "libs/components/src/base-ui/theme/heading-margin-definition/index.ts"
+      ],
+      "@watheia/base-ui.theme.light-theme": [
+        "libs/components/src/base-ui/theme/light-theme/index.ts"
       ],
       "@watheia/base-ui.theme.shadow-definition": [
         "libs/components/src/base-ui/theme/shadow-definition/index.ts"
@@ -103,67 +203,177 @@
       "@watheia/base-ui.theme.theme-provider": [
         "libs/components/src/base-ui/theme/theme-provider/index.ts"
       ],
-      "@watheia/base-ui.utils.composer": [
-        "libs/components/src/base-ui/utils/composer/index.ts"
+      "@watheia/design.views.error-page": [
+        "libs/components/src/design/views/error-page/index.ts"
       ],
-      "@watheia/base-ui.utils.is-browser": [
-        "libs/components/src/base-ui/utils/is-browser/index.ts"
+      "@watheia/design.views.markdown": [
+        "libs/components/src/design/views/markdown/index.ts"
       ],
-      "@watheia/base-ui.utils.path.is-path-inside": [
-        "libs/components/src/base-ui/utils/path/is-path-inside/index.ts"
-      ],
-      "@watheia/base-ui.utils.path.sub-paths": [
-        "libs/components/src/base-ui/utils/path/sub-paths/index.ts"
-      ],
-      "@watheia/base-ui.utils.path.to-windows-compatible-path": [
-        "libs/components/src/base-ui/utils/path/to-windows-compatible-path/index.ts"
-      ],
-      "@watheia/base-ui.utils.popper-js.ignore-popper-size": [
-        "libs/components/src/base-ui/utils/popper-js/ignore-popper-size/index.ts"
-      ],
-      "@watheia/base-ui.utils.popper-js.resize-to-match-reference": [
-        "libs/components/src/base-ui/utils/popper-js/resize-to-match-reference/index.ts"
-      ],
-      "@watheia/base-ui.utils.primitives": [
-        "libs/components/src/base-ui/utils/primitives/index.ts"
-      ],
-      "@watheia/base-ui.utils.string.affix": [
-        "libs/components/src/base-ui/utils/string/affix/index.ts"
-      ],
-      "@watheia/base-ui.utils.string.capitalize": [
-        "libs/components/src/base-ui/utils/string/capitalize/index.ts"
-      ],
-      "@watheia/base-ui.utils.string.ellipsis": [
-        "libs/components/src/base-ui/utils/string/ellipsis/index.ts"
-      ],
-      "@watheia/base-ui.utils.string.get-initials": [
-        "libs/components/src/base-ui/utils/string/get-initials/index.ts"
-      ],
-      "@watheia/base-ui.utils.string.strip-trailing-char": [
-        "libs/components/src/base-ui/utils/string/strip-trailing-char/index.ts"
-      ],
-      "@watheia/base-ui.utils.time.time-ago": [
-        "libs/components/src/base-ui/utils/time/time-ago/index.ts"
-      ],
-      "@watheia/base-ui.utils.time.time-format": [
-        "libs/components/src/base-ui/utils/time/time-format/index.ts"
-      ],
-      "@watheia/base-ui.utils.tracking.component-highlighter": [
-        "libs/components/src/base-ui/utils/tracking/component-highlighter/index.ts"
-      ],
-      "@watheia/base-ui.utils.tracking.component-id": [
-        "libs/components/src/base-ui/utils/tracking/component-id/index.ts"
-      ],
-      "@watheia/base-ui.utils.tracking.component-label": [
-        "libs/components/src/base-ui/utils/tracking/component-label/index.ts"
-      ],
-      "@watheia/base-ui.utils.tracking.component-url": [
-        "libs/components/src/base-ui/utils/tracking/component-url/index.ts"
-      ],
-      "@watheia/base-ui.utils.tracking.overlay-border": [
-        "libs/components/src/base-ui/utils/tracking/overlay-border/index.ts"
+      "@watheia/design.views.not-found-page": [
+        "libs/components/src/design/views/not-found-page/index.ts"
       ],
       "@watheia/design.views.sample": ["libs/components/src/design/views/sample/index.ts"],
+      "@watheia/design.views.server-error-page": [
+        "libs/components/src/design/views/server-error-page/index.ts"
+      ],
+      "@watheia/docs.code.react-playground": [
+        "libs/components/src/docs/code/react-playground/index.ts"
+      ],
+      "@watheia/docs.markdown.elements.base-table": [
+        "libs/components/src/docs/markdown/elements/base-table/index.ts"
+      ],
+      "@watheia/docs.markdown.elements.block-quote": [
+        "libs/components/src/docs/markdown/elements/block-quote/index.ts"
+      ],
+      "@watheia/docs.markdown.elements.bold": [
+        "libs/components/src/docs/markdown/elements/bold/index.ts"
+      ],
+      "@watheia/docs.markdown.elements.hr": [
+        "libs/components/src/docs/markdown/elements/hr/index.ts"
+      ],
+      "@watheia/docs.markdown.elements.image": [
+        "libs/components/src/docs/markdown/elements/image/index.ts"
+      ],
+      "@watheia/docs.markdown.elements.italic": [
+        "libs/components/src/docs/markdown/elements/italic/index.ts"
+      ],
+      "@watheia/docs.markdown.elements.ol": [
+        "libs/components/src/docs/markdown/elements/ol/index.ts"
+      ],
+      "@watheia/docs.markdown.elements.paragraph": [
+        "libs/components/src/docs/markdown/elements/paragraph/index.ts"
+      ],
+      "@watheia/docs.markdown.elements.sup": [
+        "libs/components/src/docs/markdown/elements/sup/index.ts"
+      ],
+      "@watheia/docs.markdown.elements.td": [
+        "libs/components/src/docs/markdown/elements/td/index.ts"
+      ],
+      "@watheia/docs.markdown.elements.tr": [
+        "libs/components/src/docs/markdown/elements/tr/index.ts"
+      ],
+      "@watheia/docs.markdown.elements.ul": [
+        "libs/components/src/docs/markdown/elements/ul/index.ts"
+      ],
+      "@watheia/docs.markdown.heading": [
+        "libs/components/src/docs/markdown/heading/index.ts"
+      ],
+      "@watheia/docs.markdown.hybrid-live-code-snippet": [
+        "libs/components/src/docs/markdown/hybrid-live-code-snippet/index.ts"
+      ],
+      "@watheia/docs.markdown.md": ["libs/components/src/docs/markdown/md/index.ts"],
+      "@watheia/docs.markdown.mdx": ["libs/components/src/docs/markdown/mdx/index.ts"],
+      "@watheia/docs.molecules.documentation-links": [
+        "libs/components/src/docs/molecules/documentation-links/index.ts"
+      ],
+      "@watheia/docs.theme.theme-compositions": [
+        "libs/components/src/docs/theme/theme-compositions/index.ts"
+      ],
+      "@watheia/docs.theme.theme-context": [
+        "libs/components/src/docs/theme/theme-context/index.ts"
+      ],
+      "@watheia/docs.types.docs-file": [
+        "libs/components/src/docs/types/docs-file/index.ts"
+      ],
+      "@watheia/docs.ui.anchor": ["libs/components/src/docs/ui/anchor/index.ts"],
+      "@watheia/docs.ui.code-snippet": [
+        "libs/components/src/docs/ui/code-snippet/index.ts"
+      ],
+      "@watheia/docs.ui.consumable-link": [
+        "libs/components/src/docs/ui/consumable-link/index.ts"
+      ],
+      "@watheia/docs.ui.copied-message": [
+        "libs/components/src/docs/ui/copied-message/index.ts"
+      ],
+      "@watheia/docs.ui.copy-box": ["libs/components/src/docs/ui/copy-box/index.ts"],
+      "@watheia/docs.ui.heading": ["libs/components/src/docs/ui/heading/index.ts"],
+      "@watheia/docs.ui.highlighted-text": [
+        "libs/components/src/docs/ui/highlighted-text/index.ts"
+      ],
+      "@watheia/docs.ui.import-action": [
+        "libs/components/src/docs/ui/import-action/index.ts"
+      ],
+      "@watheia/docs.ui.inline-code": ["libs/components/src/docs/ui/inline-code/index.ts"],
+      "@watheia/docs.ui.label": ["libs/components/src/docs/ui/label/index.ts"],
+      "@watheia/docs.ui.label-list": ["libs/components/src/docs/ui/label-list/index.ts"],
+      "@watheia/docs.ui.linked-heading": [
+        "libs/components/src/docs/ui/linked-heading/index.ts"
+      ],
+      "@watheia/docs.ui.list": ["libs/components/src/docs/ui/list/index.ts"],
+      "@watheia/docs.ui.prop-table": ["libs/components/src/docs/ui/prop-table/index.ts"],
+      "@watheia/docs.ui.section": ["libs/components/src/docs/ui/section/index.ts"],
+      "@watheia/docs.ui.sub-title": ["libs/components/src/docs/ui/sub-title/index.ts"],
+      "@watheia/docs.ui.table": ["libs/components/src/docs/ui/table/index.ts"],
+      "@watheia/docs.ui.table-column": [
+        "libs/components/src/docs/ui/table-column/index.ts"
+      ],
+      "@watheia/docs.ui.table-heading-column": [
+        "libs/components/src/docs/ui/table-heading-column/index.ts"
+      ],
+      "@watheia/docs.ui.table-heading-row": [
+        "libs/components/src/docs/ui/table-heading-row/index.ts"
+      ],
+      "@watheia/docs.ui.table-row": ["libs/components/src/docs/ui/table-row/index.ts"],
+      "@watheia/docs.ui.version-tag": ["libs/components/src/docs/ui/version-tag/index.ts"],
+      "@watheia.tools.composer": ["libs/components/src/tools/composer/index.ts"],
+      "@watheia.tools.constants/storage": [
+        "libs/components/src/tools/constants/storage/index.ts"
+      ],
+      "@watheia/tools.hooks/use-click-outside": [
+        "libs/components/src/tools/hooks/use-click-outside/index.ts"
+      ],
+      "@watheia/tools.hooks/use-graphql-light": [
+        "libs/components/src/tools/hooks/use-graphql-light/index.ts"
+      ],
+      "@watheia/tools.is-browser": ["libs/components/src/tools/is-browser/index.ts"],
+      "@watheia/tools.path.is-path-inside": [
+        "libs/components/src/tools/path/is-path-inside/index.ts"
+      ],
+      "@watheia/tools.path.sub-paths": [
+        "libs/components/src/tools/path/sub-paths/index.ts"
+      ],
+      "@watheia/tools.path.to-windows-compatible-path": [
+        "libs/components/src/tools/path/to-windows-compatible-path/index.ts"
+      ],
+      "@watheia/tools.popper-js.ignore-popper-size": [
+        "libs/components/src/tools/popper-js/ignore-popper-size/index.ts"
+      ],
+      "@watheia/tools.popper-js.resize-to-match-reference": [
+        "libs/components/src/tools/popper-js/resize-to-match-reference/index.ts"
+      ],
+      "@watheia/tools.primitives": ["libs/components/src/tools/primitives/index.ts"],
+      "@watheia/tools.string.affix": ["libs/components/src/tools/string/affix/index.ts"],
+      "@watheia/tools.string.capitalize": [
+        "libs/components/src/tools/string/capitalize/index.ts"
+      ],
+      "@watheia/tools.string.ellipsis": [
+        "libs/components/src/tools/string/ellipsis/index.ts"
+      ],
+      "@watheia/tools.string.get-initials": [
+        "libs/components/src/tools/string/get-initials/index.ts"
+      ],
+      "@watheia/tools.string.strip-trailing-char": [
+        "libs/components/src/tools/string/strip-trailing-char/index.ts"
+      ],
+      "@watheia/tools.time.time-ago": ["libs/components/src/tools/time/time-ago/index.ts"],
+      "@watheia/tools.time.time-format": [
+        "libs/components/src/tools/time/time-format/index.ts"
+      ],
+      "@watheia/tools.tracking.component-highlighter": [
+        "libs/components/src/tools/tracking/component-highlighter/index.ts"
+      ],
+      "@watheia/tools.tracking.component-id": [
+        "libs/components/src/tools/tracking/component-id/index.ts"
+      ],
+      "@watheia/tools.tracking.component-label": [
+        "libs/components/src/tools/tracking/component-label/index.ts"
+      ],
+      "@watheia/tools.tracking.component-url": [
+        "libs/components/src/tools/tracking/component-url/index.ts"
+      ],
+      "@watheia/tools.tracking.overlay-border": [
+        "libs/components/src/tools/tracking/overlay-border/index.ts"
+      ],
       "@waweb/gatsby-plugin-emotion": ["libs/gatsby-plugin-emotion/index.js"],
       "@waweb/gatsby-plugin-top-layout": ["libs/gatsby-plugin-top-layout/index.js"]
     }

@@ -1,0 +1,74 @@
+.container {
+  background-color: var(--wa-bg-bedrock);
+  height: 100%;
+  padding: 16px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+  * {
+    transition: all 80ms;
+  }
+}
+
+.regular {
+  padding: 8px;
+}
+
+.bg {
+  background: var(--wa-bg-color);
+  border: 1px solid var(--wa-border-color);
+  padding: 8px;
+  border-radius: 4px;
+
+  &:hover {
+    background: var(--wa-bg-heavy);
+    border: 1px solid var(--wa-border-color-heavy);
+  }
+}
+
+.accentText {
+  color: var(--wa-accent-text);
+}
+
+.strongText {
+  // can also be achieves with bold
+  color: var(--wa-text-color-heavy);
+}
+
+.btn {
+  background: var(--wa-accent-color);
+  color: var(--wa-text-on-accent);
+
+  &:hover {
+    background: var(--wa-accent-heavy);
+    // color: var(--wa-text-color-heavy);
+  }
+}
+
+.accentBg {
+  background: var(--wa-accent-bg);
+
+  border: 1px solid var(--wa-border-color);
+  padding: 8px;
+  border-radius: 4px;
+
+  &:hover {
+    background: var(--wa-accent-bg-heavy);
+    border: 1px solid var(--wa-border-color-heavy);
+    // color: var(--wa-text-color-heavy);
+  }
+}
+
+.accentCard {
+  border: 1px solid var(--wa-accent-color);
+  background: var(--wa-bg-color);
+  padding: 8px;
+  border-radius: 4px;
+
+  &:hover {
+    border-color: var(--wa-accent-heavy);
+    background: var(--wa-bg-heavy);
+    box-shadow: 0 0 0 0.125em var(--wa-accent-bg);
+  }
+}

@@ -1,12 +1,15 @@
 import React from "react"
-import { BaseImage } from "./image"
+import { ThemeCompositions } from "@watheia/base-ui.theme.light-theme"
+import { Image } from "./image"
 
-export const BaseImageExample = () => (
-  <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-    <BaseImage
+export const ImageExample = ({ ...rest }) => (
+  <ThemeCompositions>
+    <Image
+      src="homepage-bit/map.png"
       data-testid="test-img"
       alt="alt world"
-      src="https://static.bit.dev/bit-logo.svg"
+      style={{ width: 500, margin: "auto" }}
+      {...rest}
     />
-  </div>
+  </ThemeCompositions>
 )

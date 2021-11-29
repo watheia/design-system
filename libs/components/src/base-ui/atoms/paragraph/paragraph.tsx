@@ -2,7 +2,7 @@ import React from "react"
 import clsx from "clsx"
 
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
-import { styles as adobeClean } from "@watheia/base-ui.theme.fonts.clean"
+import { styles as font } from "@watheia/base-ui.theme.fonts.clean"
 import * as styles from "./paragraph.module.scss"
 
 export type ParagraphProps = {
@@ -15,6 +15,8 @@ export type ParagraphProps = {
    * The underlying html element
    */
   element: "p" | "div" | "span"
+
+  // variant?: "primary" | "secondary" | "muted"
 } & React.HTMLAttributes<HTMLParagraphElement>
 
 /**
@@ -26,8 +28,8 @@ export type ParagraphProps = {
 export function Paragraph({ className, size, element: Element, ...props }: ParagraphProps) {
   return (
     <Element
-      className={clsx(styles[size], adobeClean.sansFont, className)}
-      data-bit-id="watheia.base-ui/text/paragraph"
+      className={clsx(styles[size], font.sansFont, className)}
+      data-bit-id="watheia.base-ui/atoms/paragraph"
       {...props}
     />
   )

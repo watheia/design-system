@@ -1,23 +1,21 @@
 ---
 labels: ["react", "typescript", "image"]
-description: "template component for images"
+description: "concrete image component"
 ---
 
-import { BaseImage } from "./image"
+import { Image } from "./image"
 
 ### Overview
 
-A base image component.  
-Accepts all the arguments of native html image.
+Concrete image, using our Static Storage CDN.  
+Treats src as relative paths on top of our image storage, and supports all other properties an html `<img>` would.  
+Image example:
 
-<br />
-
-Base image example:
-
-```js live=true
-<BaseImage
+```js live
+<Image
+  src="homepage-bit/map.png"
   data-testid="test-img"
   alt="alt world"
-  src="https://static.bit.dev/bit-logo.svg"
+  style={{ width: 500 }}
 />
 ```

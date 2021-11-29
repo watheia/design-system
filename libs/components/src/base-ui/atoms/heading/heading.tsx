@@ -1,10 +1,12 @@
 import React from "react"
-import { styles as adobeClean } from "@watheia/base-ui.theme.fonts.clean"
 import clsx from "clsx"
 
-const makeHeading = (element?: Element) => {
-  return (props: HeadingProps) => <Heading element={element} {...props} />
-}
+import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
+
+import sizeStyles from "./heading-sizes.module.scss"
+import marginStyles from "./heading-margins.module.scss"
+import { styles as font } from "@watheia/base-ui.theme.fonts.clean"
+import * as styles from "./heading.module.scss"
 
 export type Element = "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
 
@@ -21,21 +23,114 @@ export type HeadingProps = {
  * @example
  * <Heading element="h3">This is a title</Heading>
  */
-export function Heading({ element = "h1", className, ...props }: HeadingProps) {
+export function Heading({ element = "h1", className, ...props }: HeaderProps) {
   const Element = element
-
   return (
     <Element
-      data-bit-id="watheia.base-ui/text/heading"
-      className={clsx(adobeClean.serifFont, className)}
+      data-bit-id="watheia.base-ui/atoms/heading"
+      className={clsx(font.serifFont, className)}
       {...props}
     />
   )
 }
 
-export const H1 = makeHeading("h1")
-export const H2 = makeHeading("h2")
-export const H3 = makeHeading("h3")
-export const H4 = makeHeading("h4")
-export const H5 = makeHeading("h5")
-export const H6 = makeHeading("h6")
+export type HeaderProps = {
+  /** font-size for the header */
+  size?: PossibleSizes
+} & HeadingProps
+
+export function H1(props: HeaderProps) {
+  return (
+    <Heading
+      data-bit-id="watheia.base-ui/atoms/heading"
+      {...props}
+      element="h1"
+      className={clsx(
+        styles.h1,
+        marginStyles.h1,
+        sizeStyles[props.size || "xl"],
+        props.className
+      )}
+    />
+  )
+}
+export function H2(props: HeaderProps) {
+  return (
+    <Heading
+      element="h2"
+      data-bit-id="watheia.base-ui/atoms/heading"
+      {...props}
+      className={clsx(
+        styles.h2,
+        marginStyles.h2,
+        sizeStyles[props.size || "lg"],
+        font.serifFont,
+        props.className
+      )}
+    />
+  )
+}
+export function H3(props: HeaderProps) {
+  return (
+    <Heading
+      element="h3"
+      data-bit-id="watheia.base-ui/atoms/heading"
+      {...props}
+      className={clsx(
+        styles.h3,
+        marginStyles.h3,
+        sizeStyles[props.size || "md"],
+        font.serifFont,
+        props.className
+      )}
+    />
+  )
+}
+export function H4(props: HeaderProps) {
+  return (
+    <Heading
+      element="h4"
+      data-bit-id="watheia.base-ui/atoms/heading"
+      {...props}
+      className={clsx(
+        styles.h4,
+        marginStyles.h4,
+        sizeStyles[props.size || "sm"],
+        font.serifFont,
+        props.className
+      )}
+    />
+  )
+}
+export function H5(props: HeaderProps) {
+  return (
+    <Heading
+      element="h5"
+      data-bit-id="watheia.base-ui/atoms/heading"
+      {...props}
+      className={clsx(
+        styles.h5,
+        marginStyles.h5,
+        sizeStyles[props.size || "xs"],
+        font.serifFont,
+        props.className
+      )}
+    />
+  )
+}
+export function H6({ element = "h6", ...props }: HeaderProps) {
+  return (
+    <Heading
+      element="h6"
+      data-bit-id="watheia.base-ui/atoms/heading"
+      {...props}
+      className={clsx(
+        styles.h6,
+        marginStyles.h6,
+        sizeStyles[props.size || "xxs"],
+        font.serifFont,
+        props.className
+      )}
+    />
+  )
+}

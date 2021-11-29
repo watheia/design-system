@@ -43,7 +43,8 @@
         "@types/react": "^17.0.36",
         "@types/react-dom": "^17.0.11",
         "react": "^17.0.2",
-        "react-dom": "^17.0.2"
+        "react-dom": "^17.0.2",
+        "graphql": "^14.7.0"
       }
     }
   },
@@ -62,7 +63,7 @@
       /**
        * uncomment to apply the chosen environment on all components.
        **/
-      "teambit.react/react": {},
+
       "teambit.pkg/pkg": {
         "packageManagerPublishArgs": ["--access public"],
         "packageJson": {
@@ -86,10 +87,22 @@
       }
     },
     "libs/components/src/base-ui": {
-      "defaultScope": "watheia.base-ui"
+      "defaultScope": "watheia.base-ui",
+      "teambit.react/react": {}
     },
     "libs/components/src/design": {
-      "defaultScope": "watheia.design"
+      "defaultScope": "watheia.design",
+      "teambit.react/react": {}
+    },
+    "libs/components/src/tools": {
+      "defaultScope": "watheia.tools",
+      "teambit.react/react": {}
+    },
+    "libs/components/src/docs": {
+      "defaultScope": "watheia.docs",
+      "teambit.react/react": {
+        "mdx": true
+      }
     }
   }
 }

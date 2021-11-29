@@ -1,7 +1,7 @@
 import React, { createContext, ReactNode, useContext, ComponentType } from "react"
 import { NativeLink, LinkProps } from "@watheia/base-ui.routing.native-link"
 import { NativeNavLink, NavLinkProps } from "@watheia/base-ui.routing.native-nav-link"
-import { isBrowser } from "@watheia/base-ui.utils.is-browser"
+import { isBrowser } from "@watheia/tools.is-browser"
 
 export type Location<State = any> = {
   pathname: string

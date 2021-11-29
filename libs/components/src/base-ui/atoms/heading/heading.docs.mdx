@@ -1,48 +1,46 @@
 ---
 labels: ["react", "typescript", "heading"]
-description: "base heading"
+description: "heading component"
 ---
 
-import { Heading } from "./heading"
+import { H1, H2, H3, H4, H5, H6 } from "./heading"
+import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
+// export const examples = [
+//   {
+//     scope: {
+//       H1
+//     },
+//     title: "H1 example:",
+//     description: "",
+//     code: `<H1>Title</H1>`
+//   },
+//   {
+//     scope: {
+//       H2
+//     },
+//     title: "H2 example:",
+//     description: "",
+//     code: `<H2>Title</H2>`
+//   },
+//   {
+//     scope: {
+//       H2,
+//       PossibleSizes
+//     },
+//     title: "H2 with size prop example:",
+//     description: "smaller H2 overridden with the size prop",
+//     code: `<H2 size={PossibleSizes.md}>Title</H2>`
+//   }
+// ]
 
 ### Overview
 
-Base title component, to be styled by composing components.
+A set of concrete heading for the Evangelist homepage.
+H1, H2, H3, H4, H5, H6.
+Each header is equivalent to its html element (e.g. `<H1/>` is `<h1/>`, etc).
 
-<br />
+### Size
 
-H1 default heading:
-
-```js live=true
-<Heading>H1 Heading</Heading>
-```
-
-H2 heading:
-
-```js live=true
-<Heading element="h2">H2 Heading</Heading>
-```
-
-H3 heading:
-
-```js live=true
-<Heading element="h3">H3 Heading</Heading>
-```
-
-H4 heading:
-
-```js live=true
-<Heading element="h4">H4 Heading</Heading>
-```
-
-H5 heading:
-
-```js live=true
-<Heading element="h5">H5 Heading</Heading>
-```
-
-H6 heading:
-
-```js live=true
-<Heading element="h6">H6 Heading</Heading>
-```
+To keep a consistent look to the site, headers come in a limited set of sizes.
+While each header corresponds to a default font-size, it can be overridden using the size prop.
+`import { PossibleSizes } from '@watheia/base-ui.theme.sizes';`

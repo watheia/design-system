@@ -6,7 +6,7 @@ import { Link as BaseLink, LinkProps } from "@watheia/base-ui.routing.link"
 import * as styles from "./link.module.scss"
 
 /**
- * A concrete link, styled for Evangelist, extending [base link](https://bit.dev/bit/base-ui/elements/link).
+ * A concrete link, styled for Evangelist, extending [base link](https://bit.dev/bit/base-ui/atoms/link).
  * Accepts all props as html Anchor Element.
  *
  * The link will use these css variables, when available:

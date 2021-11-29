@@ -1,39 +1,39 @@
 import React from "react"
-import { Theme } from "@watheia/base-ui.theme.theme-provider"
-import { Heading } from "./heading"
+import { ThemeCompositions } from "@watheia/base-ui.theme.light-theme"
+import { H1, H2, H3, H4, H5, H6 } from "./heading"
 
-export const H1DefaultHeading = () => (
-  <Theme>
-    <Heading>H1 Heading</Heading>
-  </Theme>
+export const HeadingH1 = () => (
+  <ThemeCompositions>
+    <H1>Title</H1>
+  </ThemeCompositions>
 )
 
-export const H2Heading = () => (
-  <Theme>
-    <Heading element="h2">H2 Heading</Heading>
-  </Theme>
+export const HeadingH2 = () => (
+  <ThemeCompositions>
+    <H2>Title</H2>
+  </ThemeCompositions>
 )
 
-export const H3Heading = () => (
-  <Theme>
-    <Heading element="h3">H3 Heading</Heading>
-  </Theme>
+export const HeadingH3 = () => (
+  <ThemeCompositions>
+    <H3>Title</H3>
+  </ThemeCompositions>
 )
 
-export const H4Heading = () => (
-  <Theme>
-    <Heading element="h4">H4 Heading</Heading>
-  </Theme>
+export const HeadingH4 = () => (
+  <ThemeCompositions>
+    <H4>Title</H4>
+  </ThemeCompositions>
 )
 
-export const H5Heading = () => (
-  <Theme>
-    <Heading element="h5">H5 Heading</Heading>
-  </Theme>
+export const HeadingH5 = () => (
+  <ThemeCompositions>
+    <H5>Title</H5>
+  </ThemeCompositions>
 )
 
-export const H6Heading = () => (
-  <Theme>
-    <Heading element="h6">H6 Heading</Heading>
-  </Theme>
+export const HeadingH6 = () => (
+  <ThemeCompositions>
+    <H6>Title</H6>
+  </ThemeCompositions>
 )

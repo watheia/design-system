@@ -189,7 +189,7 @@ module.exports = {
           leave out if you want to exclude neither (recommended!)
     */
     exclude: {
-      path: "(\\.yarn|\\.cache|\\.git/bit|\\.vscode)",
+      path: "(\\.yarn|\\.cache|\\.git/bit|\\.vscode|public)",
       dynamic: true
     },
 
@@ -326,11 +326,11 @@ module.exports = {
           },
           modules: [
             {
-              criteria: { source: "^libs/gatsby-plugin-emotion" },
+              criteria: { source: "^libs/components/src/base-ui" },
               attributes: { fillcolor: "#ccccff" }
             },
             {
-              criteria: { source: "^libs/gatsby-plugin-top-layout" },
+              criteria: { source: "^libs/components/src/tools" },
               attributes: { fillcolor: "#ccccff" }
             }
           ],
