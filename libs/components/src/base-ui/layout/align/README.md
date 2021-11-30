@@ -7,9 +7,9 @@ A set of CSS components to align elements.
 Same as css property text-align.
 
 ```tsx
-import { text } from '@bit/bit.base-ui.layout.align';
+import { text } from "@bit/bit.base-ui.layout.align"
 function A() {
-  return <div className={text.center}>a</div>;
+  return <div className={text.center}>a</div>
 }
 ```
 
@@ -31,10 +31,10 @@ function B() {
 Same as `margin-left: auto; margin-right: auto`.
 
 ```tsx
-import { marginCenter } from '@bit/bit.base-ui.layout.align';
+import { marginCenter } from "@bit/bit.base-ui.layout.align"
 
 function C() {
-  return <div className={classNames(marginCenter)}>this is centered</div>;
+  return <div className={classNames(marginCenter)}>this is centered</div>
 }
 ```
 

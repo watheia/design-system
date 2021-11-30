@@ -19,18 +19,20 @@ This includes the properties `checked`, `defaultChecked` `onInputChanged`, and `
 If you need to pass custom props to the _input_, create a dedicate instance in your consuming code like so:
 
 ```tsx
-import { CheckboxLabel, Input } from '...input.checkbox.label';
+import { CheckboxLabel, Input } from "...input.checkbox.label"
 
 function SelectAll() {
   // ...
-  return <CheckboxLabel input={<Input aria-orientation="rtl" />}>select all</CheckboxLabel>;
+  return <CheckboxLabel input={<Input aria-orientation="rtl" />}>select all</CheckboxLabel>
 }
 ```
 
 Automatic forwarding will no longer occur, and you will have to supply props directly to the input:
 
 ```tsx
-<CheckboxLabel input={<Input aria-orientation="rtl" onChange={handleChange} checked={isChecked} />}>
+<CheckboxLabel
+  input={<Input aria-orientation="rtl" onChange={handleChange} checked={isChecked} />}
+>
   select all
 </CheckboxLabel>
 ```

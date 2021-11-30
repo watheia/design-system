@@ -1,6 +1,6 @@
 .propRow {
   border-bottom: 1px solid
-    var(--bit-border-color-lightest, var(--bit-border-color-lightest, #ededed));
+    var(--wa-border-color-lightest, var(--wa-border-color-lightest, #ededed));
   margin-bottom: 8px;
   padding: 18px 20px;
   &.singleColumn {
@@ -13,10 +13,10 @@
   &.show {
     display: flex;
     min-width: 110px;
-    color: var(--bit-text-color-light);
+    color: var(--wa-text-color-light);
     font-weight: bold;
     text-transform: uppercase;
-    font-size: var(--bit-p-xxs);
+    font-size: var(--wa-p-xxs);
   }
 }
 
@@ -38,7 +38,7 @@
 }
 
 .required {
-  color: var(--bit-text-color-light);
+  color: var(--wa-text-color-light);
   font-size: 12px;
   white-space: nowrap;
 }
@@ -46,15 +46,15 @@
 .name {
   margin-right: 5px;
   font-family: Roboto mono;
-  font-size: var(--bit-p-xxs);
+  font-size: var(--wa-p-xxs);
   color: #4646c6;
 }
 
 .type {
   display: inline-block;
-  background-color: var(--bit-accent-bg, #eceaff);
+  background-color: var(--wa-accent-bg, #eceaff);
   font-family: Roboto mono;
-  font-size: var(--bit-p-xxs);
+  font-size: var(--wa-p-xxs);
   width: fit-content;
   padding: 5px;
   border-radius: 4px;
@@ -68,7 +68,7 @@
     padding: 0 !important; // override syntax highlighter inline styles
     word-break: break-word;
     font-family: Roboto mono;
-    font-size: var(--bit-p-xxs);
+    font-size: var(--wa-p-xxs);
     white-space: pre-wrap;
 
     margin: 0; // reset browser's default css
@@ -85,7 +85,7 @@
 
 .default {
   font-family: Roboto mono;
-  font-size: var(--bit-p-xxs);
+  font-size: var(--wa-p-xxs);
 }
 
 .breakWord {

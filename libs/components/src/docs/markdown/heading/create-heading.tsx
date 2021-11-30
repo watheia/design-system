@@ -3,14 +3,14 @@ import classnames from "clsx"
 import { LinkedHeading } from "@watheia/docs.ui.linked-heading"
 import type { LinkedHeadingProps, Element } from "@watheia/docs.ui.linked-heading"
 import { styles as clean } from "@watheia/base-ui.theme.fonts.clean"
-import styles from "./create-heading.module.scss"
+import * as styles from "./create-heading.module.scss"
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 
 export type HeadingProps = HTMLAttributes<HTMLHeadingElement> & LinkedHeadingProps
 
 export function createHeading(size: PossibleSizes, element?: Element) {
   return function Heading({ children, className, ...rest }: HeadingProps) {
-    const isMainHeading = size === "lg" || size === "md"
+    const isMainHeading = size === PossibleSizes.lg || size === PossibleSizes.md
     return (
       <LinkedHeading
         {...rest}

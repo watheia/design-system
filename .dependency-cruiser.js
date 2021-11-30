@@ -189,7 +189,7 @@ module.exports = {
           leave out if you want to exclude neither (recommended!)
     */
     exclude: {
-      path: "(\\.yarn|\\.cache|\\.git/bit|\\.vscode|public)",
+      path: "(\\.yarn|\\.cache|\\.git/bit|\\.vscode|public|coverage)",
       dynamic: true
     },
 

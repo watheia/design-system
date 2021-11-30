@@ -4,14 +4,14 @@ Basic grid element for 1-12 columns.
 Accepts all props of native html div element.
 
 ```tsx
-import { grid } from '@bit/bit.base-ui.layout.grid-component';
+import { grid } from "@bit/bit.base-ui.layout.grid-component"
 
 //...
 
-<Grid col={2}>
+;<Grid col={2}>
   <div>column 1</div>
   <div>column 2</div>
-</Grid>;
+</Grid>
 ```
 
 It has built in responsive support, using it's `colX` props:

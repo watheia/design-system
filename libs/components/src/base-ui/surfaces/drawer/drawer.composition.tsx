@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { Drawer } from './drawer';
-import { Containee } from '@watheia/base-ui.surfaces.abs-container';
+import React, { useState } from "react"
+import { Drawer } from "./drawer"
+import { Containee } from "@watheia/base-ui.surfaces.abs-container"
 
-const frameStyle = { border: '1px solid gray', borderRadius: 5, padding: 2 };
+const frameStyle = { border: "1px solid gray", borderRadius: 5, padding: 2 }
 
 export const Controlled = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(true)
 
   return (
     <div style={{ padding: 30 }}>
@@ -18,12 +18,12 @@ export const Controlled = () => {
         <Containee style={frameStyle}>menu</Containee>
       </Drawer>
     </div>
-  );
-};
+  )
+}
 
 export const UsingMargin = () => {
-  const [margin, setMargin] = useState(16);
-  const [indent, setIndent] = useState(16);
+  const [margin, setMargin] = useState(16)
+  const [indent, setIndent] = useState(16)
 
   return (
     <div style={{ padding: 30 }}>
@@ -35,7 +35,7 @@ export const UsingMargin = () => {
           max="40"
           value={margin}
           onChange={(e) => {
-            setMargin(+e.target.value);
+            setMargin(+e.target.value)
           }}
         />
       </div>
@@ -47,7 +47,7 @@ export const UsingMargin = () => {
           max="40"
           value={indent}
           onChange={(e) => {
-            setIndent(+e.target.value);
+            setIndent(+e.target.value)
           }}
         />
       </div>
@@ -66,8 +66,8 @@ export const UsingMargin = () => {
         </Containee>
       </Drawer>
     </div>
-  );
-};
+  )
+}
 
 export const Uncontrolled = () => {
   return (
@@ -76,11 +76,11 @@ export const Uncontrolled = () => {
         <Containee style={frameStyle}>menu</Containee>
       </Drawer>
     </div>
-  );
-};
+  )
+}
 
 export const ClickOutsideDisabled = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(true)
 
   return (
     <div style={{ padding: 30 }}>
@@ -89,10 +89,10 @@ export const ClickOutsideDisabled = () => {
         onChange={(event, open: boolean) => setIsOpen(open)}
         clickOutside={false}
         placeholder="no click outside"
-        style={{ border: '1px solid gray', borderRadius: 5, padding: 4 }}
+        style={{ border: "1px solid gray", borderRadius: 5, padding: 4 }}
       >
         <Containee>menu</Containee>
       </Drawer>
     </div>
-  );
-};
+  )
+}

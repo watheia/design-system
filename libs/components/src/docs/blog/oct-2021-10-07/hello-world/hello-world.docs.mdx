@@ -1,0 +1,36 @@
+---
+description: "An MDX component."
+labels: ["mdx", "blog", "hello-world"]
+author: Aaron R Miller <amiller@watheia.org>
+---
+
+import { HelloWorld } from "./index"
+
+## Static Content Page in MDX
+
+Here you will find a simple MDX file compiled by Bit to a reusable component.
+
+### Features
+
+- Compiled output in JS, ready to render as a component in any React app (Gatsby, NextJS, CreateReactApp)
+- Customized theming with a [`ThemeProvider`](https://bit.dev/teambit/documenter/theme/theme-context)
+- Use your own [`MDXProvider`](https://mdxjs.com/getting-started/#mdxprovider) (or use this [MDXProvider component](https://bit.dev/teambit/mdx/ui/mdx-layout))
+
+### Component usage
+
+```js
+<HelloWorld />
+```
+
+### Render with theme and MDX providers
+
+```js
+import { ThemeCompositions } from "@teambit/documenter.theme.theme-compositions"
+import { MDXLayout } from "@teambit/ui.mdx-layout"
+import { HelloWorld } from "./index"
+;<ThemeCompositions>
+  <MDXLayout>
+    <HelloWorld />
+  </MDXLayout>
+</ThemeCompositions>
+```

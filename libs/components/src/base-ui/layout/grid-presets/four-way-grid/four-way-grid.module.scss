@@ -1,4 +1,4 @@
-@import '~@watheia/base-ui.layout.breakpoints/_breakpoints.scss';
+@import "~@watheia/base-ui.layout.breakpoints/_breakpoints.scss";
 
 .fourWayGrid {
   display: grid;
@@ -7,17 +7,17 @@
   grid-template-rows: repeat(3, auto auto 50px) auto auto;
 
   grid-template-areas:
-    'txt1'
-    'img1'
-    '.'
-    'txt2'
-    'img2'
-    '.'
-    'txt3'
-    'img3'
-    '.'
-    'txt4'
-    'img4';
+    "txt1"
+    "img1"
+    "."
+    "txt2"
+    "img2"
+    "."
+    "txt3"
+    "img3"
+    "."
+    "txt4"
+    "img4";
 
   & > :nth-child(1) {
     grid-area: txt1;
@@ -55,24 +55,24 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr 40px) 1fr;
     grid-template-areas:
-      'img1	txt1'
-      '.		.'
-      'img2	txt2'
-      '.		.'
-      'img3	txt3'
-      '.		.'
-      'img4	txt4';
+      "img1	txt1"
+      ".		."
+      "img2	txt2"
+      ".		."
+      "img3	txt3"
+      ".		."
+      "img4	txt4";
   }
 
   @media (min-width: $br-l) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto 80px auto auto;
     grid-template-areas:
-      'img1	img2'
-      'txt1	txt2'
-      '.		.'
-      'img3	img4'
-      'txt3	txt4';
+      "img1	img2"
+      "txt1	txt2"
+      ".		."
+      "img3	img4"
+      "txt3	txt4";
 
     align-items: start;
   }

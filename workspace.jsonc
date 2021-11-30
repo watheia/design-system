@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://harmony-docs.bit.dev/workspace/configurations
- **/ {
+ **/{
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -42,9 +42,9 @@
       "peerDependencies": {
         "@types/react": "^17.0.36",
         "@types/react-dom": "^17.0.11",
+        "graphql": "^14.7.0",
         "react": "^17.0.2",
-        "react-dom": "^17.0.2",
-        "graphql": "^14.7.0"
+        "react-dom": "^17.0.2"
       }
     }
   },
@@ -63,9 +63,10 @@
       /**
        * uncomment to apply the chosen environment on all components.
        **/
-
       "teambit.pkg/pkg": {
-        "packageManagerPublishArgs": ["--access public"],
+        "packageManagerPublishArgs": [
+          "--access public"
+        ],
         "packageJson": {
           "name": "@watheia/{scope}.{name}",
           "private": false,

@@ -1,20 +1,20 @@
-import React, { Component, createRef, RefObject, useState } from 'react';
+import React, { Component, createRef, RefObject, useState } from "react"
 // @ts-ignore
-import createPolyfillRef from 'react-create-ref';
+import createPolyfillRef from "react-create-ref"
 
-import { ClickOutside } from './click-outside';
-import { useClickOutside } from './use-click-outside';
+import { ClickOutside } from "./click-outside"
+import { useClickOutside } from "./use-click-outside"
 
-import styles from './click-outside.composition.module.scss';
+import styles from "./click-outside.composition.module.scss"
 
 export function UsingHook() {
-  const ref: RefObject<HTMLDivElement> = createRef();
-  const [click, setClick] = useState('');
-  useClickOutside(ref, () => setClick('outside!'));
+  const ref: RefObject<HTMLDivElement> = createRef()
+  const [click, setClick] = useState("")
+  useClickOutside(ref, () => setClick("outside!"))
 
   return (
     <div className={styles.container}>
-      <div ref={ref} onClick={() => setClick('inside!')} className={styles.target}>
+      <div ref={ref} onClick={() => setClick("inside!")} className={styles.target}>
         inside
       </div>
 
@@ -22,17 +22,17 @@ export function UsingHook() {
 
       {click && <div>clicked - '{click}'</div>}
     </div>
-  );
+  )
 }
 
 export function UsingHookAndRefPolyfill() {
-  const ref: RefObject<HTMLDivElement> = createPolyfillRef();
-  const [click, setClick] = useState('');
-  useClickOutside(ref, () => setClick('outside!'));
+  const ref: RefObject<HTMLDivElement> = createPolyfillRef()
+  const [click, setClick] = useState("")
+  useClickOutside(ref, () => setClick("outside!"))
 
   return (
     <div className={styles.container}>
-      <div ref={ref} onClick={() => setClick('inside!')} className={styles.target}>
+      <div ref={ref} onClick={() => setClick("inside!")} className={styles.target}>
         inside
       </div>
 
@@ -40,24 +40,31 @@ export function UsingHookAndRefPolyfill() {
 
       {click && <div>clicked - '{click}'</div>}
     </div>
-  );
+  )
 }
 
 export function UsingClassWithRefPolyfill() {
-  return <ClassWithRefPolyfill />;
+  return <ClassWithRefPolyfill />
 }
 
 class ClassWithRefPolyfill extends Component {
-  private ref: RefObject<HTMLDivElement> = createRef();
+  private ref: RefObject<HTMLDivElement> = createRef()
   state = {
-    click: '',
-  };
+    click: ""
+  }
 
   render() {
     return (
       <div className={styles.container}>
-        <ClickOutside targetRef={this.ref} handler={() => this.setState({ click: 'outside!' })} />
-        <div ref={this.ref} onClick={() => this.setState({ click: 'inside!' })} className={styles.target}>
+        <ClickOutside
+          targetRef={this.ref}
+          handler={() => this.setState({ click: "outside!" })}
+        />
+        <div
+          ref={this.ref}
+          onClick={() => this.setState({ click: "inside!" })}
+          className={styles.target}
+        >
           inside
         </div>
 
@@ -65,19 +72,19 @@ class ClassWithRefPolyfill extends Component {
 
         {this.state.click && <div>clicked - '{this.state.click}'</div>}
       </div>
-    );
+    )
   }
 }
 
 export function UsingWrapper() {
-  const ref: RefObject<HTMLDivElement> = createRef();
-  const [click, setClick] = useState('');
-  useClickOutside(ref, () => setClick('outside!'));
+  const ref: RefObject<HTMLDivElement> = createRef()
+  const [click, setClick] = useState("")
+  useClickOutside(ref, () => setClick("outside!"))
 
   return (
     <div className={styles.container}>
-      <ClickOutside targetRef={ref} handler={() => setClick('outside!')} />
-      <div ref={ref} onClick={() => setClick('inside!')} className={styles.target}>
+      <ClickOutside targetRef={ref} handler={() => setClick("outside!")} />
+      <div ref={ref} onClick={() => setClick("inside!")} className={styles.target}>
         inside
       </div>
 
@@ -85,5 +92,5 @@ export function UsingWrapper() {
 
       {click && <div>clicked - '{click}'</div>}
     </div>
-  );
+  )
 }

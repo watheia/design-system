@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react"
 import { TopLayoutContext } from "./top-layout-context"
-import { Theme } from "@watheia/base-ui.theme.theme-provider"
+import { Theme } from "@watheia/base-ui.theme.light-theme"
 
 export type TopLayoutProps = {
   /**

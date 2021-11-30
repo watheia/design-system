@@ -1,4 +1,4 @@
-import styles from './z-grid.module.scss';
+import styles from "./z-grid.module.scss"
 
 /**
  * @name zGrid
@@ -29,5 +29,5 @@ import styles from './z-grid.module.scss';
  * </Grid>
  */
 
-export const zGrid = styles.zGrid;
-export const halfZGrid = styles.halfZGrid;
+export const zGrid = styles.zGrid
+export const halfZGrid = styles.halfZGrid

@@ -3,8 +3,8 @@ import clsx from "clsx"
 
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 
-import sizeStyles from "./heading-sizes.module.scss"
-import marginStyles from "./heading-margins.module.scss"
+import * as sizeStyles from "./heading-sizes.module.scss"
+import * as marginStyles from "./heading-margins.module.scss"
 import { styles as font } from "@watheia/base-ui.theme.fonts.clean"
 import * as styles from "./heading.module.scss"
 
@@ -42,7 +42,6 @@ export type HeaderProps = {
 export function H1(props: HeaderProps) {
   return (
     <Heading
-      data-bit-id="watheia.base-ui/atoms/heading"
       {...props}
       element="h1"
       className={clsx(
@@ -58,7 +57,6 @@ export function H2(props: HeaderProps) {
   return (
     <Heading
       element="h2"
-      data-bit-id="watheia.base-ui/atoms/heading"
       {...props}
       className={clsx(
         styles.h2,
@@ -74,7 +72,6 @@ export function H3(props: HeaderProps) {
   return (
     <Heading
       element="h3"
-      data-bit-id="watheia.base-ui/atoms/heading"
       {...props}
       className={clsx(
         styles.h3,
@@ -90,7 +87,6 @@ export function H4(props: HeaderProps) {
   return (
     <Heading
       element="h4"
-      data-bit-id="watheia.base-ui/atoms/heading"
       {...props}
       className={clsx(
         styles.h4,
@@ -106,7 +102,6 @@ export function H5(props: HeaderProps) {
   return (
     <Heading
       element="h5"
-      data-bit-id="watheia.base-ui/atoms/heading"
       {...props}
       className={clsx(
         styles.h5,
@@ -122,7 +117,6 @@ export function H6({ element = "h6", ...props }: HeaderProps) {
   return (
     <Heading
       element="h6"
-      data-bit-id="watheia.base-ui/atoms/heading"
       {...props}
       className={clsx(
         styles.h6,

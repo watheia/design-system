@@ -22,10 +22,10 @@
   display: none;
 }
 
-[data-split-layout^='column'] > .fatSplitter > .columnHandle {
+[data-split-layout^="column"] > .fatSplitter > .columnHandle {
   display: inline;
 }
 
-[data-split-layout^='row'] > .fatSplitter > .rowHandle {
+[data-split-layout^="row"] > .fatSplitter > .rowHandle {
   display: inline;
 }

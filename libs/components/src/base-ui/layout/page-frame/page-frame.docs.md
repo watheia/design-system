@@ -1,6 +1,6 @@
 ---
 description: CSS components for readable columns.
-labels: ['grid', 'column', 'center', 'layout', 'css']
+labels: ["grid", "column", "center", "layout", "css"]
 ---
 
 import { centerColumn, wideColumn, textColumn } from '@watheia/base-ui.layout.page-frame';

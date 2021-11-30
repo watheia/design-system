@@ -55,7 +55,7 @@ module.exports = {
 
         // customTypings: (classes) => classes.map((className) => `export const ${className}: string;`).join('\n'),
 
-        dropEmptyFile: true
+        dropEmptyFile: false
       }
     },
     {

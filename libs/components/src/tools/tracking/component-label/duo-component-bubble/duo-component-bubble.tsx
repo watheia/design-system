@@ -3,7 +3,7 @@ import clsx from "clsx"
 import { Card } from "@watheia/base-ui.surfaces.card"
 import { ComponentUrl } from "@watheia/tools.tracking.component-url"
 
-import scopeStyles from "./scope-colors.module.scss"
+import * as scopeStyles from "./scope-colors.module.scss"
 import { BASE_URL } from "../base-url"
 
 import {

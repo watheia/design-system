@@ -13,21 +13,21 @@ body {
     pointer-events: none;
   }
 
-  &[data-is-dragging='true'] > * {
+  &[data-is-dragging="true"] > * {
     transition: none;
   }
 
   // layouts:
-  &[data-split-layout^='row'] {
+  &[data-split-layout^="row"] {
     flex-direction: row;
   }
-  &[data-split-layout^='row reverse'] {
+  &[data-split-layout^="row reverse"] {
     flex-direction: row-reverse;
   }
-  &[data-split-layout^='column'] {
+  &[data-split-layout^="column"] {
     flex-direction: column;
   }
-  &[data-split-layout^='column reverse'] {
+  &[data-split-layout^="column reverse"] {
     flex-direction: column-reverse;
   }
 }

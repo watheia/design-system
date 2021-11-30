@@ -1,11 +1,11 @@
 .splitter {
   user-select: none;
 
-  [data-split-layout^='row'] & {
+  [data-split-layout^="row"] & {
     cursor: col-resize;
     height: 100%;
   }
-  [data-split-layout^='column'] & {
+  [data-split-layout^="column"] & {
     cursor: row-resize;
     width: 100%;
   }

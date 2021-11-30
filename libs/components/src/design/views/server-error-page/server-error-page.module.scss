@@ -11,15 +11,15 @@
     font-size: 24px;
   }
   .github {
-    color: var(--bit-text-color-heavy);
+    color: var(--wa-text-color-heavy);
   }
   .slack {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 16px;
-    color: var(--bit-text-on-accent, white);
-    background-color: var(--bit-slack-bg, #222022);
+    color: var(--wa-text-on-accent, white);
+    background-color: var(--wa-slack-bg, #222022);
   }
 }
 

@@ -9,7 +9,7 @@
 
 .defaultCheckbox {
   &::before {
-    content: '☐';
+    content: "☐";
   }
 
   input:focus + & {
@@ -21,6 +21,6 @@
   }
 
   input:checked + &::before {
-    content: '☑';
+    content: "☑";
   }
 }

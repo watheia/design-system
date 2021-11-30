@@ -1,5 +1,5 @@
 .propRow {
-  border: 1px solid var(--bit-border-color-lightest, #ededed);
+  border: 1px solid var(--wa-border-color-lightest, #ededed);
   border-radius: 5px;
   margin-bottom: 8px;
   padding: 18px 20px;
@@ -35,7 +35,7 @@
 }
 
 .required {
-  color: var(--bit-text-color-light);
+  color: var(--wa-text-color-light);
   font-size: 13px;
 }
 
@@ -45,7 +45,7 @@
 
 .type {
   display: inline-block;
-  background-color: var(--bit-accent-bg, #eceaff);
+  background-color: var(--wa-accent-bg, #eceaff);
   font-family: monospace;
   width: fit-content;
   padding: 5px;

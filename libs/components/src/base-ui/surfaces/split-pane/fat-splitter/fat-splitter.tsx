@@ -1,8 +1,8 @@
-import { Splitter, SplitterProps } from '@watheia/base-ui.surfaces.split-pane.splitter';
-import cn from 'classnames';
-import React from 'react';
+import { Splitter, SplitterProps } from "@watheia/base-ui.surfaces.split-pane.splitter"
+import cn from "classnames"
+import React from "react"
 
-import styles from './fat-splitter.module.scss';
+import styles from "./fat-splitter.module.scss"
 
 export function FatSplitter(props: SplitterProps) {
   return (
@@ -10,5 +10,5 @@ export function FatSplitter(props: SplitterProps) {
       <span className={styles.columnHandle}>═</span>
       <span className={styles.rowHandle}>║</span>
     </Splitter>
-  );
+  )
 }

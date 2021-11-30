@@ -1,35 +1,41 @@
-import { Layout } from '@watheia/base-ui.surfaces.split-pane.layout';
-import type { PaneProps } from '@watheia/base-ui.surfaces.split-pane.pane';
-import type { SplitterProps } from '@watheia/base-ui.surfaces.split-pane.splitter';
-import classNames from 'classnames';
-import React, { ReactElement } from 'react';
+import { Layout } from "@watheia/base-ui.surfaces.split-pane.layout"
+import type { PaneProps } from "@watheia/base-ui.surfaces.split-pane.pane"
+import type { SplitterProps } from "@watheia/base-ui.surfaces.split-pane.splitter"
+import classNames from "classnames"
+import React, { ReactElement } from "react"
 
-import { calcSplit } from './calc-split';
-import styles from './split-pane.module.scss';
-import { useDragTracker } from './use-drag-tracker';
+import { calcSplit } from "./calc-split"
+import styles from "./split-pane.module.scss"
+import { useDragTracker } from "./use-drag-tracker"
 
-export type Size = number | string | undefined;
+export type Size = number | string | undefined
 
 export type SplitPaneProps = React.HTMLAttributes<HTMLDivElement> & {
-  size?: Size;
-  layout?: Layout;
-  children: [ReactElement<PaneProps>, ReactElement<SplitterProps>, ReactElement<PaneProps>];
-};
+  size?: Size
+  layout?: Layout
+  children: [ReactElement<PaneProps>, ReactElement<SplitterProps>, ReactElement<PaneProps>]
+}
 
-export function SplitPane({ layout = Layout.column, size = '38%', className, children, ...rest }: SplitPaneProps) {
-  const containerRef = React.createRef<HTMLDivElement>();
+export function SplitPane({
+  layout = Layout.column,
+  size = "38%",
+  className,
+  children,
+  ...rest
+}: SplitPaneProps) {
+  const containerRef = React.createRef<HTMLDivElement>()
 
-  const [snapshot, isDragging, setDragging] = useDragTracker(containerRef);
-  const [A, B] = calcSplit(snapshot, layout, size);
+  const [snapshot, isDragging, setDragging] = useDragTracker(containerRef)
+  const [A, B] = calcSplit(snapshot, layout, size)
 
   // clone children to add props
-  const [left, splitter, right] = children;
-  const leftWithSize = React.cloneElement(left, { size: A, layout });
-  const rightWithSize = React.cloneElement(right, { size: B, layout });
+  const [left, splitter, right] = children
+  const leftWithSize = React.cloneElement(left, { size: A, layout })
+  const rightWithSize = React.cloneElement(right, { size: B, layout })
   const splitterWithDrag = React.cloneElement(splitter, {
     onDragging: setDragging,
-    isDragging,
-  });
+    isDragging
+  })
 
   return (
     <div
@@ -43,5 +49,5 @@ export function SplitPane({ layout = Layout.column, size = '38%', className, chi
       {splitterWithDrag}
       {rightWithSize}
     </div>
-  );
+  )
 }

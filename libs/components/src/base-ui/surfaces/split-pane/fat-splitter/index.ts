@@ -1,1 +1,1 @@
-export { FatSplitter } from './fat-splitter';
+export { FatSplitter } from "./fat-splitter"

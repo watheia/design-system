@@ -1,6 +1,6 @@
-import React from 'react';
-import { Image } from './image';
+import React from "react"
+import { Image } from "./image"
 
 export const BlockQuoteExample = () => {
-  return <Image src="https://static.bit.dev/bit-logo.svg" />;
-};
+  return <Image src="https://static.bit.dev/bit-logo.svg" />
+}

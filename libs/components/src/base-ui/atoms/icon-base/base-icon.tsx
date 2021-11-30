@@ -1,12 +1,12 @@
-import React from 'react';
-import classnames from 'classnames';
+import React from "react"
+import classnames from "classnames"
 
 export type BaseIconProps = {
   /**
    * icon id (class name)
    */
-  of: string;
-} & React.HTMLAttributes<HTMLSpanElement>;
+  of: string
+} & React.HTMLAttributes<HTMLSpanElement>
 
 /**
  * Base template component for icons.
@@ -16,5 +16,11 @@ export type BaseIconProps = {
  * const EvaButton = (props) => <BaseIcon {...props} of={`${iconset}-${props.of}`} />;
  */
 export function BaseIcon({ of: iconName, className, ...rest }: BaseIconProps) {
-  return <span data-bit-id="teambit.base-ui/elements/icon" className={classnames(iconName, className)} {...rest} />;
+  return (
+    <span
+      data-bit-id="teambit.base-ui/elements/icon"
+      className={classnames(iconName, className)}
+      {...rest}
+    />
+  )
 }

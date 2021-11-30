@@ -1,4 +1,4 @@
-import { useEffect, RefObject } from 'react';
+import { useEffect, RefObject } from "react"
 
 /** calls handler when clicking in the DOM outside the target component */
 export function useClickOutside(
@@ -9,20 +9,20 @@ export function useClickOutside(
 ) {
   useEffect(() => {
     const listener = (event: MouseEvent | TouchEvent) => {
-      const element = event.target as HTMLElement | null;
+      const element = event.target as HTMLElement | null
       // Do nothing if clicking ref's element or descendent elements
       if (!ref.current || !element || ref.current.contains(element)) {
-        return;
+        return
       }
-      handler(event);
-    };
+      handler(event)
+    }
     if (enabled) {
-      document.addEventListener('mousedown', listener);
-      document.addEventListener('touchstart', listener);
+      document.addEventListener("mousedown", listener)
+      document.addEventListener("touchstart", listener)
     }
     return () => {
-      document.removeEventListener('mousedown', listener);
-      document.removeEventListener('touchstart', listener);
-    };
-  }, [ref, handler, enabled]);
+      document.removeEventListener("mousedown", listener)
+      document.removeEventListener("touchstart", listener)
+    }
+  }, [ref, handler, enabled])
 }

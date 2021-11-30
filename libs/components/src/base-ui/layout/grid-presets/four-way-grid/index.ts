@@ -1,4 +1,4 @@
-import styles from './four-way-grid.module.scss';
+import styles from "./four-way-grid.module.scss"
 
 /**
  * @name fourWayGrid
@@ -46,4 +46,4 @@ import styles from './four-way-grid.module.scss';
  * </Grid>
  */
 
-export const fourWayGrid = styles.fourWayGrid;
+export const fourWayGrid = styles.fourWayGrid

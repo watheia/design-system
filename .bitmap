@@ -11,115 +11,121 @@
 {
     "atoms/button": {
         "scope": "watheia.base-ui",
-        "version": "1.5.3",
+        "version": "1.5.8",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/button"
     },
     "atoms/button-base": {
         "scope": "watheia.base-ui",
-        "version": "1.1.3",
+        "version": "1.1.10",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/button-base"
     },
     "atoms/checkbox/hidden": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/checkbox/hidden"
     },
     "atoms/checkbox/indicator": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/checkbox/indicator"
     },
     "atoms/checkbox/label": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/checkbox/label"
     },
     "atoms/dots-loader": {
         "scope": "watheia.base-ui",
-        "version": "1.2.6",
+        "version": "1.2.9",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/dots-loader"
     },
     "atoms/error": {
         "scope": "watheia.base-ui",
-        "version": "1.1.3",
+        "version": "1.1.6",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/error"
     },
     "atoms/heading": {
         "scope": "watheia.base-ui",
-        "version": "1.5.0",
+        "version": "1.5.7",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/heading"
     },
     "atoms/icon": {
         "scope": "watheia.base-ui",
-        "version": "1.5.0",
+        "version": "1.5.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/icon"
     },
     "atoms/icon-base": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/icon-base"
     },
     "atoms/icon-line": {
         "scope": "watheia.base-ui",
-        "version": "1.1.3",
+        "version": "1.1.6",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/icon-line"
     },
     "atoms/image": {
         "scope": "watheia.base-ui",
-        "version": "1.5.0",
+        "version": "1.5.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/image"
     },
     "atoms/image-base": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/image-base"
     },
     "atoms/link": {
         "scope": "watheia.base-ui",
-        "version": "1.5.3",
+        "version": "1.5.6",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/link"
     },
     "atoms/paragraph": {
         "scope": "watheia.base-ui",
-        "version": "1.5.0",
+        "version": "1.5.7",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/paragraph"
     },
     "atoms/styled-text": {
         "scope": "watheia.base-ui",
-        "version": "1.1.3",
+        "version": "1.1.6",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/styled-text"
     },
     "atoms/text-separator": {
         "scope": "watheia.base-ui",
-        "version": "1.2.6",
+        "version": "1.2.9",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/text-separator"
     },
     "atoms/x-button": {
         "scope": "watheia.base-ui",
-        "version": "1.1.3",
+        "version": "1.1.6",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/x-button"
     },
+    "blog/oct-2021-10-07/hello-world": {
+        "scope": "watheia.docs",
+        "version": "0.0.4",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/docs/blog/oct-2021-10-07/hello-world"
+    },
     "code/react-playground": {
         "scope": "watheia.docs",
-        "version": "1.1.4",
+        "version": "1.1.9",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/code/react-playground"
     },
@@ -131,49 +137,49 @@
     },
     "constants/storage": {
         "scope": "watheia.tools",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/tools/constants/storage"
     },
     "css-components/elevation": {
         "scope": "watheia.base-ui",
-        "version": "1.2.2",
+        "version": "1.2.5",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/css-components/elevation"
     },
     "css-components/fade-in-out": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/css-components/fade-in-out"
     },
     "css-components/pill": {
         "scope": "watheia.base-ui",
-        "version": "1.2.2",
+        "version": "1.2.5",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/css-components/pill"
     },
     "css-components/roundness": {
         "scope": "watheia.base-ui",
-        "version": "1.2.2",
+        "version": "1.2.5",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/css-components/roundness"
     },
     "gfx/ref-tooltip": {
         "scope": "watheia.base-ui",
-        "version": "1.5.0",
+        "version": "1.5.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/gfx/ref-tooltip"
     },
     "hooks/use-click-outside": {
         "scope": "watheia.tools",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/tools/hooks/use-click-outside"
     },
     "hooks/use-graphql-light": {
         "scope": "watheia.tools",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/tools/hooks/use-graphql-light"
     },
@@ -185,7 +191,7 @@
     },
     "layout/align": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/layout/align"
     },
@@ -197,139 +203,139 @@
     },
     "layout/col-span": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/layout/col-span"
     },
     "layout/grid-component": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/layout/grid-component"
     },
     "layout/grid-presets/four-way-grid": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/layout/grid-presets/four-way-grid"
     },
     "layout/grid-presets/z-grid": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/layout/grid-presets/z-grid"
     },
     "layout/page-frame": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/layout/page-frame"
     },
     "layout/top-layout": {
         "scope": "watheia.base-ui",
-        "version": "0.0.12",
+        "version": "0.0.15",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/layout/top-layout"
     },
     "markdown/elements/base-table": {
         "scope": "watheia.docs",
-        "version": "1.1.4",
+        "version": "1.1.13",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/markdown/elements/base-table"
     },
     "markdown/elements/block-quote": {
         "scope": "watheia.docs",
-        "version": "1.1.4",
+        "version": "1.1.9",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/markdown/elements/block-quote"
     },
     "markdown/elements/bold": {
         "scope": "watheia.docs",
-        "version": "1.1.4",
+        "version": "1.1.9",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/markdown/elements/bold"
     },
     "markdown/elements/hr": {
         "scope": "watheia.docs",
-        "version": "1.1.4",
+        "version": "1.1.13",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/markdown/elements/hr"
     },
     "markdown/elements/image": {
         "scope": "watheia.docs",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/markdown/elements/image"
     },
     "markdown/elements/italic": {
         "scope": "watheia.docs",
-        "version": "1.1.4",
+        "version": "1.1.9",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/markdown/elements/italic"
     },
     "markdown/elements/ol": {
         "scope": "watheia.docs",
-        "version": "1.1.4",
+        "version": "1.1.9",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/markdown/elements/ol"
     },
     "markdown/elements/paragraph": {
         "scope": "watheia.docs",
-        "version": "1.1.7",
+        "version": "1.1.14",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/markdown/elements/paragraph"
     },
     "markdown/elements/sup": {
         "scope": "watheia.docs",
-        "version": "1.1.4",
+        "version": "1.1.9",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/markdown/elements/sup"
     },
     "markdown/elements/td": {
         "scope": "watheia.docs",
-        "version": "1.1.4",
+        "version": "1.1.9",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/markdown/elements/td"
     },
     "markdown/elements/tr": {
         "scope": "watheia.docs",
-        "version": "1.1.4",
+        "version": "1.1.13",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/markdown/elements/tr"
     },
     "markdown/elements/ul": {
         "scope": "watheia.docs",
-        "version": "1.1.4",
+        "version": "1.1.9",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/markdown/elements/ul"
     },
     "markdown/heading": {
         "scope": "watheia.docs",
-        "version": "1.1.4",
+        "version": "1.1.13",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/markdown/heading"
     },
     "markdown/hybrid-live-code-snippet": {
         "scope": "watheia.docs",
-        "version": "1.2.0",
+        "version": "1.2.7",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/markdown/hybrid-live-code-snippet"
     },
     "markdown/md": {
         "scope": "watheia.docs",
-        "version": "1.1.7",
+        "version": "1.1.16",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/markdown/md"
     },
     "markdown/mdx": {
         "scope": "watheia.docs",
-        "version": "1.1.7",
+        "version": "1.1.16",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/markdown/mdx"
     },
     "molecules/documentation-links": {
         "scope": "watheia.docs",
-        "version": "1.2.0",
+        "version": "1.2.7",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/molecules/documentation-links"
     },
@@ -437,19 +443,19 @@
     },
     "surfaces/background": {
         "scope": "watheia.base-ui",
-        "version": "1.2.2",
+        "version": "1.2.5",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/surfaces/background"
     },
     "surfaces/bedrock": {
         "scope": "watheia.base-ui",
-        "version": "1.1.2",
+        "version": "1.1.5",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/surfaces/bedrock"
     },
     "surfaces/card": {
         "scope": "watheia.base-ui",
-        "version": "1.5.0",
+        "version": "1.5.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/surfaces/card"
     },
@@ -461,61 +467,61 @@
     },
     "surfaces/drawer": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/surfaces/drawer"
     },
     "surfaces/dropdown": {
         "scope": "watheia.base-ui",
-        "version": "1.1.3",
+        "version": "1.1.6",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/surfaces/dropdown"
     },
     "surfaces/split-pane/collapsed-pane": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/surfaces/split-pane/collapsed-pane"
     },
     "surfaces/split-pane/fat-splitter": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/surfaces/split-pane/fat-splitter"
     },
     "surfaces/split-pane/hover-splitter": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/surfaces/split-pane/hover-splitter"
     },
     "surfaces/split-pane/layout": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/surfaces/split-pane/layout"
     },
     "surfaces/split-pane/pane": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/surfaces/split-pane/pane"
     },
     "surfaces/split-pane/split-pane": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/surfaces/split-pane/split-pane"
     },
     "surfaces/split-pane/splitter": {
         "scope": "watheia.base-ui",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/surfaces/split-pane/splitter"
     },
     "surfaces/tooltip": {
         "scope": "watheia.base-ui",
-        "version": "1.1.3",
+        "version": "1.1.6",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/surfaces/tooltip"
     },
@@ -527,19 +533,19 @@
     },
     "theme/brand-definition": {
         "scope": "watheia.base-ui",
-        "version": "1.1.3",
+        "version": "1.1.6",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/theme/brand-definition"
     },
     "theme/brands": {
         "scope": "watheia.base-ui",
-        "version": "1.2.0",
+        "version": "1.2.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/theme/brands"
     },
     "theme/color-definition": {
         "scope": "watheia.base-ui",
-        "version": "1.5.0",
+        "version": "1.5.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/theme/color-definition"
     },
@@ -551,13 +557,13 @@
     },
     "theme/dark-theme": {
         "scope": "watheia.base-ui",
-        "version": "1.2.4",
+        "version": "1.2.7",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/theme/dark-theme"
     },
     "theme/fonts/clean": {
         "scope": "watheia.base-ui",
-        "version": "1.3.0",
+        "version": "1.3.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/theme/fonts/clean"
     },
@@ -575,25 +581,25 @@
     },
     "theme/heading-margin-definition": {
         "scope": "watheia.base-ui",
-        "version": "1.1.3",
+        "version": "1.1.6",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/theme/heading-margin-definition"
     },
     "theme/light-theme": {
         "scope": "watheia.base-ui",
-        "version": "1.5.0",
+        "version": "1.5.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/theme/light-theme"
     },
     "theme/shadow-definition": {
         "scope": "watheia.base-ui",
-        "version": "1.1.3",
+        "version": "1.1.6",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/theme/shadow-definition"
     },
     "theme/size-definition": {
         "scope": "watheia.base-ui",
-        "version": "1.5.0",
+        "version": "1.5.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/theme/size-definition"
     },
@@ -605,19 +611,19 @@
     },
     "theme/theme-compositions": {
         "scope": "watheia.docs",
-        "version": "1.1.4",
+        "version": "1.1.11",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/theme/theme-compositions"
     },
     "theme/theme-context": {
         "scope": "watheia.docs",
-        "version": "1.2.0",
+        "version": "1.2.9",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/theme/theme-context"
     },
     "theme/theme-provider": {
         "scope": "watheia.base-ui",
-        "version": "1.5.0",
+        "version": "1.5.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/theme/theme-provider"
     },
@@ -635,199 +641,199 @@
     },
     "tracking/component-highlighter": {
         "scope": "watheia.tools",
-        "version": "1.1.3",
+        "version": "1.1.8",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/tools/tracking/component-highlighter"
     },
     "tracking/component-id": {
         "scope": "watheia.tools",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/tools/tracking/component-id"
     },
     "tracking/component-label": {
         "scope": "watheia.tools",
-        "version": "1.1.3",
+        "version": "1.1.10",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/tools/tracking/component-label"
     },
     "tracking/component-url": {
         "scope": "watheia.tools",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/tools/tracking/component-url"
     },
     "tracking/overlay-border": {
         "scope": "watheia.tools",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/tools/tracking/overlay-border"
     },
     "types/docs-file": {
         "scope": "watheia.docs",
-        "version": "1.2.0",
+        "version": "1.2.7",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/types/docs-file"
     },
     "ui/anchor": {
         "scope": "watheia.docs",
-        "version": "1.1.7",
+        "version": "1.1.16",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/anchor"
     },
     "ui/code-snippet": {
         "scope": "watheia.docs",
-        "version": "1.1.7",
+        "version": "1.1.16",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/code-snippet"
     },
     "ui/consumable-link": {
         "scope": "watheia.docs",
-        "version": "1.2.0",
+        "version": "1.2.7",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/consumable-link"
     },
     "ui/copied-message": {
         "scope": "watheia.docs",
-        "version": "1.1.7",
+        "version": "1.1.16",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/copied-message"
     },
     "ui/copy-box": {
         "scope": "watheia.docs",
-        "version": "1.1.7",
+        "version": "1.1.16",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/copy-box"
     },
     "ui/heading": {
         "scope": "watheia.docs",
-        "version": "1.1.7",
-        "mainFile": "index.tsx",
+        "version": "1.1.14",
+        "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/heading"
     },
     "ui/highlighted-text": {
         "scope": "watheia.docs",
-        "version": "1.1.7",
+        "version": "1.1.14",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/highlighted-text"
     },
     "ui/import-action": {
         "scope": "watheia.docs",
-        "version": "1.1.7",
+        "version": "1.1.16",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/import-action"
     },
     "ui/inline-code": {
         "scope": "watheia.docs",
-        "version": "1.2.0",
+        "version": "1.2.9",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/inline-code"
     },
     "ui/label": {
         "scope": "watheia.docs",
-        "version": "1.1.4",
+        "version": "1.1.13",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/label"
     },
     "ui/label-list": {
         "scope": "watheia.docs",
-        "version": "1.2.0",
+        "version": "1.2.7",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/label-list"
     },
     "ui/linked-heading": {
         "scope": "watheia.docs",
-        "version": "1.2.0",
+        "version": "1.2.7",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/linked-heading"
     },
     "ui/list": {
         "scope": "watheia.docs",
-        "version": "1.2.0",
+        "version": "1.2.7",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/list"
     },
     "ui/prop-table": {
         "scope": "watheia.docs",
-        "version": "1.1.4",
+        "version": "1.1.13",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/prop-table"
     },
     "ui/section": {
         "scope": "watheia.docs",
-        "version": "1.1.4",
+        "version": "1.1.9",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/section"
     },
     "ui/sub-title": {
         "scope": "watheia.docs",
-        "version": "1.2.0",
+        "version": "1.2.5",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/sub-title"
     },
     "ui/table": {
         "scope": "watheia.docs",
-        "version": "1.1.4",
+        "version": "1.1.11",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/table"
     },
     "ui/table-column": {
         "scope": "watheia.docs",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/table-column"
     },
     "ui/table-heading-column": {
         "scope": "watheia.docs",
-        "version": "1.1.0",
+        "version": "1.1.3",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/table-heading-column"
     },
     "ui/table-heading-row": {
         "scope": "watheia.docs",
-        "version": "1.2.0",
+        "version": "1.2.9",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/table-heading-row"
     },
     "ui/table-row": {
         "scope": "watheia.docs",
-        "version": "1.1.4",
+        "version": "1.1.9",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/table-row"
     },
     "ui/version-tag": {
         "scope": "watheia.docs",
-        "version": "1.1.4",
+        "version": "1.1.9",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/ui/version-tag"
     },
     "views/error-page": {
         "scope": "watheia.design",
-        "version": "1.2.0",
+        "version": "1.2.5",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/design/views/error-page"
     },
     "views/markdown": {
         "scope": "watheia.design",
-        "version": "1.1.7",
+        "version": "1.1.16",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/design/views/markdown"
     },
     "views/not-found-page": {
         "scope": "watheia.design",
-        "version": "1.1.7",
+        "version": "1.1.16",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/design/views/not-found-page"
     },
     "views/sample": {
         "scope": "watheia.design",
-        "version": "1.2.11",
+        "version": "1.2.18",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/design/views/sample"
     },
     "views/server-error-page": {
         "scope": "watheia.design",
-        "version": "1.1.7",
+        "version": "1.1.16",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/design/views/server-error-page"
     },

@@ -1,4 +1,4 @@
-import definitions from './_storage.module.scss';
+import definitions from "./_storage.module.scss"
 
 /**
  * Provides constant url for images CDN.
@@ -10,4 +10,4 @@ import definitions from './_storage.module.scss';
  * background-image: url($staticStorageUrl + '/some/image.svg');
  */
 
-export const staticStorageUrl = definitions.staticStorageUrl.replace(/["']/g, '');
+export const staticStorageUrl = definitions.staticStorageUrl.replace(/["']/g, "")

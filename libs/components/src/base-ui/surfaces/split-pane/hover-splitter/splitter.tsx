@@ -1,8 +1,8 @@
-import { Splitter, SplitterProps } from '@watheia/base-ui.surfaces.split-pane.splitter';
-import cn from 'classnames';
-import React from 'react';
+import { Splitter, SplitterProps } from "@watheia/base-ui.surfaces.split-pane.splitter"
+import cn from "classnames"
+import React from "react"
 
-import styles from './splitter.module.scss';
+import styles from "./splitter.module.scss"
 
 export function HoverSplitter({ children, className, ...rest }: SplitterProps) {
   return (
@@ -10,5 +10,5 @@ export function HoverSplitter({ children, className, ...rest }: SplitterProps) {
       <div className={styles.highlighter} />
       {children}
     </Splitter>
-  );
+  )
 }

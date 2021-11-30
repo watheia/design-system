@@ -1,27 +1,27 @@
-import React from 'react';
-import { render, fireEvent /* waitForElementToBeRemoved */ } from '@testing-library/react';
+import React from "react"
+import { render, fireEvent /* waitForElementToBeRemoved */ } from "@testing-library/react"
 
-import Button from './button';
-import { BasicButton } from './button.composition';
+import Button from "./button"
+import { BasicButton } from "./button.composition"
 
-const testLoader = <span data-testid="test-loader">loading...</span>;
+const testLoader = <span data-testid="test-loader">loading...</span>
 
-it('should render with children', () => {
-  const { getByText } = render(<BasicButton />);
-  const rendered = getByText('Click');
-  expect(rendered).toBeInstanceOf(HTMLElement);
-});
+it("should render with children", () => {
+  const { getByText } = render(<BasicButton />)
+  const rendered = getByText("Click")
+  expect(rendered).toBeInstanceOf(HTMLElement)
+})
 
-it('should trigger onClick', () => {
-  const onClick = jest.fn();
-  const { getByText } = render(<Button onClick={onClick}>actual button</Button>);
-  const rendered = getByText('actual button');
+it("should trigger onClick", () => {
+  const onClick = jest.fn()
+  const { getByText } = render(<Button onClick={onClick}>actual button</Button>)
+  const rendered = getByText("actual button")
 
   //could use userEvents.click(), in @testing-library/user-event
-  fireEvent.click(rendered);
+  fireEvent.click(rendered)
 
-  expect(onClick).toHaveBeenCalled();
-});
+  expect(onClick).toHaveBeenCalled()
+})
 
 // it('should remove loader after onClick has been resolved', async () => {
 // 	let resolveClick = () => {};
@@ -49,32 +49,32 @@ it('should trigger onClick', () => {
 // 	await waitForElementToBeRemoved(() => queryByTestId('test-loader'));
 // });
 
-it('should show loader when explicitly set loading={true}', () => {
-  const { getByTestId } = render(<Button loader={testLoader} loading={true} />);
+it("should show loader when explicitly set loading={true}", () => {
+  const { getByTestId } = render(<Button loader={testLoader} loading={true} />)
 
-  expect(getByTestId('test-loader')).toBeInstanceOf(HTMLElement);
-});
+  expect(getByTestId("test-loader")).toBeInstanceOf(HTMLElement)
+})
 
-it('should not show loader when explicitly set loading={false}', () => {
-  const { queryByTestId } = render(<Button loader={testLoader} loading={false} />);
+it("should not show loader when explicitly set loading={false}", () => {
+  const { queryByTestId } = render(<Button loader={testLoader} loading={false} />)
 
-  expect(queryByTestId('test-loader')).not.toBeInstanceOf(HTMLElement);
-});
+  expect(queryByTestId("test-loader")).not.toBeInstanceOf(HTMLElement)
+})
 
-it('should not render children while loading', () => {
+it("should not render children while loading", () => {
   const { queryByText } = render(
     <Button loader={testLoader} loading={true}>
       actual children
     </Button>
-  );
+  )
 
-  expect(queryByText('actual children')).not.toBeInstanceOf(HTMLElement);
-});
+  expect(queryByText("actual children")).not.toBeInstanceOf(HTMLElement)
+})
 
-it('should remove loader when changing loading back to ={false}', () => {
-  const { queryByTestId, rerender } = render(<Button loader={testLoader} loading={true} />);
-  expect(queryByTestId('test-loader')).toBeInstanceOf(HTMLElement);
+it("should remove loader when changing loading back to ={false}", () => {
+  const { queryByTestId, rerender } = render(<Button loader={testLoader} loading={true} />)
+  expect(queryByTestId("test-loader")).toBeInstanceOf(HTMLElement)
 
-  rerender(<Button loader={testLoader} loading={false} />);
-  expect(queryByTestId('test-loader')).not.toBeInstanceOf(HTMLElement);
-});
+  rerender(<Button loader={testLoader} loading={false} />)
+  expect(queryByTestId("test-loader")).not.toBeInstanceOf(HTMLElement)
+})

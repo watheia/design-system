@@ -3,6 +3,8 @@ import star from "./star.svg"
 import * as styles from "./sample.module.scss"
 import clsx from "clsx"
 import { Link } from "@watheia/base-ui.atoms.link"
+import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
+import { H1, H2 } from "@watheia/base-ui.atoms.heading"
 
 export type SampleViewProps = {
   /**
@@ -16,11 +18,11 @@ export function SampleView({ title, className, ...props }: SampleViewProps) {
     <div className={clsx(styles.page, className)} {...props}>
       <header className="flex">
         {/* <Logo width="75" height="75" /> */}
-        <h1>{title}</h1>
+        <H1>{title}</H1>
       </header>
       <main>
-        <h2>Resources &amp; Tools</h2>
-        <p>Thank you for using and showing some ♥ for Nx.</p>
+        <H2>Resources &amp; Tools</H2>
+        <Paragraph>Thank you for using and showing some ♥ for Nx.</Paragraph>
         <div className="flex github-star-container">
           <Link href="https://github.com/nrwl/nx" target="_blank" rel="noopener noreferrer">
             {" "}
@@ -31,7 +33,7 @@ export function SampleView({ title, className, ...props }: SampleViewProps) {
             </div>
           </Link>
         </div>
-        <p>Here are some links to help you get started.</p>
+        <Paragraph>Here are some links to help you get started.</Paragraph>
         <ul className="resources">
           <li className="col-span-2">
             <Link
@@ -71,8 +73,8 @@ export function SampleView({ title, className, ...props }: SampleViewProps) {
             </Link>
           </li>
         </ul>
-        <h2>Next Steps</h2>
-        <p>Here are some things you can do with Nx.</p>
+        <H2>Next Steps</H2>
+        <Paragraph>Here are some things you can do with Nx.</Paragraph>
         <details open>
           <summary>Add UI library</summary>
           <pre>{`# Generate UI lib

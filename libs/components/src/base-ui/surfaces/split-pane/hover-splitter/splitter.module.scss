@@ -18,11 +18,11 @@
   }
 
   &:hover,
-  [data-is-dragging='true'] > .hoverSplitter > &,
+  [data-is-dragging="true"] > .hoverSplitter > &,
   &:hover::before,
   &:hover::after,
-  [data-is-dragging='true'] > .hoverSplitter > &::before,
-  [data-is-dragging='true'] > .hoverSplitter > &::after {
+  [data-is-dragging="true"] > .hoverSplitter > &::before,
+  [data-is-dragging="true"] > .hoverSplitter > &::after {
     background: var(--wa-accent-color, #04bfbf);
     // fade in
     transition-delay: 0.18s;
@@ -30,14 +30,14 @@
 
   &::before,
   &::after {
-    content: ' '; // <- using 'nbsp' space
+    content: " "; // <- using 'nbsp' space
     display: block;
     position: absolute;
 
     background: transparent;
   }
 
-  [data-split-layout^='row'] > .hoverSplitter > & {
+  [data-split-layout^="row"] > .hoverSplitter > & {
     &::before,
     &::after {
       width: 200%;
@@ -51,7 +51,7 @@
     }
   }
 
-  [data-split-layout^='column'] > .hoverSplitter > & {
+  [data-split-layout^="column"] > .hoverSplitter > & {
     &::before,
     &::after {
       width: 100%;

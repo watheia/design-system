@@ -4,4 +4,12 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-// You can delete this file if you're not using it
+exports.onCreateWebpackConfig = ({ stage, rules, loaders, plugins, actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      fallback: {
+        path: require.resolve("path-browserify")
+      }
+    }
+  })
+}
