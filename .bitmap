@@ -39,6 +39,12 @@
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/checkbox/label"
     },
+    "atoms/community-link": {
+        "scope": "watheia.design",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/design/atoms/community-link"
+    },
     "atoms/dots-loader": {
         "scope": "watheia.base-ui",
         "version": "1.2.9",
@@ -89,7 +95,7 @@
     },
     "atoms/link": {
         "scope": "watheia.base-ui",
-        "version": "1.5.6",
+        "version": "1.6.0",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/link"
     },
@@ -323,15 +329,33 @@
     },
     "markdown/md": {
         "scope": "watheia.docs",
-        "version": "1.1.16",
+        "version": "1.1.17",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/markdown/md"
     },
     "markdown/mdx": {
         "scope": "watheia.docs",
-        "version": "1.1.16",
+        "version": "1.1.17",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/docs/markdown/mdx"
+    },
+    "molecules/community-links/github-link": {
+        "scope": "watheia.design",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/design/molecules/community-links/github-link"
+    },
+    "molecules/community-links/slack-link": {
+        "scope": "watheia.design",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/design/molecules/community-links/slack-link"
+    },
+    "molecules/community-links/twitter-link": {
+        "scope": "watheia.design",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/design/molecules/community-links/twitter-link"
     },
     "molecules/documentation-links": {
         "scope": "watheia.docs",
@@ -815,25 +839,25 @@
     },
     "views/markdown": {
         "scope": "watheia.design",
-        "version": "1.1.16",
+        "version": "1.1.17",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/design/views/markdown"
     },
     "views/not-found-page": {
         "scope": "watheia.design",
-        "version": "1.1.16",
+        "version": "1.2.0",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/design/views/not-found-page"
     },
     "views/sample": {
         "scope": "watheia.design",
-        "version": "1.2.18",
+        "version": "1.2.19",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/design/views/sample"
     },
     "views/server-error-page": {
         "scope": "watheia.design",
-        "version": "1.1.16",
+        "version": "1.2.0",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/design/views/server-error-page"
     },

@@ -203,6 +203,18 @@
       "@watheia/base-ui.theme.theme-provider": [
         "libs/components/src/base-ui/theme/theme-provider/index.ts"
       ],
+      "@watheia/design.atoms.community-link": [
+        "libs/components/src/design/atoms/community-link/index.ts"
+      ],
+      "@watheia/design.molecules.community-links.github-link": [
+        "libs/components/src/design/molecules/community-links/github-link"
+      ],
+      "@watheia/design.molecules.community-links.slack-link": [
+        "libs/components/src/design/molecules/community-links/slack-link/index.ts"
+      ],
+      "@watheia/design.design/molecules/twitter-card": [
+        "libs/components/src/design/molecules/twitter-card/index.ts"
+      ],
       "@watheia/design.views.error-page": [
         "libs/components/src/design/views/error-page/index.ts"
       ],
