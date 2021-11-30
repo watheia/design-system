@@ -1,7 +1,8 @@
 import React from "react"
 import classNames from "clsx"
 import { H1 } from "@watheia/docs.ui.heading"
-import styles from "./error-page.module.scss"
+import * as styles from "./error-page.module.scss"
+import { staticStorageUrl } from "@watheia/tools.constants.storage"
 
 type ErrorPageProps = {
   /**
@@ -22,9 +23,9 @@ export function ErrorPage({ code, title, className, children, ...rest }: ErrorPa
     <div {...rest} className={classNames(styles.errorPage, className)}>
       <H1 className={styles.title}>{title}</H1>
       <img
-        alt="error-image"
+        alt="error 404"
         className={styles.img}
-        src={`https://static.bit.dev/harmony/${code}.svg`}
+        src={`${staticStorageUrl}/harmony/${code}.svg`}
       />
       {children}
     </div>

@@ -10,7 +10,7 @@ export function createHeading(size: PossibleSizes) {
     className,
     ...rest
   }: HTMLAttributes<HTMLHeadingElement>) {
-    const isMainHeading = size === "lg" || size === "md"
+    const isMainHeading = size === PossibleSizes.lg || size === PossibleSizes.md
 
     return (
       <LinkedHeading

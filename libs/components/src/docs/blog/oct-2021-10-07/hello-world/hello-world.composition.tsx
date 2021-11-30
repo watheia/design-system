@@ -1,6 +1,4 @@
-import React from 'react';
-import { HelloWorld } from './index';
+import React from "react"
+import { HelloWorld } from "./index"
 
-export const BasicHelloWorld = () => (
-  <HelloWorld />
-);
+export const BasicHelloWorld = () => <HelloWorld />

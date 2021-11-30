@@ -1,9 +1,11 @@
 import React from "react"
 import classNames from "clsx"
 
-import { Link as BaseLink, LinkProps } from "@watheia/base-ui.routing.link"
+import { Link as BaseLink, LinkProps as WaLinkProps } from "@watheia/base-ui.routing.link"
 
 import * as styles from "./link.module.scss"
+
+export type LinkProps = WaLinkProps
 
 /**
  * A concrete link, styled for Evangelist, extending [base link](https://bit.dev/bit/base-ui/atoms/link).

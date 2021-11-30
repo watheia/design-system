@@ -7,7 +7,6 @@ Accepts all props of native html div element.
 import { grid } from "@bit/bit.base-ui.layout.grid-component"
 
 //...
-
 ;<Grid col={2}>
   <div>column 1</div>
   <div>column 2</div>

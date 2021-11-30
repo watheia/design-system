@@ -1,7 +1,7 @@
 import React, { useMemo } from "react"
 import ReactMarkdown from "react-markdown"
 import { components } from "./components"
-import styles from "./markdown.module.scss"
+import * as styles from "./markdown.module.scss"
 
 export type MarkdownProps = {
   children: string

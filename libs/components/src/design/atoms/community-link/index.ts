@@ -1,1 +1,1 @@
-export * from './community-link';
+export * from "./community-link"

@@ -212,7 +212,13 @@
       "@watheia/design.molecules.community-links.slack-link": [
         "libs/components/src/design/molecules/community-links/slack-link/index.ts"
       ],
-      "@watheia/design.design/molecules/twitter-card": [
+      "@watheia/design.molecules.enterprise-logos": [
+        "libs/components/src/design/molecules/enterprise-logos/index.ts"
+      ],
+      "@watheia/design.molecules.testimonial": [
+        "libs/components/src/design/molecules/testimonial/index.ts"
+      ],
+      "@watheia/design.molecules.twitter-card": [
         "libs/components/src/design/molecules/twitter-card/index.ts"
       ],
       "@watheia/design.views.error-page": [
@@ -327,14 +333,14 @@
       ],
       "@watheia/docs.ui.table-row": ["libs/components/src/docs/ui/table-row/index.ts"],
       "@watheia/docs.ui.version-tag": ["libs/components/src/docs/ui/version-tag/index.ts"],
-      "@watheia.tools.composer": ["libs/components/src/tools/composer/index.ts"],
-      "@watheia.tools.constants/storage": [
+      "@watheia/tools.composer": ["libs/components/src/tools/composer/index.ts"],
+      "@watheia/tools.constants.storage": [
         "libs/components/src/tools/constants/storage/index.ts"
       ],
-      "@watheia/tools.hooks/use-click-outside": [
+      "@watheia/tools.hooks.use-click-outside": [
         "libs/components/src/tools/hooks/use-click-outside/index.ts"
       ],
-      "@watheia/tools.hooks/use-graphql-light": [
+      "@watheia/tools.hooks.use-graphql-light": [
         "libs/components/src/tools/hooks/use-graphql-light/index.ts"
       ],
       "@watheia/tools.is-browser": ["libs/components/src/tools/is-browser/index.ts"],

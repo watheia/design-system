@@ -1,1 +1,1 @@
-export * from './twitter-link';
+export * from "./twitter-link"

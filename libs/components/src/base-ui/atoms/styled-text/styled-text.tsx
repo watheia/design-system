@@ -1,6 +1,6 @@
 import React from "react"
 import classNames from "clsx"
-import styles from "./styled-text.module.scss"
+import * as styles from "./styled-text.module.scss"
 
 export type StyledTextProps = {
   variant?: "body" | "muted" | "lead" | "detail"

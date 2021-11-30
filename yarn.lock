@@ -8549,6 +8549,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"community-link-76dd6b@workspace:libs/components/src/design/atoms/community-link":
+  version: 0.0.0-use.local
+  resolution: "community-link-76dd6b@workspace:libs/components/src/design/atoms/community-link"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
 "compare-url-5d6b17@workspace:libs/components/src/base-ui/routing/compare-url":
   version: 0.0.0-use.local
   resolution: "compare-url-5d6b17@workspace:libs/components/src/base-ui/routing/compare-url"
@@ -10697,6 +10706,15 @@ __metadata:
   checksum: 1c0911e14a6f8d26721c91e01db06092a5f7675159f0261d69c403396a385afd13dd76825e7678f66daffa930cfaa8d45f506fb35f818a2788463d022af1b884
   languageName: node
   linkType: hard
+
+"enterprise-logos-c60b81@workspace:libs/components/src/design/molecules/enterprise-logos":
+  version: 0.0.0-use.local
+  resolution: "enterprise-logos-c60b81@workspace:libs/components/src/design/molecules/enterprise-logos"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
 
 "entities@npm:^1.1.1, entities@npm:~1.1.1":
   version: 1.1.2
@@ -13341,6 +13359,15 @@ __metadata:
   checksum: 14e448192a35c1e42efee94c9d01a10f42fe790375891a24b25261246ce9336ab9df5d274585aedd4568f7922246c2a78b8a8cd2571bfe99c693a9718e7dd0e3
   languageName: node
   linkType: hard
+
+"github-link-e28e90@workspace:libs/components/src/design/molecules/community-links/github-link":
+  version: 0.0.0-use.local
+  resolution: "github-link-e28e90@workspace:libs/components/src/design/molecules/community-links/github-link"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
 
 "github-slugger@npm:^1.1.1, github-slugger@npm:^1.2.1":
   version: 1.4.0
@@ -24581,6 +24608,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"slack-link-ccdb59@workspace:libs/components/src/design/molecules/community-links/slack-link":
+  version: 0.0.0-use.local
+  resolution: "slack-link-ccdb59@workspace:libs/components/src/design/molecules/community-links/slack-link"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
 "slash@npm:^3.0.0":
   version: 3.0.0
   resolution: "slash@npm:3.0.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fslash%2F-%2Fslash-3.0.0.tgz"
@@ -26064,6 +26100,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"testimonial-a8ae55@workspace:libs/components/src/design/molecules/testimonial":
+  version: 0.0.0-use.local
+  resolution: "testimonial-a8ae55@workspace:libs/components/src/design/molecules/testimonial"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
 "text-separator-044e0d@workspace:libs/components/src/base-ui/atoms/text-separator":
   version: 0.0.0-use.local
   resolution: "text-separator-044e0d@workspace:libs/components/src/base-ui/atoms/text-separator"
@@ -26662,6 +26707,24 @@ __metadata:
   checksum: 6061daba1724f59473d99a7bb82e13f211cdf6e31315510ae9656fefd4779851cb927adad90f3b488c8ed77c106adc0421ea8055f6f976ff21b27c5c4e918487
   languageName: node
   linkType: hard
+
+"twitter-card-7fa4f4@workspace:libs/components/src/design/molecules/twitter-card":
+  version: 0.0.0-use.local
+  resolution: "twitter-card-7fa4f4@workspace:libs/components/src/design/molecules/twitter-card"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
+"twitter-link-7ac082@workspace:libs/components/src/design/molecules/community-links/twitter-link":
+  version: 0.0.0-use.local
+  resolution: "twitter-link-7ac082@workspace:libs/components/src/design/molecules/community-links/twitter-link"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
 
 "type-check@npm:^0.4.0, type-check@npm:~0.4.0":
   version: 0.4.0

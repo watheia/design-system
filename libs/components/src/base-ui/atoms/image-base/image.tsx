@@ -1,6 +1,6 @@
 import React from "react"
 import classNames from "clsx"
-import styles from "./image.module.scss"
+import * as styles from "./image.module.scss"
 
 export type BaseImageProps = {
   /**

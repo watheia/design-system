@@ -1,6 +1,6 @@
 import React from "react"
 import classNames from "classnames"
-import styles from "./input.module.scss"
+import * as styles from "./input.module.scss"
 
 type InputProps = { error: boolean } & React.InputHTMLAttributes<HTMLInputElement>
 type TextareaProps = { error: boolean } & React.InputHTMLAttributes<HTMLTextAreaElement>

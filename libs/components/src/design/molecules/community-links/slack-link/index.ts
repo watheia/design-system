@@ -1,1 +1,1 @@
-export * from './slack-link';
+export * from "./slack-link"

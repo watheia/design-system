@@ -16,7 +16,6 @@ return <div className={colSpan[8]}>I'm taking up 3/4 of the line</div>
 import { colSpanL, colSpan } from "@bit/bit.base-ui.layout.col-span"
 
 //...
-
 ;<div className={classNames(colSpan[12], colSpanL[6])}>I'm taking up 3/4 of the line</div>
 ```
 
