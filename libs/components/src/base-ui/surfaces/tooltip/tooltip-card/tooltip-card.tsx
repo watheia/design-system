@@ -1,5 +1,5 @@
 import React from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 import { Containee, Position } from "@watheia/base-ui.surfaces.abs-container"
 import { elevationClass, ElevationHeight } from "@watheia/base-ui.css-components.elevation"
 import { roundnessClass, Roundness } from "@watheia/base-ui.css-components.roundness"

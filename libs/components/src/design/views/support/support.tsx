@@ -1,5 +1,5 @@
 import React, { HTMLAttributes, ReactNode } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { centerColumn } from "@watheia/base-ui.layout.page-frame"
 import { backgrounds } from "@watheia/base-ui.surfaces.background"

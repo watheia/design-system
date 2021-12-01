@@ -1,8 +1,8 @@
 import React from "react"
 import classNames from "clsx"
-import styles from "./bold.module.scss"
+import * as styles from "./bold.module.scss"
 
-export type BoldProps = {} & React.HTMLAttributes<HTMLSpanElement>
+export type BoldProps = React.HTMLAttributes<HTMLSpanElement>
 
 export function Bold({ children, className, ...rest }: BoldProps) {
   return (

@@ -3,6 +3,7 @@ import classNames from "clsx"
 import { mutedText } from "@watheia/base-ui.atoms.styled-text"
 import { Paragraph } from "@watheia/docs.markdown.elements.paragraph"
 import styles from "./sub-title.module.scss"
+import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 
 export type SubtitleProps = React.HTMLAttributes<HTMLParagraphElement>
 
@@ -14,7 +15,7 @@ export function Subtitle({ children, className, ...rest }: SubtitleProps) {
     <Paragraph
       element="p"
       className={classNames(mutedText, styles.subTitle, className)}
-      size="xl"
+      size={PossibleSizes.xl}
       {...rest}
     >
       {children}

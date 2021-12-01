@@ -1,3 +1,4 @@
+export const themedText: string
 export const muted: string
 export const body: string
 export const detail: string

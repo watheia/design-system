@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react"
-import classNames from "classnames"
-import styles from "./grid.module.scss"
+import classNames from "clsx"
+import * as styles from "./grid.module.scss"
 
 import {
   colGrid,

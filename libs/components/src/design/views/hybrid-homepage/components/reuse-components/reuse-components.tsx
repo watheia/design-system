@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
-import styles from "./reuse-components.module.scss"
+import * as styles from "./reuse-components.module.scss"
 
 import { fourWayGrid } from "@watheia/base-ui.layout.grid-presets.four-way-grid"
 
@@ -22,11 +22,7 @@ import { H2, H3 } from "@watheia/base-ui.atoms.heading"
  */
 export function ReuseComponents(props: HTMLAttributes<HTMLDivElement>) {
   return (
-    <div
-      {...props}
-      className={classNames(props.className, text.center)}
-      data-bit-id="teambit.evangelist/sections/reuse-components"
-    >
+    <div {...props} className={classNames(props.className, text.center)}>
       <div className={classNames(textColumn, marginCenter)}>
         <H2 size={PossibleSizes.sm}>Host and share components in the cloud</H2>
         <Paragraph size={PossibleSizes.xl} className={classNames(styles.subtitle)}>

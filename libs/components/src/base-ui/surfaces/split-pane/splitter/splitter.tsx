@@ -1,4 +1,4 @@
-import classNames from "classnames"
+import classNames from "clsx"
 import React, { HTMLAttributes } from "react"
 
 import styles from "./splitter.module.scss"

@@ -1,4 +1,4 @@
-import styles from "./grid-template.module.scss"
+import * as styles from "./grid-template.module.scss"
 
 type ColumnPreset = {
   1: string
@@ -26,7 +26,9 @@ export const colGridXl = makePreset("xl")
 function makePreset(breakPoints: string): ColumnPreset {
   const obj: any = {}
 
-  for (var i = 1; i <= 12; i++) {
+  for (let i = 1; i <= 12; i++) {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     obj[i] = styles[`colTemplate--${breakPoints}-${i}`]
   }
 

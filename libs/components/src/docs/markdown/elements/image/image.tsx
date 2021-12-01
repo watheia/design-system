@@ -1,9 +1,9 @@
 import React from "react"
-import classNames from "classnames"
-import styles from "./image.module.scss"
+import classNames from "clsx"
+import * as styles from "./image.module.scss"
 
-export type ImageProps = {} & React.ImgHTMLAttributes<HTMLImageElement>
+export type ImageProps = React.ImgHTMLAttributes<HTMLImageElement>
 
-export function Image({ src, className, ...rest }: ImageProps) {
-  return <img {...rest} src={src} className={classNames(styles.img, className)} />
+export function Image({ alt, src, className, ...rest }: ImageProps) {
+  return <img {...rest} alt={alt} src={src} className={classNames(styles.img, className)} />
 }

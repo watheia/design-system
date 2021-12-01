@@ -3,6 +3,7 @@ import classNames from "clsx"
 import { HeadingProps, Heading } from "@watheia/base-ui.atoms.heading"
 import * as sizeStyles from "./heading-sizes.module.scss"
 import * as styles from "./heading.module.scss"
+import { styles as clean } from "@watheia/base-ui.theme.fonts.clean"
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 
 // export type Sizes = "xxs" | "xs" | "sm" | "md" | "lg" | "xl" | "xxl"
@@ -24,7 +25,12 @@ export function H1(props: HeaderProps) {
     <Heading
       element="h1"
       {...props}
-      className={classNames(styles.h1, sizeStyles[props.size || "lg"], props.className)}
+      className={classNames(
+        styles.h1,
+        sizeStyles[props.size || PossibleSizes.lg],
+        clean.sansFont,
+        props.className
+      )}
     />
   )
 }

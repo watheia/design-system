@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
-import styles from "./build-together.module.scss"
+import * as styles from "./build-together.module.scss"
 
 import { fourWayGrid } from "@watheia/base-ui.layout.grid-presets.four-way-grid"
 
@@ -24,11 +24,7 @@ import { H2, H3 } from "@watheia/base-ui.atoms.heading"
 
 export function BuildTogether(props: HTMLAttributes<HTMLDivElement>) {
   return (
-    <div
-      {...props}
-      className={classNames(props.className, text.center)}
-      data-bit-id="teambit.evangelist/sections/build-together"
-    >
+    <div {...props} className={classNames(props.className, text.center)}>
       <div className={classNames(textColumn, marginCenter)}>
         <H2 size={PossibleSizes.sm}>
           Collaborate on component updates to build in perfect sync

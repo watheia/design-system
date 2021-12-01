@@ -1,5 +1,5 @@
 import React from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 import { Image } from "@watheia/base-ui.atoms.image"
 import * as styles from "./enterprise-logos.module.scss"
 

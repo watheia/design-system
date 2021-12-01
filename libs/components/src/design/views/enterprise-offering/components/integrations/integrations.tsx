@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { Image } from "@watheia/base-ui.atoms.image"
 
@@ -12,11 +12,7 @@ import styles from "./integrations.module.scss"
  */
 export function Integrations({ className, ...rest }: HTMLAttributes<HTMLDivElement>) {
   return (
-    <div
-      className={classNames(className, styles.integrationBadges)}
-      data-bit-id="teambit.evangelist/sections/enterprise-offering/integrations"
-      {...rest}
-    >
+    <div className={classNames(className, styles.integrationBadges)} {...rest}>
       <div className={styles.logos}>
         <Image
           src="enterprise-offering-v1/5-ecosystem-section/logos/asana.svg"

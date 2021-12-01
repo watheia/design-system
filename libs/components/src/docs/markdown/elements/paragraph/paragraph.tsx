@@ -2,7 +2,7 @@ import React from "react"
 import classNames from "clsx"
 import { Paragraph as BaseParagraph } from "@watheia/base-ui.atoms.paragraph"
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
-import styles from "./paragraph.module.scss"
+import * as styles from "./paragraph.module.scss"
 
 /**
  * a paragraph component
@@ -11,7 +11,7 @@ export type ParagraphProps = {
   /**
    * Font size (from a list of presets).
    */
-  size?: "xxs" | "xs" | "sm" | "md" | "lg" | "xl" | "xxl"
+  size?: PossibleSizes
   /**
    * The underlying html element
    */

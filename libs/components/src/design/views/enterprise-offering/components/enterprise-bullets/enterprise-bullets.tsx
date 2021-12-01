@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 import { Grid } from "@watheia/base-ui.layout.grid-component"
 import { Image } from "@watheia/base-ui.atoms.image"
 import { text } from "@watheia/base-ui.layout.align"

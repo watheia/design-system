@@ -1,5 +1,5 @@
 import { Splitter, SplitterProps } from "@watheia/base-ui.surfaces.split-pane.splitter"
-import cn from "classnames"
+import cn from "clsx"
 import React from "react"
 
 import styles from "./splitter.module.scss"

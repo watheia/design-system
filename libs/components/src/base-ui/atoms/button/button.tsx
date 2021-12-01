@@ -3,14 +3,14 @@ import classNames from "clsx"
 
 import BaseButton, { ButtonProps as BaseProps } from "@watheia/base-ui.atoms.button-base"
 
-import styles from "./button.module.scss"
-import elevations from "./elevations.module.scss"
+import * as styles from "./button.module.scss"
+import * as elevations from "./elevations.module.scss"
 
 export type ButtonProps = {
   /**
    * style the button with shadow and click effect.
    */
-  elevation?: "none" | "low" | "medium" | "high"
+  elevation?: keyof typeof elevations
   /**
    * style variance ('cta', 'normal')
    */

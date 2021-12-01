@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
-import styles from "./component-advantages.module.scss"
+import * as styles from "./component-advantages.module.scss"
 
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
@@ -21,11 +21,7 @@ import { H3 } from "@watheia/base-ui.atoms.heading"
 
 export function ComponentsAdvantages(props: HTMLAttributes<HTMLDivElement>) {
   return (
-    <div
-      {...props}
-      className={classNames(props.className)}
-      data-bit-id="teambit.evangelist/sections/component-advantages"
-    >
+    <div {...props} className={classNames(props.className)}>
       <Grid
         colMd={12}
         className={classNames(text.center, text.sm.left, fourWayGrid, alignItems.center)}

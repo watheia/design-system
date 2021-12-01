@@ -1,7 +1,7 @@
 import React from "react"
 import { ReactNode } from "react"
-import classNames from "classnames"
-import styles from "./page-frame.module.scss"
+import classNames from "clsx"
+import * as styles from "./page-frame.module.scss"
 
 export type WideColumnProps = {
   children?: ReactNode

@@ -1,4 +1,5 @@
-import styles from "./align.module.scss"
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+import * as styles from "./align.module.scss"
 
 enum BreakPoints {
   xs = "xs",
@@ -32,16 +33,19 @@ export const fullWidth = styles.fullWidth
 
 export const text = (() => {
   const baseStyle = {
-    left: styles["text-left"],
-    center: styles["text-center"],
-    right: styles["text-right"]
+    left: styles.textLeft,
+    center: styles.textCenter,
+    right: styles.textRight
   }
 
   const medias = Object.keys(BreakPoints)
     .map((br) => ({
       [br]: {
+        // @ts-ignore
         left: styles[`text-${br}-left`],
+        // @ts-ignore
         center: styles[`text-${br}-center`],
+        // @ts-ignore
         right: styles[`text-${br}-right`]
       }
     }))
@@ -57,13 +61,13 @@ export const marginCenter = styles.marginCenter
 
 //consider moving this logic to <Grid/>
 export const justifyItems = {
-  left: styles["justifyItems-left"],
-  center: styles["justifyItems-center"],
-  right: styles["justifyItems-right"]
+  left: styles.justifyItemsLeft,
+  center: styles.justifyItemsCenter,
+  right: styles.justifyItemsRight
 }
 
 export const alignItems = {
-  start: styles["alignItems-start"],
-  center: styles["alignItems-center"],
-  end: styles["alignItems-end"]
+  start: styles.alignItemsStart,
+  center: styles.alignItemsCenter,
+  end: styles.alignItemsEnd
 }

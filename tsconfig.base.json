@@ -79,8 +79,8 @@
       "@watheia/base-ui.layout.align": [
         "libs/components/src/base-ui/layout/align/index.ts"
       ],
-      "@watheia/base-ui.layout.breakpoints": [
-        "libs/components/src/base-ui/layout/breakpoints/index.ts"
+      "@watheia/base-ui.layout.breakpoints/*": [
+        "libs/components/src/base-ui/layout/breakpoints/*"
       ],
       "@watheia/base-ui.layout.col-span": [
         "libs/components/src/base-ui/layout/col-span/index.ts"
@@ -172,9 +172,7 @@
       "@watheia/base-ui.theme.color-definition": [
         "libs/components/src/base-ui/theme/color-definition/index.ts"
       ],
-      "@watheia/base-ui.theme.colors": [
-        "libs/components/src/base-ui/theme/colors/index.ts"
-      ],
+      "@watheia/base-ui.theme.colors/*": ["libs/components/src/base-ui/theme/colors/*"],
       "@watheia/base-ui.theme.dark-theme": [
         "libs/components/src/base-ui/theme/dark-theme/index.ts"
       ],
@@ -206,6 +204,10 @@
       "@watheia/design.atoms.community-link": [
         "libs/components/src/design/atoms/community-link/index.ts"
       ],
+      "@watheia/design.data.links": ["libs/components/src/design/data/links/index.ts"],
+      "@watheia/design.data.testimonials": [
+        "libs/components/src/design/data/testimonials/index.ts"
+      ],
       "@watheia/design.molecules.community-links.github-link": [
         "libs/components/src/design/molecules/community-links/github-link"
       ],
@@ -221,6 +223,9 @@
       "@watheia/design.molecules.twitter-card": [
         "libs/components/src/design/molecules/twitter-card/index.ts"
       ],
+      "@watheia/design.organisms.comment-carousel": [
+        "libs/components/src/design/organisms/comment-carousel/index.ts"
+      ],
       "@watheia/design.views.error-page": [
         "libs/components/src/design/views/error-page/index.ts"
       ],
@@ -231,6 +236,9 @@
         "libs/components/src/design/views/not-found-page/index.ts"
       ],
       "@watheia/design.views.sample": ["libs/components/src/design/views/sample/index.ts"],
+      "@watheia/design.views.hybrid-homepage": [
+        "libs/components/src/design/views/hybrid-homepage/index.ts"
+      ],
       "@watheia/design.views.server-error-page": [
         "libs/components/src/design/views/server-error-page/index.ts"
       ],
@@ -302,6 +310,9 @@
       ],
       "@watheia/docs.ui.copied-message": [
         "libs/components/src/docs/ui/copied-message/index.ts"
+      ],
+      "@watheia/base-ui.layout.spacing": [
+        "libs/components/src/base-ui/layout/spacing/index.ts"
       ],
       "@watheia/docs.ui.copy-box": ["libs/components/src/docs/ui/copy-box/index.ts"],
       "@watheia/docs.ui.heading": ["libs/components/src/docs/ui/heading/index.ts"],

@@ -1,5 +1,5 @@
 import React from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 
@@ -43,7 +43,7 @@ export function TwitterCard(props: TwitterCardProps) {
   const { title, className, children, image, verified, titleId, textId, ...rest } = props
   return (
     <Card
-      data-bit-id="teambit.evangelist/marketing/twitter-card"
+      data-bit-id="watheia.design/molecules/twitter-card"
       className={classNames(styles.twitterCard, className)}
       elevation="low"
       {...rest}

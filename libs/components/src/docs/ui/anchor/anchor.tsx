@@ -1,7 +1,7 @@
 import React from "react"
 import classNames from "clsx"
 import { Icon } from "@watheia/base-ui.atoms.icon"
-import styles from "./anchor.module.scss"
+import * as styles from "./anchor.module.scss"
 
 type AnchorProps = {
   /**

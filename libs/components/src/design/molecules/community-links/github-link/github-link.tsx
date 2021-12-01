@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-ignore
 import numberAbbreviate from "number-abbreviate"
@@ -32,7 +32,7 @@ export class GithubLink extends PureComponent<GithubLinkProps> {
     return (
       <CommunityLink
         external
-        data-bit-id="teambit.evangelist/marketing/community-links/github-link"
+        data-bit-id="watheia.design/molecules/community-links/github-link"
         className={classNames(styles.githubLink, className)}
         {...rest}
       >

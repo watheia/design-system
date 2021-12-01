@@ -1,5 +1,5 @@
 import React from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 import * as styles from "./input.module.scss"
 
 type InputProps = { error: boolean } & React.InputHTMLAttributes<HTMLInputElement>

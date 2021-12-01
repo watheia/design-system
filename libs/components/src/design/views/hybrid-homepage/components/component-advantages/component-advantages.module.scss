@@ -1,5 +1,9 @@
 @import "~@watheia/base-ui.layout.breakpoints/_breakpoints.scss";
 
+.img {
+  color: inherit;
+}
+
 .text {
   @media screen and (min-width: $br-l) {
     width: 80%;

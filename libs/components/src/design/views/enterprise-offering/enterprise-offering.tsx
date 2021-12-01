@@ -1,25 +1,22 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { centerColumn, textColumn } from "@watheia/base-ui.layout.page-frame"
 import { marginCenter, text } from "@watheia/base-ui.layout.align"
 import { backgrounds } from "@watheia/base-ui.surfaces.background"
 
-import { Hero } from "@watheia/evangelist.sections.enterprise-offering.hero"
-import { PoweringEnterprise } from "@watheia/evangelist.sections.enterprise-offering.powering-enterprise"
-import { AdvantageCards } from "@watheia/evangelist.sections.enterprise-offering.advantage-cards"
-import { Reliability } from "@watheia/evangelist.sections.enterprise-offering.reliability"
-import { EcoSystem } from "@watheia/evangelist.sections.enterprise-offering.eco-system"
-import { Integrations } from "@watheia/evangelist.sections.enterprise-offering.integrations"
-import { ComponentAnalytics } from "@watheia/evangelist.sections.enterprise-offering.component-analytics"
-import { ExpertSupport } from "@watheia/evangelist.sections.enterprise-offering.experts-support"
-import {
-  SalesCta,
-  ContactValues
-} from "@watheia/evangelist.sections.enterprise-offering.sales-cta"
-import { EnterpriseBullets } from "@watheia/evangelist.sections.enterprise-offering.enterprise-bullets"
-import { margin } from "@watheia/evangelist.layout.experimental.spacing"
-import { EnterpriseLogos } from "@watheia/evangelist.marketing.enterprise-logos"
+import { Hero } from "./components/hero"
+import { PoweringEnterprise } from "./components/powering-enterprise"
+import { AdvantageCards } from "./components/advantage-cards"
+import { Reliability } from "./components/reliability"
+import { EcoSystem } from "./components/eco-system"
+import { Integrations } from "./components/integrations"
+import { ComponentAnalytics } from "./components/component-analytics"
+import { ExpertSupport } from "./components/experts-support"
+import { SalesCta, ContactValues } from "./components/sales-cta"
+import { EnterpriseBullets } from "./components/enterprise-bullets"
+import { margin } from "@watheia/base-ui.layout.spacing"
+import { EnterpriseLogos } from "@watheia/design.molecules.enterprise-logos"
 
 import styles from "./enterprise-offering.module.scss"
 

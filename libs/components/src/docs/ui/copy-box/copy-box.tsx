@@ -4,7 +4,7 @@ import classNames from "clsx"
 import { CopiedMessage } from "@watheia/docs.ui.copied-message"
 import { Icon } from "@watheia/base-ui.atoms.icon"
 import { Grid } from "@watheia/base-ui.layout.grid-component"
-import styles from "./copy-box.module.scss"
+import * as styles from "./copy-box.module.scss"
 
 export type CopyBoxProps = {
   /**

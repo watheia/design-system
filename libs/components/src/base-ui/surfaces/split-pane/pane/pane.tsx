@@ -1,5 +1,5 @@
 import { Layout, LayoutFeatures } from "@watheia/base-ui.surfaces.split-pane.layout"
-import classNames from "classnames"
+import classNames from "clsx"
 import React, { CSSProperties } from "react"
 
 import styles from "./pane.module.scss"

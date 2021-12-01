@@ -102,6 +102,9 @@
       "teambit.react/react": {
         "mdx": true
       }
+    },
+    "libs/components/src/mfe": {
+      "defaultScope": "watheia.mfe"
     }
   }
 }

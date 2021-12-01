@@ -1,7 +1,15 @@
 @import "~@watheia/base-ui.layout.breakpoints/_breakpoints.scss";
 
+.communitySection {
+  color: inherit;
+}
+
 .title {
   margin-bottom: 20px;
+}
+
+.tweets {
+  color: inherit;
 }
 
 .tweet {

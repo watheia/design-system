@@ -4,7 +4,7 @@ import classNames from "clsx"
 // //@ts-ignore
 // import Spinner from '@bit/bit.base-ui.ellipsis';
 
-import styles from "./button.module.scss"
+import * as styles from "./button.module.scss"
 import { DotsLoader } from "@watheia/base-ui.atoms.dots-loader"
 
 // const defaultSpinner = (

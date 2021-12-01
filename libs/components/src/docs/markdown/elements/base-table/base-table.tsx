@@ -1,8 +1,8 @@
 import React from "react"
 import classNames from "clsx"
-import styles from "./base-table.module.scss"
+import * as styles from "./base-table.module.scss"
 
-export type TableProps = {} & React.HTMLAttributes<HTMLTableElement>
+export type TableProps = React.HTMLAttributes<HTMLTableElement>
 
 export function Table({ children, className, ...rest }: TableProps) {
   return (

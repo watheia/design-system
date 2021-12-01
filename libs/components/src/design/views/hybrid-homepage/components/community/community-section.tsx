@@ -1,7 +1,7 @@
 import React from "react"
-import classnames from "classnames"
+import classnames from "clsx"
 
-import styles from "./community-section.module.scss"
+import * as styles from "./community-section.module.scss"
 
 import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
 import { Grid } from "@watheia/base-ui.layout.grid-component"
@@ -9,12 +9,12 @@ import { alignItems, marginCenter } from "@watheia/base-ui.layout.align"
 import { textColumn } from "@watheia/base-ui.layout.page-frame"
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 
-import { GithubLink } from "@watheia/evangelist.marketing.community-links.github-link"
-import { links } from "@watheia/evangelist.content.links"
-import { SlackLink } from "@watheia/evangelist.marketing.community-links.slack-link"
+import { GithubLink } from "@watheia/design.molecules.community-links.github-link"
+import { links } from "@watheia/design.data.links"
+import { SlackLink } from "@watheia/design.molecules.community-links.slack-link"
 import { H2 } from "@watheia/base-ui.atoms.heading"
-import { TwitterLink } from "@watheia/evangelist.marketing.community-links.twitter-link"
-import { TwitterCard } from "@watheia/evangelist.marketing.twitter-card"
+import { TwitterLink } from "@watheia/design.molecules.community-links.twitter-link"
+import { TwitterCard } from "@watheia/design.molecules.twitter-card"
 
 export type CommunitySectionProps = {
   /**
@@ -38,7 +38,6 @@ export function CommunitySection(props: CommunitySectionProps) {
       {...rest}
       colL={2}
       className={classnames(props.className, styles.communitySection, alignItems.center)}
-      data-bit-id="teambit.evangelist/sections/community"
     >
       <div className={styles.cta}>
         <div className={classnames(textColumn, marginCenter)}>
@@ -63,7 +62,7 @@ export function CommunitySection(props: CommunitySectionProps) {
         <TwitterCard
           className={styles.tweet}
           title="@Sketch2R"
-          image={"homepage-bit/tweets/sketch2r.jpg"}
+          image="homepage-bit/tweets/sketch2r.jpg"
           verified
           titleId="twitterTitle0"
           textId="twitterText0"
@@ -73,7 +72,7 @@ export function CommunitySection(props: CommunitySectionProps) {
         <TwitterCard
           className={styles.tweet}
           title="@TheNextWeb"
-          image={"homepage/join-fold/tnw.png"}
+          image="homepage/join-fold/tnw.png"
           verified
           titleId="twitterTitle0"
           textId="twitterText0"
@@ -83,7 +82,7 @@ export function CommunitySection(props: CommunitySectionProps) {
         <TwitterCard
           className={styles.tweet}
           title="@smashingmag"
-          image={"homepage/join-fold/smashing.png"}
+          image="homepage/join-fold/smashing.png"
           verified
           titleId="twitterTitle1"
           textId="twitterText2"

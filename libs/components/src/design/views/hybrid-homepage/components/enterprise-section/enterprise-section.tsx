@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
@@ -14,7 +14,7 @@ import { Icon } from "@watheia/base-ui.atoms.icon"
 import { Link } from "@watheia/base-ui.atoms.link"
 import { Button } from "@watheia/base-ui.atoms.button"
 
-import styles from "./enterprise-section.module.scss"
+import * as styles from "./enterprise-section.module.scss"
 
 /**
  * @name EnterpriseSection
@@ -25,11 +25,7 @@ import styles from "./enterprise-section.module.scss"
 
 export function EnterpriseSection(props: HTMLAttributes<HTMLDivElement>) {
   return (
-    <div
-      {...props}
-      className={classNames(text.center, props.className)}
-      data-bit-id="teambit.evangelist/sections/enterprise-section"
-    >
+    <div {...props} className={classNames(text.center, props.className)}>
       <Grid
         col={1}
         colMd={12}

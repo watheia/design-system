@@ -1,6 +1,6 @@
 import React, { HTMLAttributes } from "react"
 
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
@@ -10,7 +10,7 @@ import { textColumn } from "@watheia/base-ui.layout.page-frame"
 import { H2 } from "@watheia/base-ui.atoms.heading"
 import { Image } from "@watheia/base-ui.atoms.image"
 
-import styles from "./develop-components.module.scss"
+import * as styles from "./develop-components.module.scss"
 
 /**
  * @name DevelopComponents
@@ -21,7 +21,7 @@ import styles from "./develop-components.module.scss"
 
 export function DevelopComponents(props: HTMLAttributes<HTMLDivElement>) {
   return (
-    <div {...props} data-bit-id="teambit.evangelist/sections/develop-components">
+    <div {...props}>
       <div className={classNames(textColumn, marginCenter)}>
         <H2 size={PossibleSizes.sm}>
           Split app development to independent components and teams

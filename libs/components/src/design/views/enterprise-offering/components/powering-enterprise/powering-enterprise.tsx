@@ -1,13 +1,12 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { textColumn } from "@watheia/base-ui.layout.page-frame"
 import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 import { colorPalette } from "@watheia/base-ui.theme.accent-color"
-import { themedText } from "@watheia/base-ui.atoms.themed-text"
 import { text } from "@watheia/base-ui.layout.align"
-import { MutedText, mutedText } from "@watheia/base-ui.atoms.muted-text"
+import { StyledText, mutedText, themedText } from "@watheia/base-ui.atoms.styled-text"
 
 import { H2 } from "@watheia/base-ui.atoms.heading"
 
@@ -20,7 +19,6 @@ import styles from "./powering-enterprise.module.scss"
 export const PoweringEnterprise = (props: HTMLAttributes<HTMLDivElement>) => (
   <div
     {...props}
-    data-bit-id="teambit.evangelist/sections/enterprise-offering/powering-enterprise"
     className={classNames(
       props.className,
       text.center,
@@ -47,19 +45,19 @@ function CrunchTheNumbers() {
     <div className={classNames(text.center, styles.crunchTheNumbers)}>
       <div>
         <div className={styles.emphasized}>100%</div>
-        <MutedText>Component reuse</MutedText>
+        <StyledText variant="muted">Component reuse</StyledText>
       </div>
       <div className={colorPalette.process}>
         <div className={classNames(themedText, styles.emphasized)}>10x</div>
-        <MutedText>More releases</MutedText>
+        <StyledText variant="muted">More releases</StyledText>
       </div>
       <div className={colorPalette.primary}>
         <div className={classNames(themedText, styles.emphasized)}>90%</div>
-        <MutedText>Faster integrations</MutedText>
+        <StyledText variant="muted">Faster integrations</StyledText>
       </div>
       <div className={colorPalette.complementary}>
         <div className={classNames(themedText, styles.xtraEmpthasized)}>∞</div>
-        <MutedText>Scale</MutedText>
+        <StyledText variant="muted">Scale</StyledText>
       </div>
     </div>
   )

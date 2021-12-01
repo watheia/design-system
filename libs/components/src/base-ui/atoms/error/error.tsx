@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 import styles from "./error.module.scss"
 
 /**

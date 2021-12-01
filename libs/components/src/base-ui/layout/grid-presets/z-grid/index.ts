@@ -1,4 +1,4 @@
-import styles from "./z-grid.module.scss"
+import * as styles from "./z-grid.module.scss"
 
 /**
  * @name zGrid

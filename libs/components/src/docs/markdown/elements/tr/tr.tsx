@@ -1,8 +1,8 @@
 import React from "react"
 import classNames from "clsx"
-import styles from "./tr.module.scss"
+import * as styles from "./tr.module.scss"
 
-export type TrProps = {} & React.HTMLAttributes<HTMLTableRowElement>
+export type TrProps = React.HTMLAttributes<HTMLTableRowElement>
 
 export function Tr({ children, className, ...rest }: TrProps) {
   return (

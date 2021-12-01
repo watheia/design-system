@@ -1,17 +1,18 @@
 import React, { PureComponent } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 import Slider, { Settings } from "react-slick"
 import debounce from "lodash.debounce"
 import ResizeObserver from "resize-observer-polyfill"
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-ignore
 import createRef from "react-create-ref"
 
-import { Testimonial, TestimonialObj } from "@watheia/evangelist.marketing.testimonial"
+import { Testimonial, TestimonialObj } from "@watheia/design.molecules.testimonial"
 import "./slick-slider.module.scss"
 
-import styles from "./carousel.module.scss"
-import sliderStyles from "./slick-slider.module.scss"
+import * as styles from "./carousel.module.scss"
+import * as sliderStyles from "./slick-slider.module.scss"
 
 export type CommentCarouselProps = {
   /**
@@ -30,12 +31,12 @@ export type CommentCarouselProps = {
  * A responsive carousel based on `react-slick`, showing real user testimonials.
  * @name CommentCarousel
  * @example
- * const bitTestimonials = [
+ * const testimonials = [
  * 	{ name: 'Barbra', description: 'Quality assurance', content: 'Better than 4/5 of the market', avatar: '...', }
  * 	{ name: 'Roberto', description: 'Upper middle management', content: 'Easy to carry, nice for meetings', avatar: '...', }
  * ];
  *
- * <CommentCarousel content={bitTestimonials} />
+ * <CommentCarousel content={testimonials} />
  */
 export class CommentCarousel extends PureComponent<CommentCarouselProps> {
   state = { active: 0, slidesToShow: 3 }
@@ -81,7 +82,7 @@ export class CommentCarousel extends PureComponent<CommentCarouselProps> {
 
     return (
       <div
-        data-bit-id="teambit.evangelist/marketing/comment-carousel"
+        data-bit-id="watheia.design/organisms/comment-carousel"
         {...rest}
         className={classNames(
           styles.carouselWrapper,

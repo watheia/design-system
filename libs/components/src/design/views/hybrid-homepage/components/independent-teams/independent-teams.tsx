@@ -1,8 +1,8 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 
-import styles from "./independent-teams.module.scss"
+import * as styles from "./independent-teams.module.scss"
 
 import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
 import { Grid } from "@watheia/base-ui.layout.grid-component"
@@ -21,11 +21,7 @@ import { Image } from "@watheia/base-ui.atoms.image"
 
 export function IndependentTeams(props: HTMLAttributes<HTMLDivElement>) {
   return (
-    <div
-      {...props}
-      className={classNames(props.className)}
-      data-bit-id="teambit.evangelist/sections/independent-teams"
-    >
+    <div {...props} className={classNames(props.className)}>
       <div className={classNames(textColumn, marginCenter)}>
         <H2 size={PossibleSizes.sm} className={text.center}>
           Autonomous teams working side by side.

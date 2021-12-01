@@ -1,5 +1,5 @@
 import React, { HTMLAttributes, ReactNode } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 import Typewriter from "typewriter-effect"
 
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
@@ -13,7 +13,7 @@ import { IconLine } from "@watheia/base-ui.atoms.icon-line"
 import { Link } from "@watheia/base-ui.atoms.link"
 import { Image } from "@watheia/base-ui.atoms.image"
 import { Button } from "@watheia/base-ui.atoms.button"
-import styles from "./hero.module.scss"
+import * as styles from "./hero.module.scss"
 
 const iconsArray = [
   "logo-react",
@@ -49,7 +49,7 @@ type ReuseLandingProps = {
 
 export function Hero(props: ReuseLandingProps) {
   return (
-    <div data-bit-id="teambit.evangelist/sections/hero" {...props}>
+    <div {...props}>
       <Grid colL={2} className={classNames(styles.mainGrid, text.center, text.l.left)}>
         <div>
           <div>

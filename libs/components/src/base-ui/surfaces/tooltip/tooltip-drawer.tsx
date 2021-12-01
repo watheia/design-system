@@ -1,6 +1,6 @@
 import React from "react"
 import { Drawer, DrawerProps } from "@watheia/base-ui.surfaces.drawer"
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { fadeInOutClass } from "@watheia/base-ui.css-components.fade-in-out"
 import { TooltipMenu } from "./tooltip-card"

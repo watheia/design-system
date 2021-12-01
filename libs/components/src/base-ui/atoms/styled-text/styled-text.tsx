@@ -23,3 +23,4 @@ export function StyledText({ variant = "body", className, ...props }: StyledText
  * @name mutedText
  */
 export const mutedText = styles.muted
+export const themedText = styles.themedText

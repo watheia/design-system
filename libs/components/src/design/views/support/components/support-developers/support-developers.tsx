@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
 
@@ -73,11 +73,7 @@ export function SupportDevelopers(props: SupportDevelopersProps) {
   ]
 
   return (
-    <div
-      className={className}
-      {...rest}
-      data-bit-id="teambit.evangelist/sections/support-page/support-developers"
-    >
+    <div className={className} {...rest}>
       <div className={classNames(styles.content, text.center)}>
         <H2 size={PossibleSizes.sm}>We got you covered</H2>
         <Paragraph size={PossibleSizes.lg} className={styles.paragraph}>

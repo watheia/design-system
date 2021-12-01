@@ -1,4 +1,4 @@
-// import * as definitions from "./_storage.module.scss"
+export * as definitions from "./_storage.module.scss"
 
 /**
  * Provides constant url for images CDN.

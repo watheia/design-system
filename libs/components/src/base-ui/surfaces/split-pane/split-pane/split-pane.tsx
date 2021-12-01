@@ -1,7 +1,7 @@
 import { Layout } from "@watheia/base-ui.surfaces.split-pane.layout"
 import type { PaneProps } from "@watheia/base-ui.surfaces.split-pane.pane"
 import type { SplitterProps } from "@watheia/base-ui.surfaces.split-pane.splitter"
-import classNames from "classnames"
+import classNames from "clsx"
 import React, { ReactElement } from "react"
 
 import { calcSplit } from "./calc-split"

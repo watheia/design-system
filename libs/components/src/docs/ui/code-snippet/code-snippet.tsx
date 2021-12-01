@@ -9,7 +9,7 @@ import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/prism-light"
 import tsxSyntax from "react-syntax-highlighter/dist/esm/languages/prism/tsx"
 import defaultTheme from "react-syntax-highlighter/dist/esm/styles/prism/vsc-dark-plus"
 
-import styles from "./code-snippet.module.scss"
+import * as styles from "./code-snippet.module.scss"
 
 SyntaxHighlighter.registerLanguage("tsx", tsxSyntax)
 const customStyles = { fontFamily: "roboto mono", fontSize: 12 }

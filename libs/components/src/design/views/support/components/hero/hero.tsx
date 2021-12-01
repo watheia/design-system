@@ -1,11 +1,11 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 import { text, marginCenter } from "@watheia/base-ui.layout.align"
 import { Grid } from "@watheia/base-ui.layout.grid-component"
-import { mutedText } from "@watheia/base-ui.atoms.muted-text"
+import { mutedText } from "@watheia/base-ui.atoms.styled-text"
 import { Link } from "@watheia/base-ui.atoms.link"
 
 import { Button } from "@watheia/base-ui.atoms.button"
@@ -14,7 +14,7 @@ import { Image } from "@watheia/base-ui.atoms.image"
 
 import styles from "./hero.module.scss"
 
-type HeroProps = {} & HTMLAttributes<HTMLDivElement>
+type HeroProps = HTMLAttributes<HTMLDivElement>
 
 /**
  * Opening hero section for the Support offering page.
@@ -27,7 +27,6 @@ export function Hero(props: HeroProps) {
     <Grid
       colMd={2}
       {...rest}
-      data-bit-id="teambit.evangelist/sections/support-page/hero"
       className={classNames(className, text.center, text.md.left, styles.mainGrid)}
     >
       <div className={classNames(styles.content)}>

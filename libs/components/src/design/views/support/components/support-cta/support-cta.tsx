@@ -1,5 +1,5 @@
 import React from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
@@ -23,7 +23,6 @@ export function SupportCta(props: React.HTMLAttributes<HTMLDivElement>) {
     <Grid
       colMd={2}
       {...rest}
-      data-bit-id="teambit.evangelist/sections/support-page/support-cta"
       className={classNames(className, text.center, text.md.left, styles.mainGrid)}
     >
       <div className={styles.topSection}>

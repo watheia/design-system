@@ -3,7 +3,7 @@ import classNames from "clsx"
 
 import { Image } from "@watheia/base-ui.atoms.image"
 
-import styles from "./icon-line.module.scss"
+import * as styles from "./icon-line.module.scss"
 
 const staticPrefix = "brands"
 

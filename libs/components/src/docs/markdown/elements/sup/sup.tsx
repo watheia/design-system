@@ -1,8 +1,8 @@
 import React from "react"
 import classNames from "clsx"
-import styles from "./sup.module.scss"
+import * as styles from "./sup.module.scss"
 
-export type SupProps = {} & React.HTMLAttributes<HTMLSpanElement>
+export type SupProps = React.HTMLAttributes<HTMLSpanElement>
 
 export function Sup({ children, className, ...rest }: SupProps) {
   return (

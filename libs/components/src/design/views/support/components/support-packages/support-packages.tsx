@@ -1,5 +1,5 @@
 import React, { HTMLAttributes, ReactNode } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
@@ -24,11 +24,7 @@ export function SupportPackages(props: SupportPackagesProps) {
 
   if (!children) return null
   return (
-    <div
-      className={className}
-      {...rest}
-      data-bit-id="teambit.evangelist/sections/support-page/support-packages"
-    >
+    <div className={className} {...rest}>
       <div className={classNames(styles.topSection, marginCenter, text.center)}>
         <H2 size={PossibleSizes.sm}>Simple transparent plans</H2>
         <Paragraph size={PossibleSizes.lg} className={styles.paragraph}>

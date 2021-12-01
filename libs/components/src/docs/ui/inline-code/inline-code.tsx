@@ -1,6 +1,6 @@
 import React from "react"
 import classNames from "clsx"
-import styles from "./inline-code.module.scss"
+import * as styles from "./inline-code.module.scss"
 
 export type InlineCodeProps = React.HTMLAttributes<HTMLElement> & {
   /** colors the background with accent color */

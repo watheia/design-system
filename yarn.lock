@@ -8132,7 +8132,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"classnames@npm:2.3.1, classnames@npm:2.x, classnames@npm:^2.2.1, classnames@npm:^2.2.5, classnames@npm:^2.2.6":
+"classnames@npm:2.x, classnames@npm:^2.2.1, classnames@npm:^2.2.5, classnames@npm:^2.2.6":
   version: 2.3.1
   resolution: "classnames@npm:2.3.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fclassnames%2F-%2Fclassnames-2.3.1.tgz"
   checksum: 14db8889d56c267a591f08b0834989fe542d47fac659af5a539e110cc4266694e8de86e4e3bbd271157dbd831361310a8293e0167141e80b0f03a0f175c80960
@@ -8527,6 +8527,15 @@ __metadata:
   checksum: 53501cbeee61d5157546c0bef0fedb6cdfc763a882136284bed9a07225f09a14b82d2a84e7637edfd1a679fb35ed9502fd58ef1d091e6287f60d790147f68ddc
   languageName: node
   linkType: hard
+
+"comment-carousel-d67c41@workspace:libs/components/src/design/organisms/comment-carousel":
+  version: 0.0.0-use.local
+  resolution: "comment-carousel-d67c41@workspace:libs/components/src/design/organisms/comment-carousel"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
 
 "common-path-prefix@npm:^3.0.0":
   version: 3.0.0
@@ -14667,6 +14676,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hybrid-homepage-dfa4b0@workspace:libs/components/src/design/views/hybrid-homepage":
+  version: 0.0.0-use.local
+  resolution: "hybrid-homepage-dfa4b0@workspace:libs/components/src/design/views/hybrid-homepage"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
 "hybrid-live-code-snippet-07f440@workspace:libs/components/src/docs/markdown/hybrid-live-code-snippet":
   version: 0.0.0-use.local
   resolution: "hybrid-live-code-snippet-07f440@workspace:libs/components/src/docs/markdown/hybrid-live-code-snippet"
@@ -17570,6 +17588,15 @@ __metadata:
 "linked-heading-20b0a5@workspace:libs/components/src/docs/ui/linked-heading":
   version: 0.0.0-use.local
   resolution: "linked-heading-20b0a5@workspace:libs/components/src/docs/ui/linked-heading"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
+"links-ed63dd@workspace:libs/components/src/design/data/links":
+  version: 0.0.0-use.local
+  resolution: "links-ed63dd@workspace:libs/components/src/design/data/links"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
@@ -24913,6 +24940,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"spacing-63a17d@workspace:libs/components/src/base-ui/layout/spacing":
+  version: 0.0.0-use.local
+  resolution: "spacing-63a17d@workspace:libs/components/src/base-ui/layout/spacing"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
 "spdx-correct@npm:^3.0.0":
   version: 3.1.1
   resolution: "spdx-correct@npm:3.1.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fspdx-correct%2F-%2Fspdx-correct-3.1.1.tgz"
@@ -26103,6 +26139,15 @@ __metadata:
 "testimonial-a8ae55@workspace:libs/components/src/design/molecules/testimonial":
   version: 0.0.0-use.local
   resolution: "testimonial-a8ae55@workspace:libs/components/src/design/molecules/testimonial"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  languageName: unknown
+  linkType: soft
+
+"testimonials-46e1b2@workspace:libs/components/src/design/data/testimonials":
+  version: 0.0.0-use.local
+  resolution: "testimonials-46e1b2@workspace:libs/components/src/design/data/testimonials"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
@@ -27876,7 +27921,6 @@ __metadata:
     babel-plugin-module-resolver: 4.1.0
     babel-preset-gatsby: 2.2.0
     chai: ^4.3.4
-    classnames: 2.3.1
     clsx: ^1.1.1
     copy-to-clipboard: ^3.3.1
     core-js: ^3.0.0

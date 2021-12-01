@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { TestimonialObj } from "./testimonial-obj"
 import * as styles from "./testimonial.module.scss"
@@ -32,7 +32,7 @@ export class Testimonial extends PureComponent<TestimonialProps> {
 
     return (
       <div
-        data-bit-id="teambit.evangelist/marketing/testimonial"
+        data-bit-id="watheia.design/molecules/testimonial"
         className={classNames(styles.box, className)}
         {...rest}
         data-active={active || null}

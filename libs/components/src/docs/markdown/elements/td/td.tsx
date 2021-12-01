@@ -1,8 +1,8 @@
 import React from "react"
 import classNames from "clsx"
-import styles from "./td.module.scss"
+import * as styles from "./td.module.scss"
 
-export type TdProps = {} & React.HTMLAttributes<HTMLTableDataCellElement>
+export type TdProps = React.HTMLAttributes<HTMLTableDataCellElement>
 
 export function Td({ children, className, ...rest }: TdProps) {
   return (

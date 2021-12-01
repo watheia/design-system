@@ -3,7 +3,7 @@ import classNames from "clsx"
 import { Dropdown } from "@watheia/base-ui.surfaces.dropdown"
 import { Icon } from "@watheia/base-ui.atoms.icon"
 import { ImportMenu, TabOptions } from "./menu/menu"
-import styles from "./import-action.module.scss"
+import * as styles from "./import-action.module.scss"
 
 type ImportActionProps = {
   /**

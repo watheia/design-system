@@ -7,12 +7,12 @@ import { CommentCarousel } from "./comment-carousel"
 
 ### Overview
 
-A responsive carousel based on `react-slick`, showing real user testimonials.  
+A responsive carousel based on `react-slick`, showing real user testimonials.
 Example:
 
 ```js live
 ;() => {
-  const bitTestimonials = [
+  const testimonials = [
     {
       name: "Barbra",
       description: "Quality assurance",
@@ -40,7 +40,7 @@ Example:
   ]
   return (
     <div style={{ width: 800 }}>
-      <CommentCarousel content={bitTestimonials} />
+      <CommentCarousel content={testimonials} />
     </div>
   )
 }

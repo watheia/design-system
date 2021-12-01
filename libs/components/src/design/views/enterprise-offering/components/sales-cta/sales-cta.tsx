@@ -1,9 +1,9 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { Card } from "@watheia/base-ui.surfaces.card"
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
-import { mutedText } from "@watheia/base-ui.atoms.muted-text"
+import { mutedText } from "@watheia/base-ui.atoms.styled-text"
 import { TextSeparator } from "@watheia/base-ui.atoms.text-separator"
 import { fullWidth, marginCenter } from "@watheia/base-ui.layout.align"
 
@@ -11,7 +11,7 @@ import { Button } from "@watheia/base-ui.atoms.button"
 import { H4 } from "@watheia/base-ui.atoms.heading"
 
 import styles from "./sales-cta.module.scss"
-import { margin } from "@watheia/evangelist.layout.experimental.spacing"
+import { margin } from "@watheia/base-ui.layout.spacing"
 import { ContactForm } from "./contact-form"
 import { ContactValues } from "./contact-values"
 import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
@@ -31,11 +31,7 @@ export type EnterpriseCtaProps = {
 export const SalesCta = (props: EnterpriseCtaProps) => {
   const { onSubmitCta, onBookMeeting, className, ...rest } = props
   return (
-    <div
-      {...rest}
-      className={classNames(styles.particlesBg, className)}
-      data-bit-id="teambit.evangelist/sections/enterprise-offering/sales-cta"
-    >
+    <div {...rest} className={classNames(styles.particlesBg, className)}>
       <Card id="lets-talk" className={classNames(styles.formCard, marginCenter)}>
         <H4 size={PossibleSizes.xs}>Let’s talk </H4>
         <Paragraph className={classNames(margin[30], mutedText)}>

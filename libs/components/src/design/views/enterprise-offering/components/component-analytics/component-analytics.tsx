@@ -1,10 +1,10 @@
-import classNames from "classnames"
+import classNames from "clsx"
 import React, { HTMLAttributes } from "react"
 
 import { alignItems } from "@watheia/base-ui.layout.align"
 import { Grid } from "@watheia/base-ui.layout.grid-component"
-import { mutedText } from "@watheia/base-ui.atoms.muted-text"
-import { themedText } from "@watheia/base-ui.atoms.themed-text"
+import { mutedText } from "@watheia/base-ui.atoms.styled-text"
+import { themedText } from "@watheia/base-ui.atoms.styled-text"
 import { colorPalette } from "@watheia/base-ui.theme.accent-color"
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 
@@ -14,7 +14,7 @@ import { Image } from "@watheia/base-ui.atoms.image"
 import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
 
 import styles from "./component-analytics.module.scss"
-import { margin } from "@watheia/evangelist.layout.experimental.spacing"
+import { margin } from "@watheia/base-ui.layout.spacing"
 
 /**
  * A section showing Bit's analytical abilities.
@@ -26,7 +26,6 @@ export function ComponentAnalytics(props: HTMLAttributes<HTMLDivElement>) {
     <div className={styles.scrollPreventer}>
       <Grid
         {...props}
-        data-bit-id="teambit.evangelist/sections/enterprise-offering/component-analytics"
         className={classNames(alignItems.center, props.className, styles.customGrid)}
       >
         <div>

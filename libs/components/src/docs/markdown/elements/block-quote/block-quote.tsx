@@ -1,8 +1,8 @@
 import React from "react"
 import classNames from "clsx"
-import styles from "./block-quote.module.scss"
+import * as styles from "./block-quote.module.scss"
 
-export type BlockQuoteProps = {} & React.HTMLAttributes<HTMLQuoteElement>
+export type BlockQuoteProps = React.HTMLAttributes<HTMLQuoteElement>
 
 export function BlockQuote({ className, children, ...rest }: BlockQuoteProps) {
   return (

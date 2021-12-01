@@ -1,4 +1,4 @@
-import styles from "./col-span.module.scss"
+import * as styles from "./col-span.module.scss"
 
 type ColSpans = {
   1: string
@@ -15,10 +15,12 @@ type ColSpans = {
   12: string
 }
 
-export function makeSpans(breakPoints: string = ""): ColSpans {
+export function makeSpans(breakPoints = ""): ColSpans {
   const obj: any = {}
 
-  for (var i = 1; i <= 12; i++) {
+  for (let i = 1; i <= 12; i++) {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     obj[i] = styles[`colSpan--${breakPoints}-${i}`]
   }
 

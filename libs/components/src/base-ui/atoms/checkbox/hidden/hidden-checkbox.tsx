@@ -1,5 +1,5 @@
 import React from "react"
-import classnames from "classnames"
+import classnames from "clsx"
 import styles from "./hidden-checkbox.module.scss"
 
 export type HiddenCheckboxProps = React.InputHTMLAttributes<HTMLInputElement>

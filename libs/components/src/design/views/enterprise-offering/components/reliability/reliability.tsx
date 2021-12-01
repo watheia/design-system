@@ -1,13 +1,13 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
-import { mutedText } from "@watheia/base-ui.atoms.muted-text"
+import { mutedText } from "@watheia/base-ui.atoms.styled-text"
 
 import { H2, H3 } from "@watheia/base-ui.atoms.heading"
 import { Image } from "@watheia/base-ui.atoms.image"
 
-import styles from "./reliability.module.scss"
+import * as styles from "./reliability.module.scss"
 import { marginCenter, text } from "@watheia/base-ui.layout.align"
 import { Link } from "@watheia/base-ui.atoms.link"
 import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
@@ -19,10 +19,7 @@ import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
  */
 export const Reliability = ({ className, ...rest }: HTMLAttributes<HTMLDivElement>) => (
   <div className={styles.corpoBg} {...rest}>
-    <div
-      className={classNames(className, text.center, text.md.left)}
-      data-bit-id="teambit.evangelist/sections/enterprise-offering/reliability"
-    >
+    <div className={classNames(className, text.center, text.md.left)}>
       <div className={styles.content}>
         <H2 size={PossibleSizes.sm} className={styles.title}>
           Reliable and secure

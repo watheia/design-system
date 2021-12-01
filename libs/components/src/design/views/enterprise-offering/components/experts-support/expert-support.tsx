@@ -1,10 +1,10 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { Card } from "@watheia/base-ui.surfaces.card"
 import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
-import { mutedText } from "@watheia/base-ui.atoms.muted-text"
+import { mutedText } from "@watheia/base-ui.atoms.styled-text"
 import { text, marginCenter } from "@watheia/base-ui.layout.align"
 
 import { H2, H4 } from "@watheia/base-ui.atoms.heading"
@@ -18,10 +18,7 @@ import styles from "./expert-support.module.scss"
  * @name ExpertSupport
  */
 export const ExpertSupport = (props: HTMLAttributes<HTMLDivElement>) => (
-  <div
-    className={styles.preventOverflow}
-    data-bit-id="teambit.evangelist/sections/enterprise-offering/experts-support"
-  >
+  <div className={styles.preventOverflow}>
     <div {...props} className={classNames(styles.container, props.className)}>
       <div className={classNames(styles.mainContent, marginCenter)}>
         <H2 size={PossibleSizes.md} className={classNames(text.center, styles.title)}>

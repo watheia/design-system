@@ -1,24 +1,24 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 import { text } from "@watheia/base-ui.layout.align"
 import { Grid } from "@watheia/base-ui.layout.grid-component"
-import { mutedText } from "@watheia/base-ui.atoms.muted-text"
+import { mutedText } from "@watheia/base-ui.atoms.styled-text"
 
 import { H2 } from "@watheia/base-ui.atoms.heading"
 import { Image } from "@watheia/base-ui.atoms.image"
 import { Icon } from "@watheia/base-ui.atoms.icon"
-import { links } from "@watheia/evangelist.content.links"
+import { links } from "@watheia/design.data.links"
 
 import styles from "./support-channels.module.scss"
-import { SlackLink } from "@watheia/evangelist.marketing.community-links.slack-link"
-import { GithubLink } from "@watheia/evangelist.marketing.community-links.github-link"
-import { CommunityLink } from "@watheia/evangelist.marketing.community-links.community-link"
+import { SlackLink } from "@watheia/design.molecules.community-links.slack-link"
+import { GithubLink } from "@watheia/design.molecules.community-links.github-link"
+import { CommunityLink } from "@watheia/design.molecules.community-links.community-link"
 import { ChannelButtonCta } from "./support-channel-cta"
 
-type SupportChannelsProps = {} & HTMLAttributes<HTMLElement>
+type SupportChannelsProps = HTMLAttributes<HTMLElement>
 
 /**
  * Support channels section for specifying all the ways to contact Bit's support.
@@ -57,7 +57,6 @@ export function SupportChannels(props: SupportChannelsProps) {
     <Grid
       colMd={2}
       {...rest}
-      data-bit-id="teambit.evangelist/sections/support-page/support-channels"
       className={classNames(className, text.center, text.md.left, styles.mainGrid)}
     >
       <div className={classNames(styles.content)}>

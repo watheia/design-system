@@ -1,8 +1,8 @@
 import React from "react"
 import classNames from "clsx"
-import styles from "./separator.module.scss"
+import * as styles from "./separator.module.scss"
 
-type SeparatorProps = {} & React.HTMLAttributes<HTMLDivElement>
+type SeparatorProps = React.HTMLAttributes<HTMLDivElement>
 
 /**
  *

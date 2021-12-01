@@ -1,4 +1,4 @@
-import styles from "./four-way-grid.module.scss"
+import * as styles from "./four-way-grid.module.scss"
 
 /**
  * @name fourWayGrid

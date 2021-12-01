@@ -1,5 +1,5 @@
 import React from "react"
-import { SampleView } from "@watheia/design.views.sample"
+import { HybridHomepage } from "@watheia/design.views.hybrid-homepage"
 import { ComponentHighlighter } from "@watheia/tools.tracking.component-highlighter"
 
 export function Index() {
@@ -10,7 +10,7 @@ export function Index() {
    */
   return (
     <ComponentHighlighter motionTracking active>
-      <SampleView title="Welcome to home!" />
+      <HybridHomepage />
     </ComponentHighlighter>
   )
 }

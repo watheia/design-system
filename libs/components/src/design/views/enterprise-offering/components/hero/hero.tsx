@@ -1,8 +1,8 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
-import { themedText } from "@watheia/base-ui.atoms.themed-text"
+import { themedText } from "@watheia/base-ui.atoms.styled-text"
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 import { text, marginCenter } from "@watheia/base-ui.layout.align"
 import { Grid } from "@watheia/base-ui.layout.grid-component"
@@ -29,7 +29,6 @@ export function Hero(props: HeroProps) {
     <Grid
       colL={2}
       {...rest}
-      data-bit-id="teambit.evangelist/sections/enterprise-offering/hero"
       className={classNames(props.className, text.center, text.l.left, styles.mainGrid)}
     >
       <div className={classNames(styles.content)}>

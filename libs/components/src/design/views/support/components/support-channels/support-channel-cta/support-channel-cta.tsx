@@ -1,12 +1,12 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 import { H6 } from "@watheia/base-ui.atoms.heading"
 
 import styles from "./support-channel-cta.module.scss"
-import { mutedText } from "@watheia/base-ui.atoms.muted-text"
+import { mutedText } from "@watheia/base-ui.atoms.styled-text"
 
 type ChannelButtonCtaProps = {
   title?: string

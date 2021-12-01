@@ -3,7 +3,7 @@ import { ThemeCompositions } from "@watheia/base-ui.theme.light-theme"
 import { CommentCarousel } from "./comment-carousel"
 
 export const CommentCarouselExample = () => {
-  const bitTestimonials = [
+  const testimonials = [
     {
       name: "Barbra",
       description: "Quality assurance",
@@ -31,7 +31,7 @@ export const CommentCarouselExample = () => {
   ]
   return (
     <ThemeCompositions style={{ width: 800 }}>
-      <CommentCarousel content={bitTestimonials} data-testid="test-carousel" />
+      <CommentCarousel content={testimonials} data-testid="test-carousel" />
     </ThemeCompositions>
   )
 }

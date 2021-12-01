@@ -1,13 +1,12 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
 import { marginCenter, text, fullWidth } from "@watheia/base-ui.layout.align"
 import { Grid } from "@watheia/base-ui.layout.grid-component"
 import { textColumn } from "@watheia/base-ui.layout.page-frame"
 import { Card } from "@watheia/base-ui.surfaces.card"
-import { mutedText } from "@watheia/base-ui.atoms.muted-text"
+import { mutedText, themedText } from "@watheia/base-ui.atoms.styled-text"
 import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
-import { themedText } from "@watheia/base-ui.atoms.themed-text"
 import { colorPalette } from "@watheia/base-ui.theme.accent-color"
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 
@@ -24,11 +23,7 @@ import styles from "./advantage-cards.module.scss"
  * @name AdvantageCards
  */
 export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
-  <div
-    {...props}
-    className={classNames(props.className)}
-    data-bit-id="teambit.evangelist/sections/enterprise-offering/advantage-cards"
-  >
+  <div {...props} className={classNames(props.className)}>
     <div className={classNames(textColumn, marginCenter, text.center)}>
       <H2 size={PossibleSizes.sm}>Bit enterprise</H2>
 

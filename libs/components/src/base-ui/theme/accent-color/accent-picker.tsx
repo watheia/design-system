@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { colorPalette } from "./accent-color"
-import styles from "./accent-picker.module.scss"
+import * as styles from "./accent-picker.module.scss"
 
 export function AccentPicker() {
   const [themeName, setTheme] = useState<keyof typeof colorPalette>("primary")

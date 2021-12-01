@@ -4,7 +4,7 @@ import { H1, H2, H3, H4, H5, H6 } from "@watheia/docs.ui.heading"
 import type { Element } from "@watheia/docs.ui.heading"
 import type { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 import { Anchor } from "@watheia/docs.ui.anchor"
-import styles from "./linked-heading.module.scss"
+import * as styles from "./linked-heading.module.scss"
 
 export type { PossibleSizes, Element }
 export type LinkedHeadingProps = {

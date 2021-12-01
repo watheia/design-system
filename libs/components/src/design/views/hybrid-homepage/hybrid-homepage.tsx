@@ -1,7 +1,7 @@
 import React, { PureComponent, HTMLAttributes, ReactNode } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
-import styles from "./hybrid-homepage.module.scss"
+import * as styles from "./hybrid-homepage.module.scss"
 
 import { backgrounds } from "@watheia/base-ui.surfaces.background"
 import { centerColumn, wideColumn } from "@watheia/base-ui.layout.page-frame"
@@ -51,15 +51,8 @@ export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 
     return (
       <div {...rest} className={classNames(backgrounds.bedrock, className)}>
-        <div
-          className={classNames(
-            styles.purpleBackground,
-            styles.purpleFold,
-            styles.margin180
-          )}
-        >
+        <div className={classNames(styles.purpleBackground, styles.margin180)}>
           <Hero className={classNames(styles.landingSection)} />
-
           {mainCta}
         </div>
 

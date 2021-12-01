@@ -1,14 +1,13 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
-import styles from "./talk-to-experts.module.scss"
+import * as styles from "./talk-to-experts.module.scss"
 
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 import { Paragraph } from "@watheia/base-ui.atoms.paragraph"
 import { justifyItems, alignItems, text, marginCenter } from "@watheia/base-ui.layout.align"
 
 import { H2 } from "@watheia/base-ui.atoms.heading"
-import { Link } from "@watheia/base-ui.atoms.link"
 import { Button } from "@watheia/base-ui.atoms.button"
 
 export type TalkToExpertsProps = {
@@ -33,7 +32,6 @@ export function TalkToExperts({ onBookMeeting, className, ...rest }: TalkToExper
         text.center,
         text.sm.left
       )}
-      data-bit-id="teambit.evangelist/sections/talk-to-experts"
       {...rest}
     >
       <div className={marginCenter}>

@@ -1,6 +1,6 @@
 import React from "react"
 import classNames from "clsx"
-import styles from "./copied-message.module.scss"
+import * as styles from "./copied-message.module.scss"
 
 type AnchorProps = {
   /**

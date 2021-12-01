@@ -1,5 +1,5 @@
 import React from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 import { Containee, ContaineeProps } from "@watheia/base-ui.surfaces.abs-container"
 
 import styles from "./arrow.module.scss"

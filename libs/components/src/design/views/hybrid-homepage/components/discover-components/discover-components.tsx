@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from "react"
-import classNames from "classnames"
+import classNames from "clsx"
 
-import styles from "./discover-components.module.scss"
+import * as styles from "./discover-components.module.scss"
 
 import { PossibleSizes } from "@watheia/base-ui.theme.sizes"
 
@@ -23,11 +23,7 @@ import { Image } from "@watheia/base-ui.atoms.image"
 
 export function DiscoverComponents(props: HTMLAttributes<HTMLDivElement>) {
   return (
-    <div
-      {...props}
-      className={classNames(props.className)}
-      data-bit-id="teambit.evangelist/sections/discover-components"
-    >
+    <div {...props} className={classNames(props.className)}>
       <div className={classNames(textColumn, marginCenter)}>
         <H2 size={PossibleSizes.sm} className={text.center}>
           Stunning docs and simple discovery
@@ -63,10 +59,7 @@ export function DiscoverComponents(props: HTMLAttributes<HTMLDivElement>) {
         </div>
         <Image src="homepage-bit/button-docs.png" alt="generated docs" fullWidth />
       </Grid>
-      <Grid
-        colMd={12}
-        className={classNames(text.left, halfZGrid, alignItems.center, styles.singleGrid)}
-      >
+      <Grid colMd={12} className={classNames(text.left, halfZGrid, alignItems.center)}>
         <div>
           <H3 size={PossibleSizes.xs}>Play with examples hands-on</H3>
           <Paragraph>

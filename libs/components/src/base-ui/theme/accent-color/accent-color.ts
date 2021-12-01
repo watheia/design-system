@@ -1,4 +1,4 @@
-import colorStyles from "./accent-color.module.scss"
+import * as colorStyles from "./accent-color.module.scss"
 
 /**
  * Sets the accent color variables for the specific use case.<br/>
