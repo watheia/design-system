@@ -20,7 +20,7 @@ build:
 	nx run-many --target build --all
 
 depgraph:
-	depcruise . --progress --config .dependency-cruiser.js --output-type ddot  --output-to depgraph.dot
+	depcruise apps/home --progress --config .dependency-cruiser.js --output-type ddot  --output-to depgraph.dot
 	cat depgraph.dot | dot -T svg > depgraph.svg.tmp
 	mv depgraph.svg.tmp depgraph.svg
 
