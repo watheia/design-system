@@ -42,8 +42,8 @@
       "@watheia/base-ui.atoms.icon-base": [
         "libs/components/src/base-ui/atoms/icon-base/index.ts"
       ],
-      "@watheia/base-ui.atoms.icon-line": [
-        "libs/components/src/base-ui/atoms/icon-line/index.ts"
+      "@watheia/design.molecules.icon-line": [
+        "libs/components/src/design/molecules/icon-line/index.ts"
       ],
       "@watheia/base-ui.atoms.image": ["libs/components/src/base-ui/atoms/image/index.ts"],
       "@watheia/base-ui.atoms.image-base": [

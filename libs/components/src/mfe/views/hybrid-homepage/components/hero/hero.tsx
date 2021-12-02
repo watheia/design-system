@@ -9,7 +9,7 @@ import { Grid } from "@watheia/base-ui.layout.grid-component"
 import { textColumn } from "@watheia/base-ui.layout.page-frame"
 
 import { H1 } from "@watheia/base-ui.atoms.heading"
-import { IconLine } from "@watheia/base-ui.atoms.icon-line"
+import { IconLine } from "@watheia/design.molecules.icon-line"
 import { Link } from "@watheia/base-ui.atoms.link"
 import { Image } from "@watheia/base-ui.atoms.image"
 import { Button } from "@watheia/base-ui.atoms.button"
@@ -57,7 +57,7 @@ export function Hero(props: ReuseLandingProps) {
               How the best teams
               <br />
               <Typewriter
-                onInit={() => {}}
+                onInit={() => void 0}
                 options={{
                   strings: typeWriterArray,
                   autoStart: true,

@@ -75,12 +75,6 @@
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/atoms/icon-base"
     },
-    "atoms/icon-line": {
-        "scope": "watheia.base-ui",
-        "version": "1.3.0",
-        "mainFile": "index.ts",
-        "rootDir": "libs/components/src/base-ui/atoms/icon-line"
-    },
     "atoms/image": {
         "scope": "watheia.base-ui",
         "version": "1.6.0",
@@ -239,13 +233,13 @@
     },
     "layout/grid-presets/four-way-grid": {
         "scope": "watheia.base-ui",
-        "version": "1.3.0",
+        "version": "1.3.1",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/layout/grid-presets/four-way-grid"
     },
     "layout/grid-presets/z-grid": {
         "scope": "watheia.base-ui",
-        "version": "1.3.0",
+        "version": "1.3.1",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/base-ui/layout/grid-presets/z-grid"
     },
@@ -392,6 +386,12 @@
         "version": "0.2.0",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/design/molecules/enterprise-logos"
+    },
+    "molecules/icon-line": {
+        "scope": "watheia.design",
+        "version": "0.1.0",
+        "mainFile": "index.ts",
+        "rootDir": "libs/components/src/design/molecules/icon-line"
     },
     "molecules/testimonial": {
         "scope": "watheia.design",
@@ -893,7 +893,7 @@
     },
     "views/hybrid-homepage": {
         "scope": "watheia.mfe",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "mainFile": "index.ts",
         "rootDir": "libs/components/src/mfe/views/hybrid-homepage"
     },

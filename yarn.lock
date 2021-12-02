@@ -14363,9 +14363,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"icon-line-27e222@workspace:libs/components/src/base-ui/atoms/icon-line":
+"icon-line-ef73b4@workspace:libs/components/src/design/molecules/icon-line":
   version: 0.0.0-use.local
-  resolution: "icon-line-27e222@workspace:libs/components/src/base-ui/atoms/icon-line"
+  resolution: "icon-line-ef73b4@workspace:libs/components/src/design/molecules/icon-line"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
