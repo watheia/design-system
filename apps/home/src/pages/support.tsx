@@ -1,5 +1,5 @@
 import React from "react"
-import { HybridHomepage } from "@watheia/mfe.views.hybrid-homepage"
+import { SupportPage } from "@watheia/mfe.views.support"
 import { ComponentHighlighter } from "@watheia/tools.tracking.component-highlighter"
 
 export function Index() {
@@ -10,7 +10,7 @@ export function Index() {
    */
   return (
     <ComponentHighlighter motionTracking active>
-      <HybridHomepage />
+      <SupportPage />
     </ComponentHighlighter>
   )
 }

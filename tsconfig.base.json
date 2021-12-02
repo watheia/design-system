@@ -37,6 +37,7 @@
       "@watheia/base-ui.atoms.heading": [
         "libs/components/src/base-ui/atoms/heading/index.ts"
       ],
+      "@watheia/base-ui.atoms.input": ["libs/components/src/base-ui/atoms/input/index.ts"],
       "@watheia/base-ui.atoms.icon": ["libs/components/src/base-ui/atoms/icon/index.ts"],
       "@watheia/base-ui.atoms.icon-base": [
         "libs/components/src/base-ui/atoms/icon-base/index.ts"
@@ -236,8 +237,12 @@
         "libs/components/src/design/views/not-found-page/index.ts"
       ],
       "@watheia/design.views.sample": ["libs/components/src/design/views/sample/index.ts"],
-      "@watheia/design.views.hybrid-homepage": [
-        "libs/components/src/design/views/hybrid-homepage/index.ts"
+      "@watheia/mfe.views.hybrid-homepage": [
+        "libs/components/src/mfe/views/hybrid-homepage/index.ts"
+      ],
+      "@watheia/mfe.views.support": ["libs/components/src/mfe/views/support/index.ts"],
+      "@watheia/mfe.views.enterprise-offering": [
+        "libs/components/src/mfe/views/enterprise-offering/index.ts"
       ],
       "@watheia/design.views.server-error-page": [
         "libs/components/src/design/views/server-error-page/index.ts"

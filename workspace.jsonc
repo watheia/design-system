@@ -78,24 +78,23 @@
             "microcomponent",
             "microfrontend",
             "watheia",
+            "mfe",
             "bit",
             "layout",
-            "spectrum"
+            "spectrum",
+            "react"
           ]
         }
       }
     },
     "libs/components/src/base-ui": {
-      "defaultScope": "watheia.base-ui",
-      "teambit.react/react": {}
+      "defaultScope": "watheia.base-ui"
     },
     "libs/components/src/design": {
-      "defaultScope": "watheia.design",
-      "teambit.react/react": {}
+      "defaultScope": "watheia.design"
     },
     "libs/components/src/tools": {
-      "defaultScope": "watheia.tools",
-      "teambit.react/react": {}
+      "defaultScope": "watheia.tools"
     },
     "libs/components/src/docs": {
       "defaultScope": "watheia.docs",
@@ -105,6 +104,33 @@
     },
     "libs/components/src/mfe": {
       "defaultScope": "watheia.mfe"
+    },
+    "{atoms/**}": {
+      "teambit.react/react": {}
+    },
+    "{molecules/**}": {
+      "teambit.react/react": {}
+    },
+    "{organisms/**}": {
+      "teambit.react/react": {}
+    },
+    "{views/**}": {
+      "teambit.react/react": {}
+    },
+    "{theme/**}": {
+      "teambit.react/react": {}
+    },
+    "{layout/**}": {
+      "teambit.react/react": {}
+    },
+    "{surfaces/**}": {
+      "teambit.react/react": {}
+    },
+    "{routing/**}": {
+      "teambit.react/react": {}
+    },
+    "{ui/**}": {
+      "teambit.react/react": {}
     }
   }
 }
